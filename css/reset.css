@@ -11,33 +11,79 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-  quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    border: none;
+}
+
+.slider {
+    width: 100%;
+}
+
+.left-0 {
+    left: 0 !important;
+}
+
+.bg-FFE200 {
+    background-color: #FFE200 !important;
+}
+
+.bg-FF9638 {
+    background-color: #FF9638;
+}
+
+.bg-3298F2 {
+    background-color: #3298F2;
+}
+
+.bg-fff {
+    background-color: #ffffff;
+}
+
+
+.hidden-block .two-content-2 {
+    height: auto !important;
+    transition: 2s !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.border-python {
+    border-color: #FFE200 !important;
 }

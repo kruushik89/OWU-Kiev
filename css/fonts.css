@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/Montserrat/Montserrat-Black.eot?') format('eot'),
+    url('../fonts/GothamPro/GothamPro.otf')  format('opentype'),
+    url('../fonts/GothamPro/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro/GothamPro.ttf')  format('truetype'),
+    url('https://github.com/Seafnox/Gothampro/blob/master/GothamPro/GothamPro.svg') format('svg');
+}

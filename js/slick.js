@@ -5,7 +5,7 @@ $('.center').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 480,
+            breakpoint: 972,
             settings: {
                 slidesToShow: 1,
                 centerMode: true,
@@ -16,15 +16,18 @@ $('.center').slick({
 
 $('.center-2').slick({
     infinite: true,
-    dots: false,
+    dots: true,
+    // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     responsive: [
         {
-            breakpoint: 480,
+            breakpoint: 972,
             settings: {
                 slidesToShow: 1,
                 centerMode: true,
+
             }
         }
     ]
@@ -33,11 +36,12 @@ $('.center-2').slick({
 $('.center-3').slick({
     infinite: true,
     dots: false,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 480,
+            breakpoint: 972,
             settings: {
                 slidesToShow: 1,
                 centerMode: true,
@@ -46,4 +50,12 @@ $('.center-3').slick({
     ]
 });
 
+$(".lazy").slick({
+    lazyLoad: 'ondemand', // ondemand progressive anticipated
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
 

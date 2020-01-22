@@ -29,6 +29,36 @@ function addWhiteBorder(param) {
 // end add white border from item
 
 addWhiteBorder(typeBtn3);
+let listContent = document.querySelectorAll('.list-content');
+let arr = Array.from(listContent);
+$(document).ready(function() {
+    $('.list-inner').on('click',function () {
+        let $child = $(this).children('.list-item');
+        $('.list-item').removeClass('active-python');
+        $child.addClass('active-python');
+        let $id_child = $(this).attr('id');
+        $('.item-list-content').removeClass('display-block');
+        $('.item-list-content#p'+$id_child).addClass('display-block');
+    });
+
+    // ===============================================================================
+    // Програма для курсу
+    $('.list-content').on('click', function () {
+        let heigh = $(this.lastElementChild.scrollHeight);
+        $('.list-content').css('border-color','#A7A7A7');
+        $(this).css('border-color', '#FDDB58');
+        let child = $(this).children('.list-content-title');
+        $('.list-content-title').removeClass('active-python');
+        child.addClass('active-python');
+        let child2 = $(this).children('.list-content-text');
+        $('.list-content-text').css('height', 0);
+        child2.css('height', heigh[0]+'px');
+
+    })
+});
+
+
+
 
 
 
@@ -48,7 +78,6 @@ function y(a, b) {
     }
 }
 
-
 // modal
 let rec = document.querySelector('.rec-courses');
 let modal = document.querySelector('.body-modal');
@@ -60,10 +89,6 @@ for (let i = 0; i < nineBtn.length; i++) {
     }
 }
 
-rec.onclick = () => {
-    modal.classList.add('d-block');
-};
-
 let close = document.querySelector('.close-image img');
 close.onclick = () => {
     modal.classList.remove('d-block');
@@ -71,31 +96,6 @@ close.onclick = () => {
 // end modal
 
 // Collapse
-let content1H3 = document.querySelector('.section-two-content-1');
-let content2H3 = document.querySelector('.section-two-content-2');
-let content1 = document.querySelector('.two-content-1');
-let content2 = document.querySelector('.two-content-2');
-let vector = document.querySelector('.arr');
-let vector2 = document.querySelector('.arr-2');
-// function transform rotate 180
-function transform(param, param2) {
-    param.onclick = () => {
-        param2.classList.toggle('transform-rotate180');
-    };
-}
-
-transform(content1H3, vector);
-transform(content2H3, vector2);
-// end function transform rotate 180
-
-content2H3.addEventListener('click', function () {
-    toggle(content2);
-});
-
-content1H3.addEventListener('click', function () {
-    toggle(content1);
-});
-
 
 let show = (el) => {
     let getHeight = () => {
@@ -138,9 +138,10 @@ let toggle = function (el, timing) {
 };
 
 let b = document.querySelectorAll('.five-item-title-mob');
-
+f(b);
 function f(param) {
     param.forEach(function (el) {
+
         el.addEventListener('click', function (e) {
             toggle(e.target.nextElementSibling);
             if (e.target.nextElementSibling.classList.contains('is-visible')) {
@@ -150,7 +151,56 @@ function f(param) {
     });
 }
 
-f(b);
+
+
+// accordion 1
+let python = document.querySelectorAll('.four-item-wrap-python-title');
+let arrPython = Array.from(python);
+
+function collapse(param, clas) {
+    param.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle(clas);
+
+            if (e.target.nextElementSibling.classList.contains(clas)) {
+                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+            } else {
+                e.target.nextElementSibling.style.height = 0;
+            }
+        })
+    });
+}
+
+collapse(arrPython, 'is-visible');
+
+let accord1 = document.querySelectorAll('.python-header-item-title');
+let arrAccord1 = Array.from(accord1);
+collapse(arrAccord1);
+
+// let listContTitle = document.querySelectorAll('.list-content-title');
+// let arrlistContTitle = Array.from(listContTitle);
+// collapse(arrlistContTitle, 'is-visible');
+//
+// let listContText = document.querySelectorAll('.list-content-text');
+// let arrListContText = Array.from(listContText);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
