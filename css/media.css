@@ -189,12 +189,14 @@
         width: 90%;
         margin: 0 auto 60px;
         transition: 1s;
+        padding: 25px 10px 0;
     }
 
     .section-two-content-2 {
         width: 90%;
         margin: 0 auto;
         transition: 1s;
+        padding: 25px 10px 0;
     }
 
     .type-four-image {
@@ -350,6 +352,7 @@
 
     .type-tyrphs-item {
         margin-top: 45px;
+        padding: 60px 12px 50px;
     }
 
     .main-video {
@@ -372,6 +375,7 @@
 
     .type-eight-wrap {
         padding-top: 67px;
+        padding-bottom: 0;
     }
 
     .type-3-content-mobile {
@@ -384,6 +388,16 @@
 
     .type-3-item {
         margin-bottom: 25px;
+        height: 450px;
+        width: 95% !important;
+    }
+
+    .type-3 .slider {
+        height: 500px;
+    }
+
+    .type-3 {
+        padding: 50px 0 20px;
     }
 
     .carousel-item-slider-desktop {
@@ -464,6 +478,7 @@
 
     .type-two-python .type-2-wrapper {
         padding-top: 50px;
+        margin-bottom: 50px;
     }
 
     .type-title-text {
@@ -534,6 +549,7 @@
         padding: 20px;
         position: relative;
         margin-bottom: 35px;
+        width: 95% !important;
     }
 
     .seven-python-item-button {
@@ -691,6 +707,62 @@
         padding-bottom: 60px;
     }
 
+    .type-tyrphs-items {
+        width: 95% !important;
+    }
+
+    .type-nine, .type-ten-java {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .title-modal h2 {
+        font-size: 18px;
+        line-height: 20;
+    }
+
+    .type-ten-python .type-eight-wrap {
+        padding-top: 50px;
+    }
+
+    .wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .type-eleven-python {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .type-eleven-python .slick-dots {
+        bottom: -55px;
+    }
+
+    .type-seven-python {
+        padding-bottom: 60px;
+    }
+
+    .type-1-wrapper-mobile {
+        padding-bottom: 80px;
+    }
+
+    .type-one-python .type-1-wrapper-course-mob {
+        padding-top: 150px;
+    }
+
+    .wrapper-title-1-img-mobile {
+        top: 50px;
+    }
+
+    .java-complex-content {
+        margin-left: 15px;
+    }
+
+    header {
+        height: 60px;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -788,9 +860,17 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+    .type-two-java {
+        padding: 50px 0 0;
+    }
+
+    .section-two-content-1 {
+        margin-bottom: 30px;
+    }
+
     .wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .desctop-list {
@@ -864,13 +944,13 @@
     .list-mobile {
         display: block;
         width: 100%;
-        padding: 0 50px;
+        padding: 0 0 0 50px;
         position: relative;
     }
 
     .type-seven-image-mob {
         position: absolute;
-        right: -20px;
+        right: 0;
         top: 10%;
     }
 
@@ -881,16 +961,14 @@
 
     .main-video {
         width: 90%;
-        height: 277px;
+        height: 190px;
+        margin-left: 0;
 
     }
 
     .section-ten-btn button, .description-btn button {
         width: 260px;
     }
-
-
-
 
     .window-modal {
         width: 100%;
@@ -978,7 +1056,15 @@
     }
 
     .type-one-java .type-1-wrapper-course-mob {
-        padding-top: 280px;
+        padding-top: 230px;
+    }
+
+    .list-content {
+        padding: 10px;
+    }
+
+    .type-eight-header-text {
+        width: 100%;
     }
 
 
@@ -1154,10 +1240,6 @@
         margin-left: -108px;
     }
 
-    .center-2, .center-3, .videos, .slick-list, .slick-track{
-        height: 100%;
-    }
-
     .section-eight-content, .review-image-2, .section-seven-image {
         display: none;
     }
@@ -1263,6 +1345,37 @@
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .type-two-python .type-2-title {
+        font-size: 23px;
+    }
+
+    .type-2-title-img-left img, .type-2-title-img-right img {
+        width: 60px;
+    }
+
+    .type-2-title-img-right img {
+        bottom: -15px;
+    }
+
+    .type-2-title-img-left {
+        top: -15px;
+    }
+
+    .type-2-title-sup-mobile .type-2-text, .type-two-python .type-2-title {
+        margin-bottom: 35px;
+    }
+
+    .btn-page button {
+        width: 100%;
+    }
+
+    .btn-page {
+        width: 250px;
+        margin-left: -125px;
+    }
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
 
@@ -1304,6 +1417,7 @@
     .header-menu ul li {
         margin-left: 15px;
         margin-right: 15px;
+        font-size: 18px;
     }
 
     .header-menu ul li a {

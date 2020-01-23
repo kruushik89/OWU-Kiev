@@ -5,8 +5,8 @@
     transform: rotate(180deg);
 }
 
-.activ {
-
+.is-visible-mobile {
+    height: auto;
 }
 
 .active-python {
@@ -111,7 +111,7 @@ body {
 header {
     width: 100%;
     height: 95px;
-    background: #fff;
+    background: #F9F9F9;
 }
 
 .header-logo-item img {
@@ -217,12 +217,11 @@ header {
 
 /*menu-mobile*/
 .menu-mobile {
-    /*display: none;*/
     position: fixed;
     left: 100%;
-    top: 95px;
+    top: 60px;
     width: 100%;
-    height: 87vh;
+    height: 91vh;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: top;
@@ -231,9 +230,21 @@ header {
     transition: 1s;
 }
 
+.java .menu-mobile, .python .menu-mobile {
+    background-color: #FF9638;
+}
+
+.java .menu-mobile ul li a, .java-script .menu-mobile ul li a, .python .menu-mobile ul li a {
+    color: #ffffff;
+}
+
+.java-script .menu-mobile {
+    background-color: #FFE200;
+}
+
 .menu-mobile ul {
     height: 100%;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .menu-mobile ul li {
@@ -242,9 +253,45 @@ header {
 }
 
 .menu-mobile ul li a {
-    font-size: 2rem;
+    position: relative;
+    font-size: 1.5rem;
     line-height: 50px;
     color: #3298F2;
+    text-transform: uppercase;
+}
+
+.menu-mobile ul.dropdown-menu-mobile {
+    margin-top: 10px;
+    background-color: #ffffff;
+    height: 0;
+    overflow: hidden;
+    transition: height 500ms;
+}
+
+.menu-mobile ul.dropdown-menu-mobile a {
+    font-size: 1rem;
+    color: #000000 !important;
+}
+
+
+#course {
+    position: relative;
+}
+
+#course a.flag::after {
+    content: '';
+    border-style: solid;
+    border-width: 9px 6px 0 6px;
+    border-color: #292929 transparent transparent transparent;
+    width: 0;
+    height: 0;
+    margin: auto 0;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    z-index: 66;
+    transition: 0.45s cubic-bezier(0.78, 0, 0.17, 1.005);
 }
 
 .header-callback-menu button {
@@ -301,7 +348,7 @@ header {
     display: none;
     position: absolute;
     right: 15px;
-    top: 15px;
+    top: 0;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -478,7 +525,6 @@ header {
     padding: 20px;
     background: #FFE200;
     border-radius: 5px;
-    font-family: 'Russo One', sans-serif;
     font-weight: bold;
     font-size: 18px;
     width: 100%;
@@ -830,6 +876,11 @@ header {
     position: absolute;
     right: 15px;
     transition: 1.5s;
+    width: 15px;
+}
+
+.arr img, .arr-2 img {
+    width: 100%;
 }
 
 .title-section-2 h2 {
@@ -1312,7 +1363,7 @@ ol.carousel-indicators {
     padding: 10px 20px;
     margin-bottom: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: .5s;
 }
 
 .list-content:hover {
@@ -1338,7 +1389,7 @@ ol.carousel-indicators {
     height: 0;
     overflow: hidden;
     color: #FFFFFF;
-    transition: height .7s;
+    transition: height .5s;
 }
 
 .type-seven .list-content-text{

@@ -87,3 +87,7 @@ button {
 .border-python {
     border-color: #FFE200 !important;
 }
+
+main {
+    overflow-x: hidden;
+}

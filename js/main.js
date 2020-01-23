@@ -152,6 +152,21 @@ function f(param) {
 
 f(b);
 
+let course = document.querySelector('#course');
+
+course.addEventListener('click', function (e) {
+
+    e.target.nextElementSibling.classList.toggle('is-visible-mobile');
+
+    if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
+        e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+    } else {
+        e.target.nextElementSibling.style.height = 0;
+    }
+});
+
+
+
 
 
 

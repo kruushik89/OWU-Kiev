@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<header class="sticky-top">
+<header class="sticky-top java-script">
     <div class="wrapper">
         <div class="c-hamburger c-hamburger-line">
             <span>Menu</span>
@@ -29,7 +29,13 @@
                 <div class="header-menu">
                     <nav>
                         <ul class="nav-menu d-flex justify-content-around">
-                            <li><a href="#">курсы</a></li>
+                            <li class="nav-menu-has-children">курсы
+                                <ul class="dropdown-menu">
+                                    <li><a href="java.html">Java</a></li>
+                                    <li><a href="python.html">Python</a></li>
+                                    <li><a href="#">Бесплатные основы програмирования</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">акции</a></li>
                             <li><a href="#">отзывы</a></li>
                             <li><a href="#">галерея</a></li>
@@ -51,7 +57,13 @@
     <div class="menu-mobile">
         <nav>
             <ul>
-                <li><a href="#">курсы</a></li>
+                <li id="course"><a class="flag" href="#">курсы</a>
+                    <ul class="dropdown-menu-mobile">
+                        <li><a href="java.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="#">Бесплатные основы програмирования</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">акции</a></li>
                 <li><a href="#">отзывы</a></li>
                 <li><a href="#">галерея</a></li>
@@ -60,6 +72,9 @@
                 <li><a href="#">контакты</a></li>
             </ul>
         </nav>
+        <div class="header-callback-menu">
+            <button>заказать обратный звонок</button>
+        </div>
     </div>
     <div class="bottom-line"></div>
 </header>
@@ -334,59 +349,57 @@
                 <!--                mobile content-->
                 <div class="type-3-content-mobile">
                     <div class="center-2 slider">
-                        <div class="col-xl-3">
-                            <div class="type-3-item">
-                                <div class="type-3-item-title c-FF9638">
-                                    <h4>FullStack Developer</h4>
-                                </div>
-                                <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
-                                <div class="type-3-item-text">
-                                    «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
-                                    конца, будь то сайт или мобильное приложение.
-                                </div>
-                                <button>Хочу так работать!</button>
+
+                        <div class="type-3-item">
+                            <div class="type-3-item-title c-FF9638">
+                                <h4>FullStack Developer</h4>
                             </div>
+                            <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
+                            <div class="type-3-item-text">
+                                «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
+                                конца, будь то сайт или мобильное приложение.
+                            </div>
+                            <button>Хочу так работать!</button>
                         </div>
-                        <div class="col-xl-3">
-                            <div class="type-3-item">
-                                <div class="type-3-item-title c-FF9638">
-                                    <h4>FullStack Developer</h4>
-                                </div>
-                                <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
-                                <div class="type-3-item-text">
-                                    «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
-                                    конца, будь то сайт или мобильное приложение.
-                                </div>
-                                <button>Хочу так работать!</button>
+
+                        <div class="type-3-item">
+                            <div class="type-3-item-title c-FF9638">
+                                <h4>FullStack Developer</h4>
                             </div>
+                            <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
+                            <div class="type-3-item-text">
+                                «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
+                                конца, будь то сайт или мобильное приложение.
+                            </div>
+                            <button>Хочу так работать!</button>
                         </div>
-                        <div class="col-xl-3">
-                            <div class="type-3-item">
-                                <div class="type-3-item-title c-FF9638">
-                                    <h4>FullStack Developer</h4>
-                                </div>
-                                <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
-                                <div class="type-3-item-text">
-                                    «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
-                                    конца, будь то сайт или мобильное приложение.
-                                </div>
-                                <button>Хочу так работать!</button>
+
+
+                        <div class="type-3-item">
+                            <div class="type-3-item-title c-FF9638">
+                                <h4>FullStack Developer</h4>
                             </div>
+                            <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
+                            <div class="type-3-item-text">
+                                «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
+                                конца, будь то сайт или мобильное приложение.
+                            </div>
+                            <button>Хочу так работать!</button>
                         </div>
-                        <div class="col-xl-3">
-                            <div class="type-3-item">
-                                <div class="type-3-item-title c-FF9638">
-                                    <h4>FullStack Developer</h4>
-                                </div>
-                                <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
-                                <div class="type-3-item-text">
-                                    «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
-                                    конца, будь то сайт или мобильное приложение.ьно выполнить проект от начала
-                                    и до
-                                    конца, будь то сайт или мобильное приложение.
-                                </div>
-                                <button>Хочу так работать!</button>
+
+
+                        <div class="type-3-item">
+                            <div class="type-3-item-title c-FF9638">
+                                <h4>FullStack Developer</h4>
                             </div>
+                            <div class="type-3-item-sub-title c-fff">Минимальный оклад: 700$</div>
+                            <div class="type-3-item-text">
+                                «Человек-оркестр», который может самостоятельно выполнить проект от начала и до
+                                конца, будь то сайт или мобильное приложение.ьно выполнить проект от начала
+                                и до
+                                конца, будь то сайт или мобильное приложение.
+                            </div>
+                            <button>Хочу так работать!</button>
                         </div>
                     </div>
                 </div>
@@ -634,46 +647,46 @@
             <!--                type 5 content mobile-->
 
             <div class="type-five-content-mob flex-d">
-            <div class="type-five-content-item-mob">
-                <div class="five-item-title-mob">
-                    Вся кухня изнутри
+                <div class="type-five-content-item-mob">
+                    <div class="five-item-title-mob">
+                        Вся кухня изнутри
+                    </div>
+                    <div class="five-item-text-mob">
+                        Мы не гонимся за максимальной прибылью, как это делают другие IT-школы. Группа
+                        ограничена N студентами, что дает возможность индивидуально разбирать материал.
+                    </div>
                 </div>
-                <div class="five-item-text-mob">
-                    Мы не гонимся за максимальной прибылью, как это делают другие IT-школы. Группа
-                    ограничена N студентами, что дает возможность индивидуально разбирать материал.
-                </div>
-            </div>
 
-            <div class="type-five-content-item-mob">
-                <div class="five-item-title-mob">
-                    Подлинная атмосфера кремниевой долины
+                <div class="type-five-content-item-mob">
+                    <div class="five-item-title-mob">
+                        Подлинная атмосфера кремниевой долины
+                    </div>
+                    <div class="five-item-text-mob">
+                        OktenWeb University — белая компания. Мы платим налоги, оформляем договор со студентами,
+                        закрепляем в нем гарантии и результаты обучения. Договор имеет полную юридическую
+                        силу.
+                    </div>
                 </div>
-                <div class="five-item-text-mob">
-                    OktenWeb University — белая компания. Мы платим налоги, оформляем договор со студентами,
-                    закрепляем в нем гарантии и результаты обучения. Договор имеет полную юридическую
-                    силу.
+                <div class="type-five-content-item-mob">
+                    <div class="five-item-title-mob">
+                        Обучение в формате кузницы кадров
+                    </div>
+                    <div class="five-item-text-mob">
+                        Программу составляют программисты и работодатели. Нужная информация отделяется от
+                        бесполезной самым эффективным путем — опытным. Другие школы так не делают.
+                    </div>
                 </div>
-            </div>
-            <div class="type-five-content-item-mob">
-                <div class="five-item-title-mob">
-                    Обучение в формате кузницы кадров
-                </div>
-                <div class="five-item-text-mob">
-                    Программу составляют программисты и работодатели. Нужная информация отделяется от
-                    бесполезной самым эффективным путем — опытным. Другие школы так не делают.
-                </div>
-            </div>
 
-            <div class="type-five-content-item-mob">
-                <div class="five-item-title-mob">
-                    бесплатное повторение курса
-                </div>
-                <div class="five-item-text-mob">
-                    N% лучших студентов получают персональную рекомендацию, которая становится мощным плюсом
-                    к резюме кандидата. Они стабильно начинают с более высокого оклада.
+                <div class="type-five-content-item-mob">
+                    <div class="five-item-title-mob">
+                        бесплатное повторение курса
+                    </div>
+                    <div class="five-item-text-mob">
+                        N% лучших студентов получают персональную рекомендацию, которая становится мощным плюсом
+                        к резюме кандидата. Они стабильно начинают с более высокого оклада.
+                    </div>
                 </div>
             </div>
-        </div>
             <!--               end type 5 content mobile-->
 
         </section>
@@ -2606,67 +2619,23 @@
                         <div class="slider center-3">
                             <div class="videos">
                                 <div class="main-video">
-<!--                                    <img src="image/play.png" alt="">-->
+                                    <!--                                    <img src="image/play.png" alt="">-->
                                 </div>
 
-                                <div class="description-video">
-                                    <div class="description-name">Юрий</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Юрий пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм» и
-                                        «объектно-ориентированное программирование». Теперь он разработчик
-                                        программного
-                                        обеспечения для Android в компании Mova Tech.
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="videos">
                                 <div class="main-video">
-<!--                                    <img src="image/play.png" alt="">-->
+                                    <!--                                    <img src="image/play.png" alt="">-->
                                 </div>
-                                <div class="description-video">
-                                    <div class="description-name">Вася</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Vasya пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм»
-                                        и
-                                        «объектно-ориентированное программирование».
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
+
                             </div>
 
                             <div class="videos">
                                 <div class="main-video">
-<!--                                    <img src="image/play.png" alt="">-->
+                                    <!--                                    <img src="image/play.png" alt="">-->
                                 </div>
 
-                                <div class="description-video">
-                                    <div class="description-name">Пилип</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Юрий пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм» и
-                                        «объектно-ориентированное программирование». Теперь он разработчик
-                                        программного
-                                        обеспечения для Android в компании Mova Tech.
-
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -2810,10 +2779,10 @@
                 <div class="type-tyrphs-content-mobile">
 
                     <div class="center slider">
-                        <div class="col-xl-4 type-tyrphs-items">
+                        <div class="type-tyrphs-items">
                             <div class="type-tyrphs-item">
                                 <div class="type-tyrphs-title-1">Базовый</div>
-                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex 1</div>
+                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
                                 <div class="item-tyrphs-description">
                                     <div class="tyrphs-description"><span>Объём:</span> N часов</div>
                                     <div class="tyrphs-description"><span>Длительность:</span> 6 месяцев</div>
@@ -2837,10 +2806,10 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-4 type-tyrphs-items">
+                        <div class="type-tyrphs-items">
                             <div class="type-tyrphs-item">
                                 <div class="type-tyrphs-title-1">Базовый</div>
-                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex 2</div>
+                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
                                 <div class="item-tyrphs-description">
                                     <div class="tyrphs-description"><span>Объём:</span> N часов</div>
                                     <div class="tyrphs-description"><span>Длительность:</span> 6 месяцев</div>
@@ -2864,10 +2833,10 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-4 type-tyrphs-items">
+                        <div class="type-tyrphs-items">
                             <div class="type-tyrphs-item">
                                 <div class="type-tyrphs-title-1">Базовый</div>
-                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex 3</div>
+                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
                                 <div class="item-tyrphs-description">
                                     <div class="tyrphs-description"><span>Объём:</span> N часов</div>
                                     <div class="tyrphs-description"><span>Длительность:</span> 6 месяцев</div>

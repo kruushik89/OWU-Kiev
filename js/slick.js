@@ -3,6 +3,8 @@ $('.center').slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    centerPadding: '20px',
+    arrows: false,
     responsive: [
         {
             breakpoint: 972,
@@ -16,11 +18,13 @@ $('.center').slick({
 
 $('.center-2').slick({
     infinite: true,
-    dots: true,
+    dots: false,
     // autoplay: true,
     slidesToShow: 1,
+    arrows: false,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    centerPadding: '30px',
     responsive: [
         {
             breakpoint: 972,
@@ -36,9 +40,10 @@ $('.center-2').slick({
 $('.center-3').slick({
     infinite: true,
     dots: false,
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     responsive: [
         {
             breakpoint: 972,
@@ -53,7 +58,8 @@ $('.center-3').slick({
 $(".lazy").slick({
     lazyLoad: 'ondemand', // ondemand progressive anticipated
     dots: true,
-    autoplay: true,
+    // autoplay: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,

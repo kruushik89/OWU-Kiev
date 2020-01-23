@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<header class="sticky-top">
+<header class="sticky-top java">
     <div class="wrapper">
         <div class="c-hamburger c-hamburger-line">
             <span>Menu</span>
@@ -31,7 +31,13 @@
                 <div class="header-menu">
                     <nav>
                         <ul class="nav-menu d-flex justify-content-around">
-                            <li><a href="#">курсы</a></li>
+                            <li class="nav-menu-has-children">курсы
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html">Java Script</a></li>
+                                    <li><a href="python.html">Python</a></li>
+                                    <li><a href="#">Бесплатные основы програмирования</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">акции</a></li>
                             <li><a href="#">отзывы</a></li>
                             <li><a href="#">галерея</a></li>
@@ -49,7 +55,13 @@
             <div class="menu-mobile">
                 <nav>
                     <ul>
-                        <li><a href="#">курсы</a></li>
+                        <li id="course"><a class="flag" href="#">курсы</a>
+                            <ul class="dropdown-menu-mobile">
+                                <li><a href="index.html">Java Script</a></li>
+                                <li><a href="python.html">Python</a></li>
+                                <li><a href="#">Бесплатные основы програмирования</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">акции</a></li>
                         <li><a href="#">отзывы</a></li>
                         <li><a href="#">галерея</a></li>
@@ -2580,41 +2592,6 @@
 <!--                                    <img src="image/play.png" alt="Play">-->
                                 </div>
 
-                                <div class="description-video">
-                                    <div class="description-name">Юрий</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Юрий пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм» и
-                                        «объектно-ориентированное программирование». Теперь он разработчик
-                                        программного
-                                        обеспечения для Android в компании Mova Tech.
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="videos">
-                                <div class="main-video">
-<!--                                    <img src="image/play.png" alt="">-->
-                                </div>
-                                <div class="description-video">
-                                    <div class="description-name">Вася</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Vasya пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм»
-                                        и
-                                        «объектно-ориентированное программирование».
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="videos">
@@ -2622,22 +2599,13 @@
 <!--                                    <img src="image/play.png" alt="">-->
                                 </div>
 
-                                <div class="description-video">
-                                    <div class="description-name">Пилип</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Юрий пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм» и
-                                        «объектно-ориентированное программирование». Теперь он разработчик
-                                        программного
-                                        обеспечения для Android в компании Mova Tech.
+                            </div>
 
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
+                            <div class="videos">
+                                <div class="main-video">
+<!--                                    <img src="image/play.png" alt="">-->
                                 </div>
+
                             </div>
                         </div>
 

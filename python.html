@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<header class="">
+<header class="sticky-top python">
     <div class="wrapper">
         <div class="c-hamburger c-hamburger-line">
             <span>Menu</span>
@@ -29,7 +29,13 @@
                 <div class="header-menu">
                     <nav>
                         <ul class="nav-menu d-flex justify-content-around">
-                            <li><a href="#">курсы</a></li>
+                            <li class="nav-menu-has-children">курсы
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html">Java Script</a></li>
+                                    <li><a href="java.html">Java</a></li>
+                                    <li><a href="#">Бесплатные основы програмирования</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">акции</a></li>
                             <li><a href="#">отзывы</a></li>
                             <li><a href="#">галерея</a></li>
@@ -47,7 +53,13 @@
             <div class="menu-mobile">
                 <nav>
                     <ul>
-                        <li><a href="#">курсы</a></li>
+                        <li id="course"><a class="flag" href="#">курсы</a>
+                            <ul class="dropdown-menu-mobile">
+                                <li><a href="index.html">Java Script</a></li>
+                                <li><a href="java.html">Java</a></li>
+                                <li><a href="#">Бесплатные основы програмирования</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">акции</a></li>
                         <li><a href="#">отзывы</a></li>
                         <li><a href="#">галерея</a></li>
@@ -358,18 +370,20 @@
         <!--        type 3-->
         <section class="type-three-python">
             <div class="wrapper">
-                <div class="type-title">
-                    <div class="type-title-h3 c-3298F2">
-                        <h3>Python продолжает расти</h3>
-                    </div>
-                    <div class="type-title-h2">
-                        <h2>«Говори» на одном языке с Google и NASA</h2>
-                    </div>
-                    <div class="type-title-text">
-                        Python — пример простого, но востребованного языка. Он занимает второе место по популярности
-                        после JS и второе место по простоте после HTML, который и полноценным языком программирования-то
-                        и не является. Если вы хотите всегда иметь большой выбор вакансий, курсы Python Complex созданы
-                        для вас. Этот язык используют даже гиганты индустрии:
+                <div class="col-12">
+                    <div class="type-title">
+                        <div class="type-title-h3 c-3298F2">
+                            <h3>Python продолжает расти</h3>
+                        </div>
+                        <div class="type-title-h2">
+                            <h2>«Говори» на одном языке с Google и NASA</h2>
+                        </div>
+                        <div class="type-title-text">
+                            Python — пример простого, но востребованного языка. Он занимает второе место по популярности
+                            после JS и второе место по простоте после HTML, который и полноценным языком программирования-то
+                            и не является. Если вы хотите всегда иметь большой выбор вакансий, курсы Python Complex созданы
+                            для вас. Этот язык используют даже гиганты индустрии:
+                        </div>
                     </div>
                 </div>
 
@@ -746,9 +760,7 @@
 <!--                </div>-->
 <!--            </div>-->
         </section>
-
         <!--       end type 6 -->
-
 
         <!--        type 7-->
         <div class="type-seven-python">
@@ -818,7 +830,7 @@
                 <!--                content mobile-->
                 <div class="seven-python-content-mobile">
                     <div class="center-2 slider">
-                        <div class="col-12">
+
                             <div class="seven-python-wrap">
                                 <div class="seven-python-wrap-item">
                                     <div class="seven-python-item-title">FullStack Developer</div>
@@ -833,9 +845,6 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div class="col-12">
                             <div class="seven-python-wrap">
                                 <div class="seven-python-wrap-item">
                                     <div class="seven-python-item-title">Angular Developer</div>
@@ -850,9 +859,7 @@
                                     <button>Хочу так работать!</button>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-12">
                             <div class="seven-python-wrap">
                                 <div class="seven-python-wrap-item">
                                     <div class="seven-python-item-title">Java Developer</div>
@@ -865,13 +872,11 @@
                                     <button>Хочу так работать!</button>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <!--              end  content mobile-->
             </div>
         </div>
-
         <!--end type 7-->
 
         <!--        type 8-->
@@ -2577,79 +2582,81 @@
             </div>
 
         </section>
-
-
         <!--        end type 8-->
 
         <!--        type 9-->
         <section class="type-nine-python">
             <div class="type-eight-header">
                 <div class="wrapper">
-                    <div class="type-title">
-                        <div class="type-title-h3 c-fff">
-                            <h3>Гарантируем 100% усвоение материала</h3>
+                    <div class="col-12">
+                        <div class="type-title">
+                            <div class="type-title-h3 c-fff">
+                                <h3>Гарантируем 100% усвоение материала</h3>
+                            </div>
+                            <div class="type-title-h2">
+                                <h2>JavaScript понимают даже дети</h2>
+                            </div>
                         </div>
-                        <div class="type-title-h2">
-                            <h2>JavaScript понимают даже дети</h2>
+                        <div class="type-eight-header-text">
+                            Чтобы полностью понять тему, студент работает над ней в нескольких форматах. Вначале с
+                            преподавателем, потом в группе, потом самостоятельно, а в конце снова с преподавателем.
+                            В
+                            свободное время он может изучать дополнительную литературу, которую ему посоветовали на
+                            курсах. Такой комплекс помогает не только запомнить материал, но и свободно использовать
+                            полученные знания в работе.
                         </div>
-                    </div>
-                    <div class="type-eight-header-text">
-                        Чтобы полностью понять тему, студент работает над ней в нескольких форматах. Вначале с
-                        преподавателем, потом в группе, потом самостоятельно, а в конце снова с преподавателем.
-                        В
-                        свободное время он может изучать дополнительную литературу, которую ему посоветовали на
-                        курсах. Такой комплекс помогает не только запомнить материал, но и свободно использовать
-                        полученные знания в работе.
                     </div>
                 </div>
 
-                <div class="sec-eight-header-image">
-                    <div class="eight-header-image">
-                        <div class="eight-mobile-image-left">
-                            <img src="image/mobile/1.png" alt="">
-                        </div>
-                        <div class="eight-image-2">
-                            <img src="image/Setting.png" alt="Setting">
-                        </div>
-                        <div class="image-title">
-                            <h4>Объясняем тему теоретически</h4>
-                        </div>
-                    </div>
-
-                    <div class="eight-header-image">
-                        <div class="eight-mobile-image-right">
-                            <img src="image/mobile/2.png" alt="">
-                        </div>
-                        <div class="eight-image-2">
-                            <img src="image/list.png" alt="List">
-                        </div>
-                        <div class="image-title">
-                            <h4>Делаем лабораторные</h4>
-                        </div>
-                    </div>
-
-                    <div class="eight-header-image">
-                        <div class="eight-mobile-image-left">
-                            <img src="image/mobile/3.png" alt="">
-                        </div>
-                        <div class="eight-image-2">
-                            <img src="image/Pages.png" alt="Pages">
-                        </div>
-                        <div class="image-title">
-                            <h4>Выполняем домашнее задание</h4>
-                        </div>
-                    </div>
-
-                    <div class="eight-header-image">
-                        <div class="eight-mobile-image-right">
-                            <img src="image/mobile/4.png" alt="">
-                        </div>
-                        <div class="eight-image-2">
-                            <img src="image/Thinking.png" alt="Thinking">
+                <div class="col-11">
+                    <div class="sec-eight-header-image">
+                        <div class="eight-header-image">
+                            <div class="eight-mobile-image-left">
+                                <img src="image/mobile/1.png" alt="">
+                            </div>
+                            <div class="eight-image-2">
+                                <img src="image/Setting.png" alt="Setting">
+                            </div>
+                            <div class="image-title">
+                                <h4>Объясняем тему теоретически</h4>
+                            </div>
                         </div>
 
-                        <div class="image-title">
-                            <h4>Работаем над ошибками</h4>
+                        <div class="eight-header-image">
+                            <div class="eight-mobile-image-right">
+                                <img src="image/mobile/2.png" alt="">
+                            </div>
+                            <div class="eight-image-2">
+                                <img src="image/list.png" alt="List">
+                            </div>
+                            <div class="image-title">
+                                <h4>Делаем лабораторные</h4>
+                            </div>
+                        </div>
+
+                        <div class="eight-header-image">
+                            <div class="eight-mobile-image-left">
+                                <img src="image/mobile/3.png" alt="">
+                            </div>
+                            <div class="eight-image-2">
+                                <img src="image/Pages.png" alt="Pages">
+                            </div>
+                            <div class="image-title">
+                                <h4>Выполняем домашнее задание</h4>
+                            </div>
+                        </div>
+
+                        <div class="eight-header-image">
+                            <div class="eight-mobile-image-right">
+                                <img src="image/mobile/4.png" alt="">
+                            </div>
+                            <div class="eight-image-2">
+                                <img src="image/Thinking.png" alt="Thinking">
+                            </div>
+
+                            <div class="image-title">
+                                <h4>Работаем над ошибками</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2658,19 +2665,21 @@
 
             <div class="nine-python-content">
                 <div class="wrapper">
-                    <div class="type-title">
-                        <div class="type-title-h3">
-                            <h3>Получи опыт работы в нашей компании</h3>
-                        </div>
-                        <div class="type-title-h2 c-FF9638">
-                            <h2>5 месяцев практики в OktenWeb</h2>
-                        </div>
-                        <div class="type-six-title-text">
-                            Выпускники курсов получают персональное приглашение на практику в нашей компании. Этого уже
-                            достаточно, чтобы стать желанным кандидатом на выбранную должность, но многие приглашаются
-                            на работу в компаниях-партнерах.
-                        </div>
-                    </div>
+                   <div class="col-12">
+                       <div class="type-title">
+                           <div class="type-title-h3">
+                               <h3>Получи опыт работы в нашей компании</h3>
+                           </div>
+                           <div class="type-title-h2 c-FF9638">
+                               <h2>5 месяцев практики в OktenWeb</h2>
+                           </div>
+                           <div class="type-six-title-text">
+                               Выпускники курсов получают персональное приглашение на практику в нашей компании. Этого уже
+                               достаточно, чтобы стать желанным кандидатом на выбранную должность, но многие приглашаются
+                               на работу в компаниях-партнерах.
+                           </div>
+                       </div>
+                   </div>
                     <div class="section-three-content">
                         <div class="img-vector">
                             <img src="image/other/Vector.png" alt="">
@@ -2770,65 +2779,17 @@
                                 <div class="main-video">
 <!--                                    <img src="image/play.png" alt="">-->
                                 </div>
-
-                                <div class="description-video">
-                                    <div class="description-name">Юрий</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Юрий пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм» и
-                                        «объектно-ориентированное программирование». Теперь он разработчик
-                                        программного
-                                        обеспечения для Android в компании Mova Tech.
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
-
                             <div class="videos">
                                 <div class="main-video">
 <!--                                    <img src="image/play.png" alt="">-->
                                 </div>
-                                <div class="description-video">
-                                    <div class="description-name">Вася</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Vasya пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм»
-                                        и
-                                        «объектно-ориентированное программирование».
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
-
                             <div class="videos">
                                 <div class="main-video">
 <!--                                    <img src="image/play.png" alt="">-->
                                 </div>
 
-                                <div class="description-video">
-                                    <div class="description-name">Пилип</div>
-                                    <div class="description-title">Курс: <span class="c-3298F2">JAVA COMPLEX</span>
-                                    </div>
-                                    <div class="description-text">
-                                        Юрий пришел к нам, не имея никакого опыта. Он не знал, что такое «алгоритм» и
-                                        «объектно-ориентированное программирование». Теперь он разработчик
-                                        программного
-                                        обеспечения для Android в компании Mova Tech.
-
-                                    </div>
-                                    <div class="description-btn">
-                                        <button><a href="https://owu.com.ua/vidguky/">Смотреть все 200 отзывов</a>
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -2972,10 +2933,10 @@
                 <div class="type-tyrphs-content-mobile">
 
                     <div class="center slider">
-                        <div class="col-xl-4 type-tyrphs-items">
+                        <div class="type-tyrphs-items">
                             <div class="type-tyrphs-item">
                                 <div class="type-tyrphs-title-1">Базовый</div>
-                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex 1</div>
+                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
                                 <div class="item-tyrphs-description">
                                     <div class="tyrphs-description"><span>Объём:</span> N часов</div>
                                     <div class="tyrphs-description"><span>Длительность:</span> 6 месяцев</div>
@@ -2999,10 +2960,10 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-4 type-tyrphs-items">
+                        <div class="type-tyrphs-items">
                             <div class="type-tyrphs-item">
                                 <div class="type-tyrphs-title-1">Базовый</div>
-                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex 2</div>
+                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
                                 <div class="item-tyrphs-description">
                                     <div class="tyrphs-description"><span>Объём:</span> N часов</div>
                                     <div class="tyrphs-description"><span>Длительность:</span> 6 месяцев</div>
@@ -3026,10 +2987,10 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-4 type-tyrphs-items">
+                        <div class="type-tyrphs-items">
                             <div class="type-tyrphs-item">
                                 <div class="type-tyrphs-title-1">Базовый</div>
-                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex 3</div>
+                                <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
                                 <div class="item-tyrphs-description">
                                     <div class="tyrphs-description"><span>Объём:</span> N часов</div>
                                     <div class="tyrphs-description"><span>Длительность:</span> 6 месяцев</div>
