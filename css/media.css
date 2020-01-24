@@ -96,6 +96,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+    .type-nine-java {
+        padding-bottom: 0;
+    }
+
     .header-menu, .phone-number-block, .header-callback, .wrapper-title-1-img {
         display: none;
     }
@@ -228,8 +232,19 @@
         padding: 80px 0 160px;
     }
 
-    .type-six-title .type-title-h3, .type-six-title-text, .loonar {
+    .type-six-title .type-title-h3, .type-six-title-text, .type-six .loonar{
         color: #ffffff;
+    }
+
+    .loonar {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .loonar span {
+        font-weight: bold;
     }
 
     .type-six-title-text {
@@ -635,7 +650,7 @@
         padding: 25px 10px 40px;
         background: #EDF4FB;
         width: 100%;
-        height: 100%;
+        height: 300px;
         border-left: 10px solid #ffffff;
     }
 
@@ -694,7 +709,7 @@
     }
 
     .type-two-python-header {
-        padding: 50px 0 60px;
+        padding: 50px 0 30px;
     }
 
     .type-seven-java .type-2-title {
@@ -718,7 +733,7 @@
 
     .title-modal h2 {
         font-size: 18px;
-        line-height: 20;
+        line-height: 20px;
     }
 
     .type-ten-python .type-eight-wrap {
@@ -732,7 +747,7 @@
 
     .type-eleven-python {
         padding-top: 50px;
-        padding-bottom: 60px;
+        padding-bottom: 75px;
     }
 
     .type-eleven-python .slick-dots {
@@ -761,6 +776,30 @@
 
     header {
         height: 60px;
+    }
+
+    .four-wrap-python-image-mobile {
+        display: block;
+    }
+
+    .four-wrap-python-image {
+        display: none;
+    }
+
+    .four-item-wrap-python-title img {
+        top: 0;
+    }
+
+    .type-six-title-text {
+        text-align: justify;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0 !important;
+    }
+
+    .type-five-java .center-2 {
+        height: 300px;
     }
 
 }
@@ -860,6 +899,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+
     .type-two-java {
         padding: 50px 0 0;
     }
@@ -912,22 +952,14 @@
     }
 
     .type-title-h3 {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 23px;
         margin-bottom: 20px;
     }
 
     .type-title-h2 {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 28px;
-    }
-
-    .type-2-title-text p {
-        font-size: 24px;
-    }
-
-    .type-2-title-text p span {
-        font-size: 45px;
     }
 
     .type-six {
@@ -1012,7 +1044,7 @@
     }
 
     .info-content {
-        width: 75px;
+        width: 150px;
     }
 
     .btn-header-content {
@@ -1065,6 +1097,28 @@
 
     .type-eight-header-text {
         width: 100%;
+    }
+
+    .type-2-title-img-right img {
+        width: 60px;
+        bottom: -15px;
+    }
+
+    .type-2-title-img-left img {
+        width: 60px;
+    }
+
+    .type-2-title-img-left {
+        top: -15px;
+    }
+
+    .sec-eight-header-image {
+        width: 90%;
+        margin-right: 25px;
+    }
+
+    .type-seven-java .type-2-title {
+        font-size: 23px;
     }
 
 
@@ -1220,7 +1274,7 @@
     }
 
     .slick-dots {
-        bottom: -50px;
+        bottom: 15px;
     }
 
     .sec-four-content {
@@ -1373,6 +1427,22 @@
     .btn-page {
         width: 250px;
         margin-left: -125px;
+    }
+
+    .info-content {
+        width: 130px;
+    }
+
+    .type-2-title-text {
+        font-size: 22px;
+    }
+
+    .type-2-title-text span {
+        font-size: 28px;
+    }
+
+    .type-2-wrapper-text, .type-2-wrapper-text .type-2-text {
+        font-size: 17px;
     }
 }
 

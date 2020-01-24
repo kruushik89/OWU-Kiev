@@ -39,10 +39,28 @@ $('.center-2').slick({
 
 $('.center-3').slick({
     infinite: true,
-    dots: false,
+    dots: true,
     // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 972,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+            }
+        }
+    ]
+});
+
+$('.center-4').slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: '20px',
     arrows: false,
     responsive: [
         {

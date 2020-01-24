@@ -9,6 +9,10 @@
     height: auto;
 }
 
+.border-color {
+    border-left: 5px solid #FF9638 !important;
+}
+
 .active-python {
     color: #FDDB58 !important;
 }
@@ -228,18 +232,19 @@ header {
     border-top: 2px solid #3298F2;
     z-index: 9999;
     transition: 1s;
+    overflow: scroll;
 }
 
 .java .menu-mobile, .python .menu-mobile {
     background-color: #FF9638;
 }
 
-.java .menu-mobile ul li a, .java-script .menu-mobile ul li a, .python .menu-mobile ul li a {
-    color: #ffffff;
+.java-script .menu-mobile {
+    background-color: #3298F2;
 }
 
-.java-script .menu-mobile {
-    background-color: #FFE200;
+.java .menu-mobile ul li a, .java-script .menu-mobile ul li a, .python .menu-mobile ul li a {
+    color: #ffffff;
 }
 
 .menu-mobile ul {
@@ -2014,6 +2019,9 @@ form {
     border-radius: 6px;
     padding-left: 33px;
     height: 100%;
+    position: relative;
+    z-index: 5;
+    transition: 1s;
 }
 
 .python-header-item-title {
@@ -2042,6 +2050,7 @@ form {
     position: absolute;
     right: 26px;
     top: -68px;
+    z-index: -1;
 }
 
 .type-2-wrapper-image-python {
@@ -2159,10 +2168,14 @@ form {
     transition: height 1500ms;
 }
 
-.four-item-wrap-python-title span {
+.four-item-wrap-python-title img {
     position: absolute;
     left: -45px;
     top: -16px;
+}
+
+.four-wrap-python-image-mobile {
+    display: none;
 }
 
 .four-item-wrap-python {

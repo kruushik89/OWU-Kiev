@@ -32,7 +32,7 @@ addWhiteBorder(typeBtn3);
 let listContent = document.querySelectorAll('.list-content');
 let arr = Array.from(listContent);
 $(document).ready(function() {
-    $('.list-inner').on('click',function () {
+    $('.list-inner').on('click',function (event) {
         let $child = $(this).children('.list-item');
         $('.list-item').removeClass('active-python');
         $child.addClass('active-python');
@@ -154,28 +154,37 @@ function f(param) {
 
 
 // accordion 1
+let image = document.querySelectorAll('.four-item-wrap-python-title span img');
+let arrImage = Array.from(image);
+
 let python = document.querySelectorAll('.four-item-wrap-python-title');
 let arrPython = Array.from(python);
 
-function collapse(param, clas) {
-    param.forEach(function (el) {
-        el.addEventListener('click', function (e) {
-            e.target.nextElementSibling.classList.toggle(clas);
 
-            if (e.target.nextElementSibling.classList.contains(clas)) {
+    arrPython.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle('is-visible');
+
+            if (e.target.nextElementSibling.classList.contains('is-visible')) {
                 e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+                window.setTimeout(function () {
+                    e.target.children[0].src = 'image/python/check.png';
+                }, 1000);
+
             } else {
                 e.target.nextElementSibling.style.height = 0;
+                window.setTimeout(function () {
+                    e.target.children[0].src = 'image/python/ellipse.png';
+                }, 1000);
+
             }
         })
     });
-}
 
-collapse(arrPython, 'is-visible');
 
-let accord1 = document.querySelectorAll('.python-header-item-title');
-let arrAccord1 = Array.from(accord1);
-collapse(arrAccord1, 'is-visible');
+
+
+
 
 
 
@@ -196,7 +205,24 @@ course.addEventListener('click', function (e) {
 
 
 
+let accord1 = document.querySelectorAll('.python-header-item-title');
+let arrAccord1 = Array.from(accord1);
 
+
+arrAccord1.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+        e.target.nextElementSibling.classList.toggle('is-visible-mobile');
+
+        if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
+            e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+            e.target.offsetParent.classList.add('border-color');
+
+        } else {
+            e.target.nextElementSibling.style.height = 0;
+            e.target.offsetParent.classList.remove('border-color');
+        }
+    })
+});
 
 
 
