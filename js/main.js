@@ -26,10 +26,10 @@ function addWhiteBorder(param) {
         });
     });
 }
+
 // end add white border from item
 
 addWhiteBorder(typeBtn3);
-
 
 
 let javaListTitle = document.querySelectorAll('.java-complex-list-title');
@@ -77,6 +77,7 @@ let content1 = document.querySelector('.two-content-1');
 let content2 = document.querySelector('.two-content-2');
 let vector = document.querySelector('.arr');
 let vector2 = document.querySelector('.arr-2');
+
 // function transform rotate 180
 function transform(param, param2) {
     param.onclick = () => {
@@ -89,6 +90,7 @@ transform(content2H3, vector2);
 // end function transform rotate 180
 
 content2H3.addEventListener('click', function () {
+    console.log('work');
     toggle(content2);
 });
 
@@ -163,6 +165,19 @@ course.addEventListener('click', function (e) {
     } else {
         e.target.nextElementSibling.style.height = 0;
     }
+});
+
+// ===============================================================================
+//плавний скрол до якоря
+$(document).ready(function () {
+    $('.list-item a').click(function () {
+        // возьмем содержимое атрибута href, должен быть селектором, например начинать # с или .
+        let scrollElem = $(this).attr('href');
+
+        if ($(scrollElem).length != 0) {
+            $('html, body').animate({scrollTop: $(scrollElem).offset().top}, 500);
+        }
+    })
 });
 
 

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OWU Kiev Python</title>
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/slick-1.8.1/slick/slick.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="libs/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
 
@@ -39,7 +41,7 @@
                             <li><a href="#">акции</a></li>
                             <li><a href="#">отзывы</a></li>
                             <li><a href="#">галерея</a></li>
-                            <li><a href="#">о нас</a></li>
+                            <li><a href="#footer">о нас</a></li>
                             <li><a href="#">блог</a></li>
                             <li><a href="#">контакты</a></li>
                         </ul>
@@ -228,12 +230,12 @@
                 <div class="wrapper">
                     <div class="type-two-python-header-wrap">
                         <div class="col-xl-2 col-12 python-header-item-mobile">
-                            <div class="type-two-python-header-item">
+                            <div class="type-two-python-header-item border-color">
 
                                     <div class="python-header-item-title">
                                         Набираем группу
                                     </div>
-                                    <div class="python-header-item-text">
+                                    <div class="python-header-item-text is-visible-mobile">
                                         Создаем небольшую группу из N протеже на онлайн и стационарном направлении
                                     </div>
 
@@ -514,6 +516,54 @@
                         </div>
                     </div>
                 </div>
+
+                <!--                mobile-->
+                <div class="type-four-python-content-mob">
+                    <div class="col-12">
+                        <div class="four-item-python">
+                            <div class="four-item-wrap-python-mob">
+                                <div class="four-item-wrap-python-title-mob">
+                                    <span></span>
+                                    Даже в зрелом возрасте
+                                </div>
+                                <div class="four-item-wrap-python-text">
+                                    В Украине распространен миф о том, что только молодые люди могут освоить
+                                    IT-направление. Но максимальный возраст нашего студента доходит до N лет. Никаких
+                                    трудностей в обучении. Главное — найти правильный подход.
+                                    В Украине распространен миф о том, что только молодые люди могут освоить
+                                    IT-направление. Но максимальный возраст нашего студента доходит до N лет. Никаких
+                                    трудностей в обучении. Главное — найти правильный подход.
+                                </div>
+                            </div>
+
+                            <div class="four-item-wrap-python">
+                                <div class="four-item-wrap-python-title-mob">
+                                    <span></span>
+                                    Даже без профильного образования и навыков
+                                </div>
+                                <div class="four-item-wrap-python-text">
+                                    N% наших выпускников уже имеют образование, никак не связанное с программированием.
+                                    Это экономисты, менеджеры, юристы, разочарованные своей специальностью. Теперь они
+                                    нашли свое место в IT-индустрии.
+                                </div>
+                            </div>
+
+                            <div class="four-item-wrap-python">
+                                <div class="four-item-wrap-python-title-mob">
+                                    <span></span>
+                                    Даже без продвинутого английского
+                                </div>
+                                <div class="four-item-wrap-python-text">
+                                    Невозможно стать программистом, не имея базовых навыков технического английского. На
+                                    курсах Python мы работаем над этими навыками параллельно самому кодингу. Достаточно
+                                    только школьных знаний.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                end mobile-->
+
             </div>
 
 
@@ -885,7 +935,7 @@
         <!--end type 7-->
 
         <!--        type 8-->
-        <section class="type-eight-python">
+        <section class="type-eight-python" id="desk">
             <div class="section-five-python">
                 <div class="wrapper">
                     <div class="type-title">
@@ -1751,57 +1801,57 @@
                             <div class="list">
                                 <div class="list-inner" id="1">
                                     <div class="list-number">01</div>
-                                    <div class="list-item active-python">Spring Framework</div>
+                                    <div class="list-item active-python"><a href="#desk">Spring Framework</a></div>
                                 </div>
 
                                 <div class="list-inner" id="2">
                                     <div class="list-number">02</div>
-                                    <div class="list-item">ORM layers. JPA. Hibernate</div>
+                                    <div class="list-item"><a href="#desk">ORM layers. JPA. Hibernate</a></div>
                                 </div>
 
                                 <div class="list-inner" id="3">
                                     <div class="list-number">03</div>
-                                    <div class="list-item">JavaScript</div>
+                                    <div class="list-item"><a href="#desk">JavaScript</a></div>
                                 </div>
 
                                 <div class="list-inner" id="4">
                                     <div class="list-number">04</div>
-                                    <div class="list-item">TypeScript</div>
+                                    <div class="list-item"><a href="#desk">TypeScript</a></div>
                                 </div>
 
                                 <div class="list-inner" id="5">
                                     <div class="list-number">05</div>
-                                    <div class="list-item">Angular</div>
+                                    <div class="list-item"><a href="#desk">Angular</a></div>
                                 </div>
 
                                 <div class="list-inner" id="6">
                                     <div class="list-number">06</div>
-                                    <div class="list-item">Vue.JS</div>
+                                    <div class="list-item"><a href="#desk">Vue.JS</a></div>
                                 </div>
 
                                 <div class="list-inner" id="7">
                                     <div class="list-number">07</div>
-                                    <div class="list-item">React</div>
+                                    <div class="list-item"><a href="#desk">React</a></div>
                                 </div>
 
                                 <div class="list-inner" id="8">
                                     <div class="list-number">08</div>
-                                    <div class="list-item">Database. MySQL</div>
+                                    <div class="list-item"><a href="#desk">Database. MySQL</a></div>
                                 </div>
 
                                 <div class="list-inner" id="9">
                                     <div class="list-number">09</div>
-                                    <div class="list-item">Database. MongoDB</div>
+                                    <div class="list-item"><a href="#desk">Database. MongoDB</a></div>
                                 </div>
 
                                 <div class="list-inner" id="10">
                                     <div class="list-number">10</div>
-                                    <div class="list-item">HTML/CSS</div>
+                                    <div class="list-item"><a href="#desk">HTML/CSS</a></div>
                                 </div>
 
                                 <div class="list-inner" id="11">
                                     <div class="list-number">11</div>
-                                    <div class="list-item">DevOps Tools & Services</div>
+                                    <div class="list-item"><a href="#desk">DevOps Tools & Services</a></div>
                                 </div>
                             </div>
 
@@ -3088,10 +3138,6 @@
     </div>
 </main>
 
-
-<script src="libs/jquery/jquery-3.2.1.js"></script>
-<script src="libs/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
-<script src="libs/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/slick.js"></script>
 <script src="js/python.js"></script>
 </body>

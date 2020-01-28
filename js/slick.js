@@ -18,7 +18,7 @@ $('.center').slick({
 
 $('.center-2').slick({
     infinite: true,
-    dots: false,
+    dots: true,
     // autoplay: true,
     slidesToShow: 1,
     arrows: false,
@@ -57,7 +57,7 @@ $('.center-3').slick({
 
 $('.center-4').slick({
     infinite: true,
-    dots: false,
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerPadding: '20px',

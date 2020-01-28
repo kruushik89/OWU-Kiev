@@ -26,40 +26,50 @@ function addWhiteBorder(param) {
         });
     });
 }
+
 // end add white border from item
 
 addWhiteBorder(typeBtn3);
 let listContent = document.querySelectorAll('.list-content');
 let arr = Array.from(listContent);
-$(document).ready(function() {
+$(document).ready(function () {
     $('.list-inner').on('click',function (event) {
+
         let $child = $(this).children('.list-item');
         $('.list-item').removeClass('active-python');
         $child.addClass('active-python');
         let $id_child = $(this).attr('id');
         $('.item-list-content').removeClass('display-block');
-        $('.item-list-content#p'+$id_child).addClass('display-block');
+        $('.item-list-content#p' + $id_child).addClass('display-block');
+
     });
 
     // ===============================================================================
     // Програма для курсу
     $('.list-content').on('click', function () {
         let heigh = $(this.lastElementChild.scrollHeight);
-        $('.list-content').css('border-color','#A7A7A7');
+        $('.list-content').css('border-color', '#A7A7A7');
         $(this).css('border-color', '#FDDB58');
         let child = $(this).children('.list-content-title');
         $('.list-content-title').removeClass('active-python');
         child.addClass('active-python');
         let child2 = $(this).children('.list-content-text');
         $('.list-content-text').css('height', 0);
-        child2.css('height', heigh[0]+'px');
+        child2.css('height', heigh[0] + 'px');
 
+    });
+
+// ===============================================================================
+    //плавний скрол до якоря
+    $('.list-item a').click(function () {
+        // возьмем содержимое атрибута href, должен быть селектором, например начинать # с или .
+        let scrollElem = $(this).attr('href');
+
+        if ($(scrollElem).length != 0) {
+            $('html, body').animate({scrollTop: $(scrollElem).offset().top}, 500);
+        }
     })
 });
-
-
-
-
 
 
 let javaListTitle = document.querySelectorAll('.java-complex-list-title');
@@ -139,6 +149,7 @@ let toggle = function (el, timing) {
 
 let b = document.querySelectorAll('.five-item-title-mob');
 f(b);
+
 function f(param) {
     param.forEach(function (el) {
 
@@ -152,41 +163,30 @@ function f(param) {
 }
 
 
-
 // accordion 1
 let image = document.querySelectorAll('.four-item-wrap-python-title span img');
 let arrImage = Array.from(image);
 
-let python = document.querySelectorAll('.four-item-wrap-python-title');
+let python = document.querySelectorAll('.four-item-wrap-python-title-mob');
 let arrPython = Array.from(python);
 
-
-    arrPython.forEach(function (el) {
-        el.addEventListener('click', function (e) {
-            e.target.nextElementSibling.classList.toggle('is-visible');
-
-            if (e.target.nextElementSibling.classList.contains('is-visible')) {
-                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
-                window.setTimeout(function () {
-                    e.target.children[0].src = 'image/python/check.png';
-                }, 1000);
-
-            } else {
-                e.target.nextElementSibling.style.height = 0;
-                window.setTimeout(function () {
-                    e.target.children[0].src = 'image/python/ellipse.png';
-                }, 1000);
-
-            }
-        })
-    });
+let spanPython = document.querySelectorAll('.four-item-wrap-python-title-mob span');
+let arrSpanPython = Array.from(spanPython);
 
 
-
-
-
-
-
+arrPython.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+        console.log(e.target.children[0]);
+        e.target.nextElementSibling.classList.toggle('is-visible');
+        if (e.target.nextElementSibling.classList.contains('is-visible')) {
+            e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+            e.target.children[0].style.backgroundColor = '#72CC37';
+        } else {
+            e.target.nextElementSibling.style.height = 0;
+            e.target.children[0].style.backgroundColor = '';
+        }
+    })
+});
 
 
 let course = document.querySelector('#course');
@@ -203,26 +203,38 @@ course.addEventListener('click', function (e) {
 });
 
 
-
-
 let accord1 = document.querySelectorAll('.python-header-item-title');
 let arrAccord1 = Array.from(accord1);
 
+let accordText = document.querySelectorAll('.python-header-item-text');
+let arrAccordText = Array.from(accordText);
 
-arrAccord1.forEach(function (el) {
-    el.addEventListener('click', function (e) {
-        e.target.nextElementSibling.classList.toggle('is-visible-mobile');
+function accord() {
+    arrAccord1.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle('is-visible-mobile');
 
-        if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
-            e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
-            e.target.offsetParent.classList.add('border-color');
+            if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
+                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+                e.target.offsetParent.classList.add('border-color');
 
-        } else {
-            e.target.nextElementSibling.style.height = 0;
-            e.target.offsetParent.classList.remove('border-color');
+            } else {
+                e.target.nextElementSibling.style.height = 0;
+                e.target.offsetParent.classList.remove('border-color');
+            }
+        });
+    });
+    
+    arrAccordText.forEach(function (el) {
+        if (el.classList.contains('is-visible-mobile')) {
+            el.style.height = el.scrollHeight + 'px';
         }
     })
-});
+}
+
+accord();
+
+
 
 
 

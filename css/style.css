@@ -53,7 +53,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
+    text-align: justify;
     color: #000000;
     margin: 34px auto 0;
 }
@@ -108,13 +108,9 @@ body {
 }
 
 /*Menu*/
-#select option {
-    background-image: url(../image/logo/uk.png);
-}
-
 header {
     width: 100%;
-    height: 95px;
+    height: 70px;
     background: #F9F9F9;
 }
 
@@ -143,6 +139,10 @@ header {
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.header-menu ul li:first-child {
+    margin-right: 30px;
 }
 
 .header-menu ul li, .header-menu ul li a {
@@ -328,7 +328,7 @@ header {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    padding: 20px 0;
+    padding: 15px 0;
     color: #3298F2;
     border: 2px solid #3298F2;
     box-sizing: border-box;
@@ -853,8 +853,14 @@ header {
 
 /*type 4 content*/
 .section-two-content {
-    padding: 60px 0 105px;
+    display: none;
+    padding: 90px 0 105px;
     justify-content: space-evenly;
+}
+
+.section-two-content-mob {
+    display: none;
+    padding: 20px 0;
 }
 
 .section-two-content-1, .section-two-content-2 {
@@ -874,6 +880,26 @@ header {
     box-sizing: border-box;
     border-radius: 6px;
     position: relative;
+}
+
+.section-two-content-desk-1 {
+    border: 2px solid #FF9638;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+}
+
+.section-two-content-desk-2 {
+    border: 2px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+}
+
+.section-two-content-desk {
+    display: flex;
+    padding: 90px 0 105px;
+    justify-content: space-evenly;
 }
 
 .arr, .arr-2 {
@@ -1149,7 +1175,7 @@ header {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    text-align: center;
+    text-align: justify;
     color: #474747;
 }
 
@@ -1334,12 +1360,20 @@ ol.carousel-indicators {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    color: #292929;
     position: relative;
     width: 145px;
     margin-bottom: 35px;
     cursor: pointer;
     transition: .5s;
+}
+
+.list-item a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.list-item a:hover {
+    color: #3298f2;
 }
 
 .list-number {
@@ -2146,7 +2180,7 @@ form {
     color: #FFFFFF;
 }
 
-.four-item-wrap-python-title, .five-item-wrap-python-title {
+.four-item-wrap-python-title, .five-item-wrap-python-title, .four-item-wrap-python-title-mob {
     position: relative;
     font-weight: bold;
     font-size: 16px;
@@ -2165,7 +2199,7 @@ form {
 
 .four-item-wrap-python-text {
     overflow: hidden;
-    transition: height 1500ms;
+    transition: height 1000ms;
 }
 
 .four-item-wrap-python-title img {
@@ -2175,7 +2209,7 @@ form {
 }
 
 .four-wrap-python-image-mobile {
-    display: none;
+    opacity: 0;
 }
 
 .four-item-wrap-python {
@@ -2195,6 +2229,28 @@ form {
 
 .four-item-wrap-python-text .visible {
     margin-bottom: 10px;
+}
+
+.type-four-python-content-mob {
+    display: none;
+}
+
+.four-item-wrap-python-mob {
+    margin-bottom: 20px;
+    padding: 15px 0 0 50px;
+    transition: 1s;
+    border: 3px solid #000000;
+}
+
+.four-item-wrap-python-title-mob span {
+    background-color: rgba(237, 244, 251, 0.1);
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: -35px;
+    transition: 1s;
 }
 
 
@@ -2420,11 +2476,12 @@ form {
     color: #ffffff;
 }
 
-.type-eight-python .list-item {
+.type-eight-python .list-item, .type-eight-python .list-item a {
     color: #ffffff;
+    text-decoration: none;
 }
 
-.type-eight-python .list-item:hover {
+.type-eight-python .list-item a:hover {
     color: #fddb58;
 }
 
@@ -2787,10 +2844,10 @@ form {
 .type-six-java .section-five {
     background-color: #000000;
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 134px;
 }
 
-.type-six-java .activ, .type-six-java .list-item:hover, .type-six-java .list-content-title h4:hover {
+.type-six-java .activ, .type-six-java .list-item a:hover, .type-six-java .list-content-title h4:hover, .type-six-java .list-content-title:hover {
     color: #f48120;
 }
 
@@ -2798,12 +2855,9 @@ form {
     border-color: #f48120;
 }
 
-.type-six-java .list-content-title:hover {
-    color: #f48120;
-}
-
-.type-six-java .list-item, .type-six-java .list-content-title {
+.type-six-java .list-item a, .type-six-java .list-content-title {
     color: #ffffff;
+    text-decoration: none;
 }
 
 

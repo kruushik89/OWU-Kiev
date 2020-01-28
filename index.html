@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OWU Kiev</title>
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/slick-1.8.1/slick/slick.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="libs/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
 
@@ -64,7 +66,7 @@
                         <li><a href="#">Бесплатные основы програмирования</a></li>
                     </ul>
                 </li>
-                <li><a href="#">акции</a></li>
+                <li><a href="#">акции 1</a></li>
                 <li><a href="#">отзывы</a></li>
                 <li><a href="#">галерея</a></li>
                 <li><a href="#">о нас</a></li>
@@ -424,8 +426,8 @@
                     <div class="type-four-image-2"><img src="image/img2.png" alt=""></div>
                 </div>
             </div>
-
-            <div class="section-two-content d-flex">
+            <!--mobile-->
+            <div class="section-two-content">
                 <div class="section-two-content-1">
                     <div class="top"></div>
                     <div class="arr"><img src="image/other/vector1.png" alt="Vector"></div>
@@ -566,6 +568,150 @@
                     <div class="bottom"></div>
                 </div>
             </div>
+            <!--end mobile-->
+
+            <div class="section-two-content-desk">
+                <div class="section-two-content-1">
+                    <div class="top"></div>
+                    <div class="arr"><img src="image/other/vector1.png" alt="Vector"></div>
+                    <div class="section-two-content-title-1">
+                        <h3>OktenWeb University</h3>
+                    </div>
+
+                    <div class="two-content-1 is-visible">
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img">
+                                <img src="image/check.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Составляем программу с работодателями и действующими разработчиками OktenWeb.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img">
+                                <img src="image/check.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Даем выжимку из необходимого. Если у группы появляется свободное время, уделяем его
+                                практике .
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img">
+                                <img src="image/check.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Отвечаем за студентов собственной репутацией. Ведь выпускники проходят практику в
+                                нашей компании.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img">
+                                <img src="image/check.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Ведем одновременно не более 1 группы по каждому направлению. В группе состоят не
+                                более N учеников.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img">
+                                <img src="image/check.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Добиваемся полного понимания материала и учим студента мыслить самостоятельно.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img">
+                                <img src="image/check.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Честно указываем ставку выпускников. Разработчики без опыта не могут выйти на средний
+                                по сфере доход сразу.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom"></div>
+                </div>
+
+                <div class="section-two-content-2">
+                    <div class="top"></div>
+                    <div class="arr-2"><img src="image/other/vector2.png" alt="Vector"></div>
+                    <div class="section-two-content-title-2">
+                        <h3>Обычные курсы</h3>
+                    </div>
+
+                    <div class="two-content-2">
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img-2">
+                                <img src="image/other/point2.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Берут обучающие материалы из устаревших книг в свободном доступе. Блогов,
+                                интернета.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img-2">
+                                <img src="image/other/point2.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Забивают учебное время бесполезными темами. Например: «‎Как появился язык
+                                JavaScript?»
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img-2">
+                                <img src="image/other/point2.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Не заботятся о реальных знаниях студента. Забывают о нем сразу после окончания
+                                курсов.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img-2">
+                                <img src="image/other/point2.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Работают в режиме конвейера. Чем больше студентов удается заманить на курс, тем
+                                лучше.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img-2">
+                                <img src="image/other/point2.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Подают материал в формате советского университета. Заучить урок, сдать и забыть.
+                            </div>
+                        </div>
+
+                        <div class="section-two-content-item">
+                            <div class="section-two-content-item-img-2">
+                                <img src="image/other/point2.png" alt="">
+                            </div>
+                            <div class="item-text">
+                                Дают невыполнимые обещания о заоблачных зарплатах с первого же дня работы.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom"></div>
+                </div>
+            </div>
+
 
         </section>
         <!--        end type 4-->
@@ -791,7 +937,7 @@
 
 
         <!--        type 7-->
-        <section class="type-seven">
+        <section class="type-seven" id="desk">
             <div class="section-five">
                 <div class="wrapper">
                     <div class="type-title">
@@ -1657,57 +1803,57 @@
                             <div class="list">
                                 <div class="list-inner" id="1">
                                     <div class="list-number">01</div>
-                                    <div class="list-item active-js">Spring Framework</div>
+                                    <div class="list-item active-python"><a href="#desk">Spring Framework</a></div>
                                 </div>
 
                                 <div class="list-inner" id="2">
                                     <div class="list-number">02</div>
-                                    <div class="list-item">ORM layers. JPA. Hibernate</div>
+                                    <div class="list-item"><a href="#desk">ORM layers. JPA. Hibernate</a></div>
                                 </div>
 
                                 <div class="list-inner" id="3">
                                     <div class="list-number">03</div>
-                                    <div class="list-item">JavaScript</div>
+                                    <div class="list-item"><a href="#desk">JavaScript</a></div>
                                 </div>
 
                                 <div class="list-inner" id="4">
                                     <div class="list-number">04</div>
-                                    <div class="list-item">TypeScript</div>
+                                    <div class="list-item"><a href="#desk">TypeScript</a></div>
                                 </div>
 
                                 <div class="list-inner" id="5">
                                     <div class="list-number">05</div>
-                                    <div class="list-item">Angular</div>
+                                    <div class="list-item"><a href="#desk">Angular</a></div>
                                 </div>
 
                                 <div class="list-inner" id="6">
                                     <div class="list-number">06</div>
-                                    <div class="list-item">Vue.JS</div>
+                                    <div class="list-item"><a href="#desk">Vue.JS</a></div>
                                 </div>
 
                                 <div class="list-inner" id="7">
                                     <div class="list-number">07</div>
-                                    <div class="list-item">React</div>
+                                    <div class="list-item"><a href="#desk">React</a></div>
                                 </div>
 
                                 <div class="list-inner" id="8">
                                     <div class="list-number">08</div>
-                                    <div class="list-item">Database. MySQL</div>
+                                    <div class="list-item"><a href="#desk">Database. MySQL</a></div>
                                 </div>
 
                                 <div class="list-inner" id="9">
                                     <div class="list-number">09</div>
-                                    <div class="list-item">Database. MongoDB</div>
+                                    <div class="list-item"><a href="#desk">Database. MongoDB</a></div>
                                 </div>
 
                                 <div class="list-inner" id="10">
                                     <div class="list-number">10</div>
-                                    <div class="list-item">HTML/CSS</div>
+                                    <div class="list-item"><a href="#desk">HTML/CSS</a></div>
                                 </div>
 
                                 <div class="list-inner" id="11">
                                     <div class="list-number">11</div>
-                                    <div class="list-item">DevOps Tools & Services</div>
+                                    <div class="list-item"><a href="#desk">DevOps Tools & Services</a></div>
                                 </div>
                             </div>
 
@@ -2748,10 +2894,10 @@
                                 <div class="type-tyrphs-title-1">Базовый</div>
                                 <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
                                 <div class="item-tyrphs-description">
-                                    <div class="tyrphs-description"><span>Объём:</span> N часов</div>
-                                    <div class="tyrphs-description"><span>Длительность:</span> 6 месяцев</div>
-                                    <div class="tyrphs-description"><span>Нагрузка:</span> 8 часов в неделю</div>
-                                    <div class="tyrphs-description"><span>Практика:</span> Практика</div>
+                                    <div class="tyrphs-description"> N часов</div>
+                                    <div class="tyrphs-description">6 месяцев</div>
+                                    <div class="tyrphs-description">8 часов в неделю</div>
+                                    <div class="tyrphs-description">Практика</div>
                                 </div>
                                 <div class="item-tyrphs-form">
                                     <form>
@@ -2921,9 +3067,6 @@
 </main>
 
 
-<script src="libs/jquery/jquery-3.2.1.js"></script>
-<script src="libs/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
-<script src="libs/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/slick.js"></script>
 <script src="js/javaScript.js"></script>
 <script src="js/main.js"></script>
