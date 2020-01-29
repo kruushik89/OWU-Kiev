@@ -70,89 +70,6 @@ close.onclick = () => {
 };
 // end modal
 
-// Collapse
-let content1H3 = document.querySelector('.section-two-content-1');
-let content2H3 = document.querySelector('.section-two-content-2');
-let content1 = document.querySelector('.two-content-1');
-let content2 = document.querySelector('.two-content-2');
-let vector = document.querySelector('.arr');
-let vector2 = document.querySelector('.arr-2');
-
-// function transform rotate 180
-function transform(param, param2) {
-    param.onclick = () => {
-        param2.classList.toggle('transform-rotate180');
-    };
-}
-
-transform(content1H3, vector);
-transform(content2H3, vector2);
-// end function transform rotate 180
-
-content2H3.addEventListener('click', function () {
-    console.log('work');
-    toggle(content2);
-});
-
-content1H3.addEventListener('click', function () {
-    toggle(content1);
-});
-
-
-let show = (el) => {
-    let getHeight = () => {
-        el.style.display = 'block';
-        let height = el.scrollHeight + 'px';
-        el.style.display = '';
-        return height;
-    };
-
-    let height = getHeight();
-    el.classList.add('is-visible');
-    el.style.height = height;
-
-    window.setTimeout(function () {
-        el.style.height = '';
-    }, 1250);
-};
-
-let hide = (el) => {
-    el.style.height = el.scrollHeight + 'px';
-
-    window.setTimeout(function () {
-        el.style.height = '0';
-    }, 1);
-
-    window.setTimeout(function () {
-        el.classList.remove('is-visible');
-    }, 1250);
-};
-
-
-let toggle = function (el, timing) {
-    if (el.classList.contains('is-visible')) {
-        hide(el);
-        return;
-    } else {
-        show(el);
-    }
-
-};
-
-let b = document.querySelectorAll('.five-item-title-mob');
-
-function f(param) {
-    param.forEach(function (el) {
-        el.addEventListener('click', function (e) {
-            toggle(e.target.nextElementSibling);
-            if (e.target.nextElementSibling.classList.contains('is-visible')) {
-                e.target.parentNode.classList.toggle('bg-fff');
-            }
-        })
-    });
-}
-
-f(b);
 
 let course = document.querySelector('#course');
 
@@ -181,8 +98,66 @@ $(document).ready(function () {
 });
 
 
+function accord3() {
+    let b = document.querySelectorAll('.five-item-title-mob');
+    let arrB = Array.from(b);
+    arrB.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle('is-visible');
+            console.log(e.target.children[0]);
+            if (e.target.nextElementSibling.classList.contains('is-visible')) {
+                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+                e.target.parentElement.classList.add('bg-fff');
+                e.target.children[0].classList.add('rotate-180');
+            } else {
+                e.target.nextElementSibling.style.height = '';
+                e.target.children[0].classList.remove('rotate-180');
+                e.target.parentElement.classList.remove('bg-fff');
+            }
+        })
+    });
 
+    let bText = document.querySelectorAll('.five-item-text-mob');
+    let arrBText = Array.from(bText);
+    arrBText.forEach(function (el) {
+        if (el.classList.contains('is-visible')) {
+            el.style.height = el.scrollHeight + 'px';
+        }
+    })
 
+}
+
+accord3();
+
+//function accordion
+let content1H3 = document.querySelector('.section-two-content-title-1');
+let content2H3 = document.querySelector('.section-two-content-title-2');
+let content1 = document.querySelector('.two-content-1');
+let content2 = document.querySelector('.two-content-2');
+let vector = document.querySelectorAll('.arr');
+let arrVector = Array.from(vector);
+console.log(arrVector);
+function accord4(elem, elem2) {
+    elem.addEventListener('click', function (e) {
+        console.log(e);
+        e.target.nextElementSibling.classList.toggle('is-visible');
+        if (e.target.nextElementSibling.classList.contains('is-visible')) {
+            e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+            e.target.previousElementSibling.classList.add('rotate-180');
+            
+        } else {
+            e.target.nextElementSibling.style.height = '';
+            e.target.previousElementSibling.classList.remove('rotate-180');
+        }
+    });
+
+    if (elem2.classList.contains('is-visible')) {
+        elem2.style.height = elem2.scrollHeight + 'px';
+    }
+}
+
+accord4(content1H3, content1);
+accord4(content2H3, content2);
 
 
 

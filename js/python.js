@@ -107,109 +107,13 @@ close.onclick = () => {
 
 // Collapse
 
-let show = (el) => {
-    let getHeight = () => {
-        el.style.display = 'block';
-        let height = el.scrollHeight + 'px';
-        el.style.display = '';
-        return height;
-    };
-
-    let height = getHeight();
-    el.classList.add('is-visible');
-    el.style.height = height;
-
-    window.setTimeout(function () {
-        el.style.height = '';
-    }, 1250);
-};
-
-let hide = (el) => {
-    el.style.height = el.scrollHeight + 'px';
-
-    window.setTimeout(function () {
-        el.style.height = '0';
-    }, 1);
-
-    window.setTimeout(function () {
-        el.classList.remove('is-visible');
-    }, 1250);
-};
-
-
-let toggle = function (el, timing) {
-    if (el.classList.contains('is-visible')) {
-        hide(el);
-        return;
-    } else {
-        show(el);
-    }
-
-};
-
-let b = document.querySelectorAll('.five-item-title-mob');
-f(b);
-
-function f(param) {
-    param.forEach(function (el) {
-
-        el.addEventListener('click', function (e) {
-            toggle(e.target.nextElementSibling);
-            if (e.target.nextElementSibling.classList.contains('is-visible')) {
-                e.target.parentNode.classList.toggle('bg-fff');
-            }
-        })
-    });
-}
-
-
 // accordion 1
-let image = document.querySelectorAll('.four-item-wrap-python-title span img');
-let arrImage = Array.from(image);
-
-let python = document.querySelectorAll('.four-item-wrap-python-title-mob');
-let arrPython = Array.from(python);
-
-let spanPython = document.querySelectorAll('.four-item-wrap-python-title-mob span');
-let arrSpanPython = Array.from(spanPython);
-
-
-arrPython.forEach(function (el) {
-    el.addEventListener('click', function (e) {
-        console.log(e.target.children[0]);
-        e.target.nextElementSibling.classList.toggle('is-visible');
-        if (e.target.nextElementSibling.classList.contains('is-visible')) {
-            e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
-            e.target.children[0].style.backgroundColor = '#72CC37';
-        } else {
-            e.target.nextElementSibling.style.height = 0;
-            e.target.children[0].style.backgroundColor = '';
-        }
-    })
-});
-
-
-let course = document.querySelector('#course');
-
-course.addEventListener('click', function (e) {
-
-    e.target.nextElementSibling.classList.toggle('is-visible-mobile');
-
-    if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
-        e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
-    } else {
-        e.target.nextElementSibling.style.height = 0;
-    }
-});
-
-
-let accord1 = document.querySelectorAll('.python-header-item-title');
-let arrAccord1 = Array.from(accord1);
-
-let accordText = document.querySelectorAll('.python-header-item-text');
-let arrAccordText = Array.from(accordText);
-
 function accord() {
+    let accord1 = document.querySelectorAll('.python-header-item-title');
+    let arrAccord1 = Array.from(accord1);
+
+    let accordText = document.querySelectorAll('.python-header-item-text');
+    let arrAccordText = Array.from(accordText);
     arrAccord1.forEach(function (el) {
         el.addEventListener('click', function (e) {
             e.target.nextElementSibling.classList.toggle('is-visible-mobile');
@@ -219,12 +123,12 @@ function accord() {
                 e.target.offsetParent.classList.add('border-color');
 
             } else {
-                e.target.nextElementSibling.style.height = 0;
+                e.target.nextElementSibling.style.height = '';
                 e.target.offsetParent.classList.remove('border-color');
             }
         });
     });
-    
+
     arrAccordText.forEach(function (el) {
         if (el.classList.contains('is-visible-mobile')) {
             el.style.height = el.scrollHeight + 'px';
@@ -233,6 +137,86 @@ function accord() {
 }
 
 accord();
+
+// accordion 2
+function accord2() {
+    let python = document.querySelectorAll('.four-item-wrap-python-title-mob');
+    let arrPython = Array.from(python);
+
+    let pythonText = document.querySelectorAll('.four-item-wrap-python-text');
+    let arrPythonText = Array.from(pythonText);
+    arrPython.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle('is-visible');
+            if (e.target.nextElementSibling.classList.contains('is-visible')) {
+                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+                e.target.children[0].classList.add('bg-green');
+            } else {
+                e.target.nextElementSibling.style.height = 0;
+                e.target.children[0].classList.remove('bg-green');
+            }
+        })
+    });
+
+    arrPythonText.forEach(function (el) {
+        if (el.classList.contains('is-visible')) {
+            el.style.height = el.scrollHeight + 'px';
+        }
+    })
+}
+
+accord2();
+
+// accordion 3
+function accord3() {
+    let b = document.querySelectorAll('.five-item-title-mob');
+    let arrB = Array.from(b);
+    arrB.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle('is-visible');
+            console.log(e.target.children[0]);
+            if (e.target.nextElementSibling.classList.contains('is-visible')) {
+                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+                e.target.parentElement.classList.add('bg-fff');
+                e.target.children[0].classList.add('rotate-180');
+            } else {
+                e.target.nextElementSibling.style.height = '';
+                e.target.children[0].classList.remove('rotate-180');
+                e.target.parentElement.classList.remove('bg-fff');
+            }
+        })
+    });
+    
+    let bText = document.querySelectorAll('.five-item-text-mob');
+    let arrBText = Array.from(bText);
+    arrBText.forEach(function (el) {
+        if (el.classList.contains('is-visible')) {
+            el.style.height = el.scrollHeight + 'px';
+        }
+    })
+
+}
+
+accord3();
+
+
+// accordion 4
+let course = document.querySelector('#course');
+
+course.addEventListener('click', function (e) {
+
+    e.target.nextElementSibling.classList.toggle('is-visible-mobile');
+
+    if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
+        e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+    } else {
+        e.target.nextElementSibling.style.height = '';
+    }
+});
+
+
+
+
 
 
 

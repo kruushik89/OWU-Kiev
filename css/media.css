@@ -209,15 +209,10 @@
     }
 
     .two-content-1, .two-content-2 {
-        display: none;
+        /*display: none;*/
         height: 0;
         overflow: hidden;
         transition: height 1500ms;
-    }
-
-    .two-content-2.is-visible, .two-content-1.is-visible {
-        display: block;
-        height: auto;
     }
 
     .header-type-four {
@@ -426,7 +421,7 @@
         left: -2px;
     }
 
-    .section-two-content-title-2 h3, .section-two-content-title-1 h3 {
+    .section-two-content-title-2, .section-two-content-title-1 {
         margin-bottom: 20px;
     }
 

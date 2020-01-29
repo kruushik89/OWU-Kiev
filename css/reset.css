@@ -77,6 +77,15 @@ button {
 }
 
 
+.bg-green {
+    background-color: green !important;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+
 .hidden-block .two-content-2 {
     height: auto !important;
     transition: 2s !important;
