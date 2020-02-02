@@ -31,24 +31,6 @@ function addWhiteBorder(param) {
 
 addWhiteBorder(typeBtn3);
 
-
-let javaListTitle = document.querySelectorAll('.java-complex-list-title');
-let javaListText = document.querySelectorAll('.java-complex-list-text');
-
-y(javaListTitle, javaListText);
-
-function y(a, b) {
-    for (let i = 0; i < a.length; i++) {
-        a[i].onclick = () => {
-            for (let i = 0; i < b.length; i++) {
-                b[i].style.display = 'none';
-            }
-            b[i].style.display = 'block';
-        };
-    }
-}
-
-
 // modal
 let rec = document.querySelector('.rec-courses');
 let modal = document.querySelector('.body-modal');
@@ -64,7 +46,7 @@ rec.onclick = () => {
     modal.classList.add('d-block');
 };
 
-let close = document.querySelector('.close-image img');
+let close = document.querySelector('.close-image');
 close.onclick = () => {
     modal.classList.remove('d-block');
 };
@@ -87,6 +69,7 @@ course.addEventListener('click', function (e) {
 // ===============================================================================
 //плавний скрол до якоря
 $(document).ready(function () {
+    //плавний скрол до якоря програма курса
     $('.list-item a').click(function () {
         // возьмем содержимое атрибута href, должен быть селектором, например начинать # с или .
         let scrollElem = $(this).attr('href');
@@ -94,7 +77,20 @@ $(document).ready(function () {
         if ($(scrollElem).length != 0) {
             $('html, body').animate({scrollTop: $(scrollElem).offset().top}, 500);
         }
-    })
+    });
+
+    //плавний скрол до якоря до форми
+    function animationScroll(element, time) {
+        $(element).click(function () {
+            let scrollElem = $(this).attr('href');
+            if ($(scrollElem).length != 0) {
+                $('html, body').animate({scrollTop: $(scrollElem).offset().top}, time);
+            }
+        });
+    }
+
+    animationScroll('.type-3-item button a', 1500);
+
 });
 
 
@@ -129,14 +125,35 @@ function accord3() {
 
 accord3();
 
+// accordion from java complex
+let javaListTitle = document.querySelectorAll(' .java-complex-list-title');
+let javaListText = document.querySelectorAll('.java-complex-list-text');
+javaListTitle.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+        e.target.nextElementSibling.classList.toggle('is-visible');
+        if (e.target.nextElementSibling.classList.contains('is-visible')) {
+            e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+        } else {
+            e.target.nextElementSibling.style.height = '';
+        }
+    });
+
+    javaListText.forEach(function (el) {
+        if (el.classList.contains('is-visible')) {
+            el.style.height = el.scrollHeight + 'px';
+        }
+    })
+});
+// end accordion from java complex
+
 //function accordion
 let content1H3 = document.querySelector('.section-two-content-title-1');
 let content2H3 = document.querySelector('.section-two-content-title-2');
 let content1 = document.querySelector('.two-content-1');
 let content2 = document.querySelector('.two-content-2');
-let vector = document.querySelectorAll('.arr');
-let arrVector = Array.from(vector);
-console.log(arrVector);
+// let vector = document.querySelectorAll('.arr');
+// let arrVector = Array.from(vector);
+
 function accord4(elem, elem2) {
     elem.addEventListener('click', function (e) {
         console.log(e);
@@ -144,7 +161,7 @@ function accord4(elem, elem2) {
         if (e.target.nextElementSibling.classList.contains('is-visible')) {
             e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
             e.target.previousElementSibling.classList.add('rotate-180');
-            
+
         } else {
             e.target.nextElementSibling.style.height = '';
             e.target.previousElementSibling.classList.remove('rotate-180');
@@ -160,10 +177,36 @@ accord4(content1H3, content1);
 accord4(content2H3, content2);
 
 
+// Hover from form
+function hoverForms() {
+    let formsHover = document.querySelectorAll('.type-tyrphs-item');
+    formsHover.forEach(function (el) {
+        el.addEventListener('mouseenter', function (e) {
+            e.target.children[0].style.backgroundColor = '#3298f2';
+            e.target.children[0].style.color = '#ffffff';
 
 
+        });
+
+        el.addEventListener('mouseleave', function (e) {
+            e.target.children[0].style.backgroundColor = '';
+            e.target.children[0].style.color = '';
+        })
+
+    });
+}
+
+hoverForms();
 
 
+let enroll = document.querySelectorAll('.enroll');
+console.log(enroll);
+
+enroll.forEach(function (el) {
+    el.onclick = function () {
+        modal.classList.add('d-block');
+    }
+});
 
 
 

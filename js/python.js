@@ -60,15 +60,21 @@ $(document).ready(function () {
     });
 
 // ===============================================================================
-    //плавний скрол до якоря
-    $('.list-item a').click(function () {
-        // возьмем содержимое атрибута href, должен быть селектором, например начинать # с или .
-        let scrollElem = $(this).attr('href');
 
-        if ($(scrollElem).length != 0) {
-            $('html, body').animate({scrollTop: $(scrollElem).offset().top}, 500);
-        }
-    })
+
+    //плавний скрол до якоря до форми
+    function animationScroll(element, time) {
+        $(element).click(function () {
+            let scrollElem = $(this).attr('href');
+            if ($(scrollElem).length != 0) {
+                $('html, body').animate({scrollTop: $(scrollElem).offset().top}, time);
+            }
+        });
+    }
+
+    animationScroll('.seven-python-item-button button a', 1500);
+
+    animationScroll('.list-item a', 500);
 });
 
 
@@ -99,7 +105,7 @@ for (let i = 0; i < nineBtn.length; i++) {
     }
 }
 
-let close = document.querySelector('.close-image img');
+let close = document.querySelector('.close-image');
 close.onclick = () => {
     modal.classList.remove('d-block');
 };
@@ -214,8 +220,25 @@ course.addEventListener('click', function (e) {
     }
 });
 
+function hoverForms() {
+    let formsHover = document.querySelectorAll('.type-tyrphs-item');
+    formsHover.forEach(function (el) {
+        el.addEventListener('mouseenter', function (e) {
+            e.target.children[0].style.backgroundColor = '#3298f2';
+            e.target.children[0].style.color = '#ffffff';
 
 
+        });
+
+        el.addEventListener('mouseleave', function (e) {
+            e.target.children[0].style.backgroundColor = '';
+            e.target.children[0].style.color = '';
+        })
+
+    });
+}
+
+hoverForms();
 
 
 
