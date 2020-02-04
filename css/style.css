@@ -559,6 +559,10 @@ header {
     width: 100%;
 }
 
+.btn-header-content button:hover {
+    border: 4px solid #FFC188;
+}
+
 .header-content-text {
     position: relative;
     width: 530px;
@@ -3208,7 +3212,176 @@ form {
 
 
 /*======================================================================================================================*/
-/*other*/
+/*free*/
+/*type 1 free*/
+
+.type-one-free {
+    height: 93vh;
+}
+
+.content-title-free {
+    width: 67%;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 36px;
+}
+
+.type-one-free .content-title-2{
+    width: 65%;
+    margin-bottom: 53px;
+}
+
+.type-one-free .header-content-text {
+    width: 65%;
+    padding: 0;
+    border: none;
+}
+
+.type-one-free .content-title-2 h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.type-one-free .content-title-2 h1 span {
+    color: #333333;
+}
+
+.btn-header-free {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.btn-header-free span {
+    color: #FF9638;
+}
+
+.btn-header-free button {
+    padding: 20px 53px;
+    background: #3298F2;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.btn-header-free button:hover {
+    color: #FF9638;
+}
+
+.header-info-free {
+    position: absolute;
+    right: -3px;
+    width: 60%;
+    top: 188px;
+}
+
+.info-content-text-free {
+    background: #ffffff;
+    font-weight: 800;
+    font-size: 21px;
+    color: #FF9638;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/*======================================================================================================================*/
+/*type 2 free*/
+.type-two-free {
+    padding-top: 115px;
+    padding-bottom: 106px;
+}
+
+.free-item-left, .free-item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.free-item-left {
+    align-items: flex-end;
+}
+
+.two-free-wrap-item {
+    width: 80%;
+}
+
+.two-free-content-image {
+    display: flex;
+    justify-content: center;
+}
+
+.two-free-item-title {
+    position: relative;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 6px;
+}
+
+.two-free-item-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

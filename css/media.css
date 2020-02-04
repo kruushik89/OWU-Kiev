@@ -52,6 +52,23 @@
         width: 68%;
     }
 
+    .header-info-free {
+        top: 85px;
+        margin-bottom: 25px;
+    }
+
+    .content-title-free {
+        width: 85%;
+    }
+
+    .type-one-free .type-1-wrapper-course {
+        padding: 30px 20px 70px 50px;
+    }
+
+    .type-one-free .content-title-2 {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -892,6 +909,10 @@
 
     .footer-map {
         display: none;
+    }
+
+    .type-one-free {
+        height: auto;
     }
 
 }
