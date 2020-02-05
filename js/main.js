@@ -151,8 +151,6 @@ let content1H3 = document.querySelector('.section-two-content-title-1');
 let content2H3 = document.querySelector('.section-two-content-title-2');
 let content1 = document.querySelector('.two-content-1');
 let content2 = document.querySelector('.two-content-2');
-// let vector = document.querySelectorAll('.arr');
-// let arrVector = Array.from(vector);
 
 function accord4(elem, elem2) {
     elem.addEventListener('click', function (e) {

@@ -12,7 +12,7 @@ $(document).ready(function() {
     // Програма для курсу
     $('.list-content').on('click', function () {
         let heigh = $(this.lastElementChild.scrollHeight);
-        $('.list-content').css('border-color','#A7A7A7');
+        $('.list-content').css('border-color','');
         $(this).css('border-color', '#3298F2');
         let child = $(this).children('.list-content-title');
         $('.list-content-title').removeClass('active-js');

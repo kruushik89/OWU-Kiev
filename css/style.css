@@ -42,7 +42,6 @@ footer a:hover {
     font-weight: 900;
     font-size: 30px;
     line-height: 37px;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -50,7 +49,6 @@ footer a:hover {
     font-weight: 900;
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -122,6 +120,7 @@ header {
     width: 100%;
     height: 70px;
     background: #F9F9F9;
+    opacity: 0.85;
 }
 
 .header-logo-item img {
@@ -609,7 +608,7 @@ header {
 }
 
 .info-content {
-    width: 165px;
+    width: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1736,7 +1735,7 @@ ol.carousel-indicators {
 }
 
 .video-item {
-    width: 160px;
+    width: 270px;
     height: 140px;
     background: #C4C4C4;
 }
@@ -3342,6 +3341,545 @@ form {
 }
 
 
+/*======================================================================================================================*/
+/*type 3 free*/
+
+.header-type-three-free {
+    padding: 67px 0 50px;
+    background: #3298F2;
+    position: relative;
+}
+
+.header-type-three-free .type-title {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.type-three-free .type-title-h3 {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.type-three-free .type-title-h2 {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 30px;
+}
+
+.title-text-content {
+    width: 60%;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.title-text-content span {
+    font-weight: 900;
+}
+
+.free-three-content {
+    padding-top: 120px;
+    display: flex;
+}
+
+.item-accordion {
+    padding: 23px 0 5px 23px;
+    border: 1px solid #E6EDF3;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    transition: .5s;
+}
+
+.item-accordion:hover {
+    border: 1px solid #3298F2;
+}
+
+.item-accordion:hover .item-accordion-title {
+    color: #3298f2;
+}
+
+.item-accordion-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.item-accordion-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    overflow: hidden;
+    height: 0;
+    transition: .4s;
+}
+
+.btn-modal button {
+    width: 352px;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #FFD43D;
+    transition: .3s;
+}
+
+.btn-modal {
+    margin-top: 38px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-modal button:hover {
+    background: #FFD43D;
+}
+
+.free-three-content .type-title {
+    margin-top: 30px;
+}
+
+.type-three-free .free-three-content .type-title-h3 {
+    margin-bottom: 40px;
+}
+
+
+/*======================================================================================================================*/
+/*type 4 free*/
+
+.type-four-free {
+    position: relative;
+    background: #F9F9F9;
+    padding-top: 100px;
+}
+
+.brand-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: space-between;
+    margin: 100px auto 0;
+}
+
+.img-brand {
+    margin-bottom: 100px;
+}
+
+/*======================================================================================================================*/
+/*type 5 free*/
+.type-five-free {
+    padding-top: 105px;
+    padding-bottom: 128px;
+}
+
+.title-descript h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.title-descript {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.type-five-free .type-2-title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3298F2;
+    margin-bottom: 58px;
+    margin-top: 93px;
+}
+
+.free-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.type-five-free .type-2-title::before {
+    left: 10px;
+    bottom: -40px;
+}
+
+.type-five-free .type-2-title::after {
+    bottom: -50px;
+}
+
+.type-five-free-image img {
+    width: 100%;
+}
+
+.five-free-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/*======================================================================================================================*/
+/*type 6 free*/
+.type-six-free {
+    position: relative;
+    background: #292929;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.type-six-free .section-title {
+    text-align: center;
+}
+
+.type-six-free .description-btn a {
+    display: block;
+    background: none;
+    border: 2px solid #3298F2;
+    border-radius: 10px;
+    width: 370px;
+    padding: 25px 0;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.type-six-free .description-btn a:hover {
+    transition: .3s;
+    background: #3298F2;
+}
+
+
+
+
+/*======================================================================================================================*/
+/*type 7 free*/
+
+.type-seven-free {
+    background: #EDF4FB;
+    padding-top: 96px;
+    padding-bottom: 164px;
+}
+
+.type-seven-free .free-text {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 88px;
+}
+
+.seven-free-wrap-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seven-free-item {
+    position: relative;
+    flex-basis: 30%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.seven-free-item::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+
+.seven-free-one::before, .seven-free-two::before, .seven-free-three::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 95px;
+    height: 120px;
+    top: -48px;
+    left: -50px;
+}
+
+.seven-free-one::before{
+    background: url(../image/num-free/sprites-free.png) 0 115px;
+}
+
+.seven-free-two::before{
+    background: url(../image/num-free/sprites-free.png) -118px 115px;
+}
+
+.seven-free-three::before{
+    background: url(../image/num-free/sprites-free.png) -283px 115px;
+}
+
+.type-seven-free .type-title-h2 {
+    width: 75%;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.type-seven-free .type-title-h3 {
+    font-size: 26px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.free-form-content {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding-top: 57px;
+    padding-bottom: 112px;
+}
+
+.form-content {
+    position: relative;
+}
+
+.free-form-content .type-title-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.free-form-content .type-title-h2 {
+    width: 100%;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.btn-form-free {
+    position: absolute;
+    width: 100%;
+    bottom: -77px;
+}
+
+.btn-form-free button {
+    transition: .3s;
+    width: 100%;
+    position: absolute;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #F2F2F2;
+    background: #3298F2;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.btn-form-free button:hover {
+    color: #000000;
+}
+
+/*========================================= input radio =========================================*/
+.free-radio {
+    display: flex;
+    margin-top: 62px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2196F3;
+}
+
+/*========================================= end input radio =========================================*/
+
+
+/*========================================= form =========================================*/
+.form-free input {
+    border: 1px solid #EDF4FB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    padding: 10px 17px;
+    transition: .3s;
+}
+
+.form-free input:hover {
+    border-color: #3298F2;
+}
+
+.form-free input:focus {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+}
+
+/*========================================= end form =========================================*/
+
+
+
+/*======================================================================================================================*/
+/*Testing*/
+.test .type-title-h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+.test .type-title-h2 {
+    font-size: 48px;
+    line-height: 59px;
+}
+/*type 1 test*/
+.type-one-test .type-1-wrapper-course {
+    background: #ffffff;
+}
+.type-one-test {
+    height: 93vh;
+}
+
+.type-one-test .content-title-free {
+
+}
+
+.type-one-test .content-title-2 h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+    position: relative;
+    z-index: 1;
+}
+
+.type-one-test .content-title-free {
+    color: #FF9638;
+}
+
+.type-one-test .header-text {
+    width: 65%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    text-align: justify;
+}
+
+/*======================================================================================================================*/
+/*type 2 test*/
+.type-two-test {
+    background: #EDF4FB;
+    padding-top: 64px;
+    padding-bottom: 50px;
+}
+
+.title-text {
+    width: 60%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin: 40px auto 70px;
+}
+
+.two-test-title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FF9638;
+    margin-bottom: 15px;
+}
+
+.two-test-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    padding-left: 15px;
+    border-left: 3px solid #FF9638;
+}
+
+.two-test-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.two-test-content-text {
+    width: 60%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    margin: 60px auto 0;
+}
 
 
 
@@ -3351,24 +3889,13 @@ form {
 
 
 
+/*======================================================================================================================*/
+/*type 3 test*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.type-three-test {
+    padding-top: 115px;
+    padding-bottom: 106px;
+}
 
 
 
