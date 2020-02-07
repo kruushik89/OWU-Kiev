@@ -19,7 +19,6 @@ let accordion = document.querySelectorAll('.item-accordion');
 let arrAccordion = Array.from(accordion);
 
 arrAccordion.forEach(function (el) {
-    console.log(el.children);
     if (el.children[1].classList.contains('is-visible')) {
         el.children[0].classList.add('active-js');
         el.style.borderColor = '#3298F2';
@@ -50,6 +49,53 @@ document.querySelector('.c-hamburger').addEventListener('click', function (e) {
     this.classList.toggle('is-active');
 });
 // end c-hamburger
+
+
+// function accord oktenveb university
+function accord3() {
+    let b = document.querySelectorAll('.five-item-title-mob');
+    let arrB = Array.from(b);
+    arrB.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle('is-visible');
+            console.log(e.target.children[0]);
+            if (e.target.nextElementSibling.classList.contains('is-visible')) {
+                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+                e.target.parentElement.classList.add('bg-fff');
+                e.target.children[0].classList.add('rotate-180');
+            } else {
+                e.target.nextElementSibling.style.height = '';
+                e.target.children[0].classList.remove('rotate-180');
+                e.target.parentElement.classList.remove('bg-fff');
+            }
+        })
+    });
+
+    let bText = document.querySelectorAll('.five-item-text-mob');
+    let arrBText = Array.from(bText);
+    arrBText.forEach(function (el) {
+        if (el.classList.contains('is-visible')) {
+            el.style.height = el.scrollHeight + 'px';
+        }
+    })
+
+}
+
+accord3();
+
+// dropdown menu mobile
+let course = document.querySelector('#course');
+
+course.addEventListener('click', function (e) {
+
+    e.target.nextElementSibling.classList.toggle('is-visible-mobile');
+
+    if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
+        e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+    } else {
+        e.target.nextElementSibling.style.height = 0;
+    }
+});
 
 
 

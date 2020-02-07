@@ -27,6 +27,10 @@ footer a:hover {
     color: #3298F2 !important;
 }
 
+.active-test {
+    color: #FF9638 !important;
+}
+
 .active-java {
     color: #FF9638 !important;
 }
@@ -185,6 +189,7 @@ header {
     border: none;
 }
 
+
 .nav-menu li:hover .dropdown-menu {
     display: block;
 }
@@ -200,6 +205,8 @@ header {
 
 .dropdown-menu li {
     margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 10px;
 }
 
 .dropdown-menu li:last-child {
@@ -539,11 +546,9 @@ header {
 }
 
 .btn-header-content {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -174px;
+    margin: 0 auto;
     width: 352px;
+    text-align: center;
 }
 
 .btn-header-content button, .btn-header-mobile button {
@@ -556,10 +561,7 @@ header {
     font-weight: bold;
     font-size: 17px;
     width: 100%;
-}
-
-.btn-header-content button:hover {
-    border: 4px solid #FFC188;
+    margin-bottom: 10px;
 }
 
 .header-content-text {
@@ -1966,6 +1968,7 @@ ol.carousel-indicators {
     position: relative;
     left: 50%;
     margin-left: -125px;
+    transition: .3s;
 }
 
 .tyrphs-btn button span {
@@ -2695,7 +2698,6 @@ form {
 .section-five-python {
     padding: 50px 0 100px;
     background: #292929;
-    opacity: .8;
 }
 
 .type-eight-python .list-content:hover {
@@ -3249,7 +3251,7 @@ form {
     color: #333333;
 }
 
-.btn-header-free {
+.btn-header-free, .type-one-free .btn-header-content {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -3489,15 +3491,16 @@ form {
     line-height: 21px;
 }
 
-.type-five-free .type-2-title {
+.type-five-free .type-2-title, .type-seven-test .type-2-title {
     font-weight: 900;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 40px;
     text-align: center;
     text-transform: uppercase;
     color: #3298F2;
     margin-bottom: 58px;
     margin-top: 93px;
+    z-index: 1;
 }
 
 .free-text {
@@ -3541,7 +3544,7 @@ form {
     text-align: center;
 }
 
-.type-six-free .description-btn a {
+.type-six-free .description-btn a, .type-eight-test .description-btn a{
     display: block;
     background: none;
     border: 2px solid #3298F2;
@@ -3553,7 +3556,7 @@ form {
     text-decoration: none;
 }
 
-.type-six-free .description-btn a:hover {
+.type-six-free .description-btn a:hover, .type-eight-test .description-btn a:hover {
     transition: .3s;
     background: #3298F2;
 }
@@ -3797,6 +3800,16 @@ form {
     font-size: 48px;
     line-height: 59px;
 }
+
+.type-description {
+    position: absolute;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    background: #3298F2;
+    border-radius: 6px;
+}
 /*type 1 test*/
 .type-one-test .type-1-wrapper-course {
     background: #ffffff;
@@ -3848,7 +3861,7 @@ form {
     margin: 40px auto 70px;
 }
 
-.two-test-title {
+.two-test-title, .two-test-title-mobile {
     font-weight: 900;
     font-size: 20px;
     line-height: 24px;
@@ -3857,7 +3870,7 @@ form {
     margin-bottom: 15px;
 }
 
-.two-test-text {
+.two-test-text, .two-test-text-mobile {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -3881,35 +3894,334 @@ form {
     margin: 60px auto 0;
 }
 
-
-
-
-
-
-
-
+.two-test-mobile {
+    display: none;
+}
 
 /*======================================================================================================================*/
 /*type 3 test*/
-
 .type-three-test {
+    position: relative;
     padding-top: 115px;
-    padding-bottom: 106px;
+    padding-bottom: 235px;
+}
+
+.type-three-test .type-description {
+    width: 60%;
+    padding: 24px 79px 37px 209px;
+    left: -2px;
+    bottom: 70px;
+}
+
+/*======================================================================================================================*/
+/*type 4 test*/
+.type-four-test {
+    position: relative;
+    background: #EDF4FB;
+    padding-top: 80px;
+    /*padding-bottom: 72px;*/
+}
+
+.type-four-test .type-description {
+    width: 30%;
+    padding: 24px 0 37px 40px;
+    right: -5px;
+    bottom: 70px;
+}
+
+/*======================================================================================================================*/
+/*type 5 test*/
+.type-five-test {
+    position: relative;
+}
+.section-five-python .python-eight-image img {
+    height: 700px;
+}
+
+.hours {
+    position: relative;
+    z-index: 1;
+}
+
+.type-five-test .list-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.type-five-test .list-item a:hover {
+    color: #ff9638;
+}
+
+.type-five-test .list-content-title {
+    color: #ffffff;
+}
+
+.type-five-test .list-content:hover {
+    border: 1px solid #FF9638;
+}
+
+.type-five-test .hours-text {
+    color: #3298F2;
+}
+
+.type-five-test .btn-page button {
+    background: none;
+    border: 2px solid #FF9638;
+    color: #ffffff;
+}
+
+.type-five-test .btn-page button:hover {
+    transition: .3s;
+    background: #FF9638;
+    color: #000000;
+}
+
+/*======================================================================================================================*/
+/*type 6 test*/
+.type-six-test {
+    position: relative;
+    background: #FFFFFF;
+    padding-top: 215px;
+    padding-bottom: 101px;
+}
+
+.type-six-test .type-title-h2 {
+    margin-bottom: 20px;
+}
+
+.type-six-test .type-description {
+    width: 52%;
+    padding: 24px 115px 37px;
+    top: 62px;
+    left: -5px;
+}
+
+.type-six-test .free-text {
+    margin-top: 40px;
+    width: 80%;
+}
+
+.six-test-wrap-image {
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+}
+
+.six-test-wrap-item-image {
+    position: relative;
+    display: flex;
+    flex-basis: 22%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.six-test-wrap-item-image::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    background: url(../image/brand/sprites.png) 3px -740px;
+    right: -13px;
+    top: 23px;
+}
+
+.six-test-wrap-item-image:last-child::after {
+    background: none;
+}
+
+.six-test-image-description {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #292929;
+    margin-top: 22px;
+}
+
+.video-six-test {
+    height: 100%;
+}
+
+.video-six-test img {
+    width: 100%;
+    height: 100%;
+}
+
+/*======================================================================================================================*/
+/*type 7 test*/
+
+.type-seven-test {
+    background: #EDF4FB;
+    padding-top: 105px;
+    padding-bottom: 128px;
+}
+
+.type-seven-test .type-2-title::before {
+    background: url(../image/brand/sprites.png) -88px -740px;
+    left: 10px;
+}
+
+.type-seven-test .type-2-title::after {
+    background: url(../image/brand/sprites.png) -220px -740px;
+    right: 10px;
+    top: 42px;
+}
+
+/*======================================================================================================================*/
+/*type 8 test*/
+
+.type-eight-test {
+    position: relative;
+    background: #292929;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.type-eight-test .section-title, .type-nine-test .type-nine-title {
+    text-align: center;
 }
 
 
+/*======================================================================================================================*/
+/*type 9 test*/
 
+.type-nine-test {
+    padding-top: 66px;
+    padding-bottom: 96px;
+    background: #EDF4FB;
+}
 
+.type-nine-test .type-tyrphs-title-1 {
+    background: #F4CEAD;
+}
 
+.type-nine-test .tyrphs-btn button {
+    width: 90%;
+    margin-left: -45%;
+    background: none;
+    border: 2px solid #3298F2;
+    color: #000000;
+}
 
+.type-nine-test .tyrphs-btn button:hover {
+    background: #3298F2;
+    color: #ffffff;
+}
 
+.tyrphs-btn button span {
+    color: #000000;
+    transition: .3s;
+}
 
+.type-nine-test .tyrphs-btn button:hover span {
+    color: #ffffff;
+}
 
+  .type-nine-test .item-tyrphs-form form input:hover {
+    border-color: #FF9638;
+}
 
+.type-nine-test .item-tyrphs-form form input:focus {
+    border-color: #FF9638;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+}
 
+.mobile-before-footer {
+    display: none;
+    background: #3298F2;
+    padding-top: 79px;
+    padding-bottom: 82px;
+}
 
+.mobile-before-footer-btn button {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    background: #FFE200;
+    border-radius: 5px;
+    padding: 20px 13px;
+}
 
+.mobile-before-footer .type-title {
+    margin-bottom: 0;
+}
 
+/*======================================================Tabs==========================================================*/
 
+.warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tabs {
+    width: 100%;
+}
+.tab{
+    width: 49%;
+    cursor: pointer;
+    padding: 20px;
+    background: #EDF4FB;
+    display:inline-block;
+    font-weight: 800;
+    font-size: 18px;
+    color: #303030;
+    text-align: center;
+    border-radius:10px 10px 0 0;
+}
+.panels{
+    background:#fffffff6;
+    min-height:200px;
+    width:100%;
+    border-radius: 0 0 10px 10px;
+    overflow:hidden;
+}
+.panel{
+    display:none;
+    animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+    font-size:1.5em;
+    font-weight:bold
+}
+.radio{
+    display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel
+{
+    display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab
+{
+    background:#fffffff6;
+    font-weight: 800;
+    font-size: 16px;
+    color: #303030;
+    text-align: center;
+    border: none;
+}
 
-
+#two-tab {
+    margin-left: 3px;
+}
+/*===================================================end Tabs==========================================================*/

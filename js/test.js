@@ -1,0 +1,141 @@
+$(document).ready(function() {
+    $('.list-inner').on('click',function () {
+        let $child = $(this).children('.list-item');
+        $('.list-item').removeClass('active-test');
+        $child.addClass('active-test');
+        let $id_child = $(this).attr('id');
+        $('.item-list-content').removeClass('display-block');
+        $('.item-list-content#p'+$id_child).addClass('display-block');
+    });
+
+    // ===============================================================================
+    // Програма для курсу
+    $('.list-content').on('click', function () {
+        let heigh = $(this.lastElementChild.scrollHeight);
+        $('.list-content').css('border-color','');
+        $(this).css('border-color', '#FF9638');
+        let child = $(this).children('.list-content-title');
+        $('.list-content-title').removeClass('active-test');
+        child.addClass('active-test');
+        let child2 = $(this).children('.list-content-text');
+        $('.list-content-text').css('height', 0);
+        child2.css('height', heigh[0]+'px');
+
+    });
+
+    // Show the first tab by default
+    $('.tabs-stage div').hide();
+    $('.tabs-stage div:first').show();
+    $('.tabs-nav li:first').addClass('tab-active');
+
+// Change tab class and display content
+    $('.tabs-nav a').on('click', function(event){
+        event.preventDefault();
+        $('.tabs-nav li').removeClass('tab-active');
+        $(this).parent().addClass('tab-active');
+        $('.tabs-stage div').hide();
+        $($(this).attr('href')).show();
+    });
+});
+
+// function accord oktenveb university
+function accord3() {
+    let b = document.querySelectorAll('.five-item-title-mob');
+    let arrB = Array.from(b);
+    arrB.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            e.target.nextElementSibling.classList.toggle('is-visible');
+            console.log(e.target.children[0]);
+            if (e.target.nextElementSibling.classList.contains('is-visible')) {
+                e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+                e.target.parentElement.classList.add('bg-fff');
+                e.target.children[0].classList.add('rotate-180');
+            } else {
+                e.target.nextElementSibling.style.height = '';
+                e.target.children[0].classList.remove('rotate-180');
+                e.target.parentElement.classList.remove('bg-fff');
+            }
+        })
+    });
+
+    let bText = document.querySelectorAll('.five-item-text-mob');
+    let arrBText = Array.from(bText);
+    arrBText.forEach(function (el) {
+        if (el.classList.contains('is-visible')) {
+            el.style.height = el.scrollHeight + 'px';
+        }
+    })
+
+}
+
+accord3();
+
+// mobile accordion
+// accordion 1
+let wrapTitle = document.querySelectorAll('.two-test-title-mobile');
+let wrapText = document.querySelectorAll('.two-test-text-mobile');
+
+wrapTitle.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+        e.target.nextElementSibling.classList.toggle('is-visible-mobile');
+
+        if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
+            e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+
+        } else {
+            e.target.nextElementSibling.style.height = '';
+        }
+    });
+
+    wrapText.forEach(function (el) {
+        if (el.classList.contains('is-visible-mobile')) {
+            el.style.height = el.scrollHeight + 'px';
+        }
+    })
+});
+
+//плавний скрол до якоря до форми
+function animationScroll(element, time) {
+    $(element).click(function () {
+        let scrollElem = $(this).attr('href');
+        if ($(scrollElem).length != 0) {
+            $('html, body').animate({scrollTop: $(scrollElem).offset().top}, time);
+        }
+    });
+}
+
+animationScroll('.list-item a', 500);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
