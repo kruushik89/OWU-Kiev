@@ -210,4 +210,23 @@ enroll.forEach(function (el) {
 
 
 
+//border blue in index.html type 3
+let threeItemFooter = document.querySelectorAll('.three-index-item-footer');
+
+threeItemFooter.forEach(function (el) {
+    el.addEventListener('mouseenter', function (e) {
+        e.target.offsetParent.style.border = '2px solid #3298F2';
+        e.target.offsetParent.children[0].style.border = '2px solid #3298F2';
+    });
+
+    el.addEventListener('mouseleave', function (e) {
+        e.target.offsetParent.style.border = '';
+        e.target.offsetParent.children[0].style.border = '';
+    })
+});
+//end border blue in index.html type 3
+
+
+
+
 

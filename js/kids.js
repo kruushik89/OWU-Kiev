@@ -28,15 +28,35 @@ course.addEventListener('click', function (e) {
         e.target.nextElementSibling.style.height = 0;
     }
 });
+// end dropdown menu mobile
 
+// add white border from item
+let twoKidsBtn = document.querySelectorAll('.kids-two-item-button');
+let arrKidsBtn = Array.from(twoKidsBtn);
+function addWhiteBorder(param, borderColor) {
+    param.forEach(el => {
+        el.addEventListener('mouseenter', function (e) {
+            e.target.offsetParent.classList.add(borderColor);
+        });
+        el.addEventListener('mouseleave', function (e) {
+            e.target.offsetParent.classList.remove(borderColor);
+        });
+    });
+}
+
+// end add white border from item
+
+addWhiteBorder(arrKidsBtn, 'border-FFE200');
+
+
+// ИНТЕНСИВ ДЛЯ НОВИЧКОВ
 $(document).ready(function() {
-    $('.list-inner').on('click',function () {
-        let $child = $(this).children('.list-item');
-        $('.list-item').removeClass('active-test');
-        $child.addClass('active-test');
-        let $id_child = $(this).attr('id');
+    $('.list-item a').on('click',function (e) {
+        let $parent = $(this).parent('.list-item').parent('.list-inner').attr('id');
+        $('.list-item a').removeClass('active-js');
+        $(this).addClass('active-js');
         $('.item-list-content').removeClass('display-block');
-        $('.item-list-content#p'+$id_child).addClass('display-block');
+        $('.item-list-content#p'+$parent).addClass('display-block');
     });
 
     // ===============================================================================
@@ -44,10 +64,10 @@ $(document).ready(function() {
     $('.list-content').on('click', function () {
         let heigh = $(this.lastElementChild.scrollHeight);
         $('.list-content').css('border-color','');
-        $(this).css('border-color', '#FF9638');
+        $(this).css('border-color', '#3298F2');
         let child = $(this).children('.list-content-title');
-        $('.list-content-title').removeClass('active-test');
-        child.addClass('active-test');
+        $('.list-content-title').removeClass('active-js');
+        child.addClass('active-js');
         let child2 = $(this).children('.list-content-text');
         $('.list-content-text').css('height', 0);
         child2.css('height', heigh[0]+'px');
@@ -57,7 +77,22 @@ $(document).ready(function() {
 
 });
 
-// function accord oktenveb university
+// ===============================================================================
+//плавний скрол до якоря
+$(document).ready(function () {
+    //плавний скрол до якоря програма курса
+    $('.list-item a').click(function () {
+        // возьмем содержимое атрибута href, должен быть селектором, например начинать # с или .
+        let scrollElem = $(this).attr('href');
+
+        if ($(scrollElem).length != 0) {
+            $('html, body').animate({scrollTop: $(scrollElem).offset().top}, 500);
+        }
+    });
+
+});
+
+// Акордион
 function accord3() {
     let b = document.querySelectorAll('.five-item-title-mob');
     let arrB = Array.from(b);
@@ -89,6 +124,7 @@ function accord3() {
 
 accord3();
 
+
 // mobile accordion
 // accordion 1
 let wrapTitle = document.querySelectorAll('.two-test-title-mobile');
@@ -113,49 +149,5 @@ wrapTitle.forEach(function (el) {
         }
     })
 });
-
-//плавний скрол до якоря до форми
-function animationScroll(element, time) {
-    $(element).click(function () {
-        let scrollElem = $(this).attr('href');
-        if ($(scrollElem).length != 0) {
-            $('html, body').animate({scrollTop: $(scrollElem).offset().top}, time);
-        }
-    });
-}
-
-animationScroll('.list-item a', 500);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
