@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="libs/fancybox-2.1.7/lib/jquery.mousewheel.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="libs/fancybox-2.1.7/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="js/fancybox.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<header class="sticky-top about">
+    <div class="wrapper">
+        <div class="c-hamburger c-hamburger-line">
+            <span>Menu</span>
+        </div>
+
+        <div class="wrapper-top flex-d justify-content-between">
+            <div class="header-logo-item">
+                <img src="image/logo/logo1.png" alt="Logo">
+            </div>
+
+            <div class="header-menu-content flex-d">
+                <div class="header-menu">
+                    <nav>
+                        <ul class="nav-menu d-flex justify-content-around">
+                            <li class="nav-menu-has-children">курсы
+                                <ul class="dropdown-menu">
+                                    <li><a href="java.html">Java</a></li>
+                                    <li><a href="python.html">Python</a></li>
+                                    <li><a href="test.html">QA/QC тестирования</a></li>
+                                    <li><a href="free.html">Бесплатные основы програмирования</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">акции</a></li>
+                            <li><a href="#">отзывы</a></li>
+                            <li><a href="#">галерея</a></li>
+                            <li><a href="#">о нас</a></li>
+                            <li><a href="#">блог</a></li>
+                            <li><a href="#">контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header-callback">
+                <button class="enroll">Заказать обратный звонок</button>
+            </div>
+        </div>
+    </div>
+
+    <!--    menu mobile-->
+    <div class="menu-mobile">
+        <nav>
+            <ul>
+                <li id="course"><a class="flag" href="#">курсы</a>
+                    <ul class="dropdown-menu-mobile">
+                        <li><a href="java.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="test.html">QA/QC тестирования</a></li>
+                        <li><a href="free.html">Бесплатные основы програмирования</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">акции 1</a></li>
+                <li><a href="#">отзывы</a></li>
+                <li><a href="#">галерея</a></li>
+                <li><a href="#">о нас</a></li>
+                <li><a href="#">блог</a></li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-callback-menu">
+            <button class="enroll">заказать обратный звонок</button>
+        </div>
+    </div>
+    <div class="bottom-line"></div>
+</header>
+
+<main>
+    <div id="page" class="about">
+
+        <!--        type 1-->
+        <section class="type-one-about">
+            <div class="type-1-wrapper flex-d">
+                <div class="type-1-wrapper-course">
+                    <div class="type-1-wrapper-title">
+                        <div class="wrapper-title-2">
+                            <h2>OktenWeb University</h2>
+                        </div>
+                        <h3>Школа программирования на базе <br> Digital-агентства OktenWeb</h3>
+                    </div>
+                    <div class="header-content-text">
+                        <div class="header-text">
+                            <p><strong>OktenWeb</strong> — digital-агентство полного цикла. Мы занимаемся разработкой
+                                мобильных
+                                приложений и сайтов с нуля, превращая идею в готовый популярный продукт. </p>
+                            <p><strong>OktenWeb University</strong> — школа программирования на базе нашей веб-студии.
+                                Здесь
+                                разработчики OktenWeb, имеющие за плечами уже более 100 масштабных проектов, передают
+                                навыки перспективным новичкам. Станьте одним из них!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-content-info bg-3298F2">
+                    <div class="col-12">
+                        <div class="header-video-image">
+                            <img src="image/header.png" alt="Background">
+                            <a href=""><img src="image/play-video.png" alt="Play"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!--        end type-1-->
+
+        <!--        type-2-->
+        <section class="type-two-about">
+            <div class="wrapper">
+                <div class="col-12">
+                    <div class="type-title">
+                        <div class="type-title-h3 c-FF9638">
+                            <h3>Пройди практику у партнеров</h3>
+                        </div>
+                        <div class="type-title-h2">
+                            <h2>Мы сотрудничаем с лидерами отрасли</h2>
+                        </div>
+                    </div>
+
+                    <div class="brand-content">
+                        <div class="img-brand bg-epam"></div>
+                        <div class="img-brand bg-incora"></div>
+                        <div class="img-brand bg-binariks"></div>
+                        <div class="img-brand bg-global"></div>
+                        <div class="img-brand bg-rolique"></div>
+                        <div class="img-brand bg-eleks"></div>
+                        <div class="img-brand bg-intetics"></div>
+                        <div class="img-brand bg-soft"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--end type-2-->
+
+        <!--        type 3-->
+        <section class="type-three-about">
+            <div class="work-student">
+                Работы выпускников
+            </div>
+            <div class="wrapper">
+                <div class="col-12">
+                    <div class="type-title">
+                        <div class="type-title-h3 c-fff">
+                            <h3>Эффективные методы обучения</h3>
+                        </div>
+                        <div class="type-title-h2 c-FF9638">
+                            <h2>Добиваемся 100% понимания материала</h2>
+                        </div>
+                    </div>
+
+                    <div class="three-content-about">
+                        <div class="col-xl-5 three-content-about-text">
+                            <div class="three-about-text">
+                                Эдгар Дейл — американский психолог и педагог Государственного университета Огайо —
+                                изучал степень усвоения материала в зависимости от стиля подачи. Опытным путем он пришел
+                                к выводу, что выполнение реального действия дает самый большой эффект.
+                            </div>
+                            <div class="three-about-text-li">
+                                <ul>
+                                    <li>Студенты, что знакомились с материалом с помощью чтения или прослушивания, могли
+                                        описать до 10% и 20% соответственно
+                                    </li>
+                                    <li>Те, что вступали в дискуссию, до 50%</li>
+                                    <li>Лучше всего показали себя практики — они не только могли воспроизвести до 90%
+                                        полученной информации, но и эффективно использовали ее
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="three-about-text">
+                                При построении программы мы придерживаемся того же принципа. На теоретическом занятии
+                                нет данных, которые бы позже не закрепились на практическом. Отзывы наших студентов и их
+                                работодателей — лучшее подтверждение эффективности этого подхода.
+                            </div>
+
+                            <div class="three-about-button">
+                                <a href="" type="button">Смотреть отзывы</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 three-carousel-about">
+                            <div class="work-student-mobile">
+                                Работы выпускников
+                            </div>
+                            <div class="lazy">
+                                <div class="three-carousel-about-image">
+                                    <img src="image/header.png" alt="Carousel image">
+                                </div>
+                                <div class="three-carousel-about-image">
+                                    <img src="image/header.png" alt="Carousel image">
+                                </div>
+                                <div class="three-carousel-about-image">
+                                    <img src="image/header.png" alt="Carousel image">
+                                </div>
+                                <div class="three-carousel-about-image">
+                                    <img src="image/header.png" alt="Carousel image">
+                                </div>
+                                <div class="three-carousel-about-image">
+                                    <img src="image/header.png" alt="Carousel image">
+                                </div>
+                            </div>
+                            <div class="three-about-button-mobile">
+                                <a href="" type="button">Смотреть отзывы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="three-about-image">
+                <img src="image/text/review3.png" alt="Отзыв">
+            </div>
+        </section>
+        <!--        end type 3-->
+
+        <!--        type 4-->
+        <section class="type-four-about">
+            <div class="type-six-image-owu"><img src="image/text/owu-vertical.png" alt="OWU vertical"></div>
+            <div class="type-six-image-web"><img src="image/text/web-vertical.png" alt="WEB vertical"></div>
+            <div class="wrapper">
+                <div class="col-12">
+                    <div class="type-title">
+                        <div class="type-title-h3 c-3298F2">
+                            <h3>Обучайся у настоящих PRO</h3>
+                        </div>
+                        <div class="type-title-h2 c-FF9638">
+                            <h2>Наши преподаватели</h2>
+                        </div>
+                    </div>
+
+                    <div class="four-index-content">
+                        <div class="four-about-slider-wrap">
+                            <div class="four-about-slider-item-wrap">
+                                <div class="four-about-slider-item">
+                                    <div class="four-about-slider-item-title-before">Иван Иванов</div>
+                                    <div class="four-about-slider-item-title">JAVASCRIPT DEVELOPER</div>
+                                    <div class="four-about-slider-item-image">
+                                        <img src="image/logo/carousel-image.png" alt="Image">
+                                    </div>
+                                </div>
+
+                                <div class="four-about-slider-item-text">
+                                    Эдгар Дейл — американский психолог и педагог Государственного университета Огайо —
+                                    изучал степень усвоения материала в зависимости от стиля подачи.
+                                </div>
+                            </div>
+
+                            <div class="four-about-slider-item-wrap">
+                                <div class="four-about-slider-item">
+                                    <div class="four-about-slider-item-title-before">Иван Иванов</div>
+                                    <div class="four-about-slider-item-title">JAVA DEVELOPER</div>
+                                    <div class="four-about-slider-item-image">
+                                        <img src="image/logo/carousel-image.png" alt="Image">
+                                    </div>
+                                </div>
+
+                                <div class="four-about-slider-item-text">
+                                    Эдгар Дейл — американский психолог и педагог Государственного университета Огайо —
+                                    изучал степень усвоения материала в зависимости от стиля подачи.
+                                </div>
+                            </div>
+
+                            <div class="four-about-slider-item-wrap">
+                                <div class="four-about-slider-item">
+                                    <div class="four-about-slider-item-title-before">Иван Иванов</div>
+                                    <div class="four-about-slider-item-title">PYTHON DEVELOPER</div>
+                                    <div class="four-about-slider-item-image">
+                                        <img src="image/logo/carousel-image.png" alt="Image">
+                                    </div>
+                                </div>
+
+                                <div class="four-about-slider-item-text">
+                                    Эдгар Дейл — американский психолог и педагог Государственного университета Огайо —
+                                    изучал степень усвоения материала в зависимости от стиля подачи.
+                                </div>
+                            </div>
+
+                            <div class="four-about-slider-item-wrap">
+                                <div class="four-about-slider-item">
+                                    <div class="four-about-slider-item-title-before">Иван Иванов</div>
+                                    <div class="four-about-slider-item-title">React DEVELOPER</div>
+                                    <div class="four-about-slider-item-image">
+                                        <img src="image/logo/carousel-image.png" alt="Image">
+                                    </div>
+                                </div>
+
+                                <div class="four-about-slider-item-text">
+                                    Эдгар Дейл — американский психолог и педагог Государственного университета Огайо —
+                                    изучал степень усвоения материала в зависимости от стиля подачи.
+                                </div>
+                            </div>
+
+                            <div class="four-about-slider-item-wrap">
+                                <div class="four-about-slider-item">
+                                    <div class="four-about-slider-item-title-before">Иван Иванов</div>
+                                    <div class="four-about-slider-item-title">ANGULAR DEVELOPER</div>
+                                    <div class="four-about-slider-item-image">
+                                        <img src="image/logo/carousel-image.png" alt="Image">
+                                    </div>
+                                </div>
+
+                                <div class="four-about-slider-item-text">
+                                    Эдгар Дейл — американский психолог и педагог Государственного университета Огайо —
+                                    изучал степень усвоения материала в зависимости от стиля подачи.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--        end type 4-->
+
+        <!--        type 5 -->
+        <section class="type-five-about">
+            <div class="wrapper">
+                <div class="col-12">
+                    <div class="type-title">
+                        <div class="type-title-h2">
+                            <h2>OktenWeb в цифрах</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="col-12">
+                    <div class="five-about-content">
+                        <div class="five-about-item">
+                            <div class="five-about-item-number">7</div>
+                            <div class="five-about-item-text">Лет на рынке IT-технологий</div>
+                        </div>
+
+                        <div class="five-about-item">
+                            <div class="five-about-item-number">650</div>
+                            <div class="five-about-item-text">Успешных выпускников</div>
+                        </div>
+
+                        <div class="five-about-item">
+                            <div class="five-about-item-number">200</div>
+                            <div class="five-about-item-text">Восторженных видеоотзывов</div>
+                        </div>
+
+                        <div class="five-about-item">
+                            <div class="five-about-item-number">23</div>
+                            <div class="five-about-item-text">Преподавателей с узкой специальностью</div>
+                        </div>
+
+                        <div class="five-about-item">
+                            <div class="five-about-item-number">52</div>
+                            <div class="five-about-item-text">Партнерских соглашений</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--       end type 5 -->
+
+        <section class="blue">
+            <div class="wrapper">
+                <div class="col-12">
+                    <div class="content-blue">
+                        <div class="type-title">
+                            <div class="type-title-h3 c-fff">
+                                <h3>Комфортные условия обучения</h3>
+                            </div>
+                            <div class="type-title-h2">
+                                <h2>Львовская кремниевая долина</h2>
+                            </div>
+                            <div class="type-title-text">
+                                Программирование - во многом творческий процесс. Сложно находить нестандартные решения
+                                задач, если обстановка не способствует этому. OktenWeb решил проблему.
+                                Мы проводим занятия в неформальной атмосфере, предоставляем быстрые ноутбуки N и уютную
+                                зону отдыха каждому студенту на стационаре.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery">
+                        <div class="item-gallery">
+                            <div class="item-gallery-bg"></div>
+                            <a class="fancybox" rel="gallery1" href="http://farm2.staticflickr.com/1669/23976340262_a5ca3859f6_b.jpg">
+                                <img src="http://farm2.staticflickr.com/1669/23976340262_a5ca3859f6_m.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="http://farm1.staticflickr.com/756/22625719192_fdc3369588_b.jpg">
+                                <img src="http://farm1.staticflickr.com/756/22625719192_fdc3369588_m.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="http://farm9.staticflickr.com/8542/29466009773_a809b99d19_b.jpg">
+                                <img src="http://farm9.staticflickr.com/8542/29466009773_a809b99d19_m.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="http://farm2.staticflickr.com/1514/23919332220_60b7867d60_b.jpg">
+                                <img src="http://farm2.staticflickr.com/1514/23919332220_60b7867d60_m.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg">
+                                <img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="item-gallery">
+                            <img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
+                            <div class="gallery-link">
+                                <a href="#">Смотреть всю галерею</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--       type 6 -->
+        <section class="type-six-about">
+           <div class="wrapper">
+               <div class="col-12">
+                   <div class="type-title">
+                       <div class="type-title-h3 c-3298F2">
+                           <h3>Наши продукты</h3>
+                       </div>
+                       <div class="type-title-h2 c-FF9638">
+                           <h2>Выбери курс и запишись на занятия</h2>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="six-about-content">
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Java <br> complex</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Javascript <br> complex</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Python <br> complex</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Qa/Qc тестування</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+               </div>
+
+               <!--               mobile-->
+               <div class="six-about-content-mobile">
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Java <br> complex</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Javascript <br> complex</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Python <br> complex</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+
+                   <div class="six-about-wrap-item">
+                       <div class="six-about-item-image"></div>
+                       <div class="six-about-item-title">Qa/Qc тестування</div>
+                       <div class="six-about-item-button button-modal">
+                           Записаться
+                       </div>
+                   </div>
+               </div>
+               <!--               end mobile-->
+           </div>
+        </section>
+        <!--       end type 6 -->
+
+        <!--        modal window-->
+        <div class="body-modal">
+
+            <div class="window-modal">
+                <div class="close-image"></div>
+                <div class="container">
+                    <div class="modal-contain">
+                        <div class="title-modal">
+                            <h2>Записатися на курс</h2>
+                        </div>
+                        <div class="radio-form">
+                            <div class="radio-title">
+                                <h4>Оберіть бажаний курс*</h4>
+                            </div>
+                            <label><input type="radio" name="1" checked> Базовый</label>
+                            <label><input type="radio" name="1"> Базовый + практика</label>
+                            <label><input type="radio" name="1"> Индивидуальный</label>
+
+                        </div>
+                        <div class="forms">
+                            <form>
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="text" placeholder="Ваша фамилия">
+                                <input type="text" placeholder="097 99 999 999">
+                                <input type="email" placeholder="Ваш Email*">
+                                <input type="email" placeholder="Ваш возраст">
+                            </form>
+                        </div>
+                        <div class="modal-btn">
+                            <button>надіслати</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--        end modal window-->
+    </div>
+</main>
+
+
+<script src="js/slick.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

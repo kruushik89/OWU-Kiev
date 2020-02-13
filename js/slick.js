@@ -83,3 +83,41 @@ $(".lazy").slick({
     slidesToScroll: 1,
 });
 
+$(".four-about-slider-wrap").slick({
+    lazyLoad: 'ondemand', // ondemand progressive anticipated
+    dots: false,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                arrows: false,
+            }
+        }
+    ]
+});
+
+$(".six-about-content-mobile").slick({
+    lazyLoad: 'ondemand', // ondemand progressive anticipated
+    dots: false,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                arrows: false,
+            }
+        }
+    ]
+});
+
