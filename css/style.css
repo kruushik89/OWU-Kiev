@@ -1970,6 +1970,7 @@ ol.carousel-indicators {
 
 .type-nine-title {
     margin-bottom: 89px;
+    text-align: center;
 }
 
 .type-tyrphs-content {
@@ -5053,6 +5054,7 @@ form {
     font-size: 18px;
     line-height: 26px;
     text-align: left;
+    color: #ffffff;
     width: 55%;
 }
 
@@ -5063,7 +5065,7 @@ form {
     bottom: 0;
 }
 
-.orange-button a, .blue-button-one button, .blue-button-two a {
+.orange-button a, .blue-button-one button, .blue-button-two a, .orange-button button {
     width: 100%;
     display: block;
     background: #FFE200;
@@ -5077,6 +5079,10 @@ form {
     text-decoration: none;
     border: 2px solid #FFE200;
     transition: .3s;
+}
+
+.orange-button button:hover {
+    background: none;
 }
 
 .blue-button-one button:hover {
@@ -5222,6 +5228,7 @@ form {
 
 .blue .type-title-text {
     width: 95%;
+    color: #ffffff;
 }
 
 .content-blue {
@@ -5638,8 +5645,18 @@ form {
 /*======================================================================================================================*/
                                                         /*React*/
 /*======================================================================================================================*/
-.react .type-title-h2 {
+.react .section-title {
+    text-align: center;
+}
+
+.react .type-title-h2, .angular .type-title-h2 {
     font-size: 48px;
+    line-height: 59px;
+}
+
+.react .type-title-h3, .angular .type-title-h3 {
+    font-size: 26px;
+    line-height: 24px;
 }
 /*type react 1 */
 .type-one-react {
@@ -5658,6 +5675,12 @@ form {
 
 .one-react-content {
     display: flex;
+}
+
+.icon-react {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
 }
 
 .one-react-left-content {
@@ -5775,6 +5798,8 @@ form {
     background: #212121;
     border-radius: 50px;
     padding: 60px 37px;
+    display: flex;
+    align-items: center;
 }
 
 .two-react-content-text-image {
@@ -5850,6 +5875,244 @@ form {
     background: #3298F2;
 }
 
+.four-react-content {
+    margin: 0 auto;
+}
+
+.four-react-carousel-item {
+    width: 65%!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 50%;
+    margin-left: -32.5%;
+}
+
+.four-react-carousel-item img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    opacity: .5;
+    /*Добавим вот такой вот код*/
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    /*конец кода с transition*/
+}
+
+.react-carousel-image-description {
+    display: none;
+    text-align: center;
+    font-weight: 500;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 33px;
+}
+
+.react-carousel-image-description span {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.type-four-react .slick-active {
+    padding: 20px 0;
+}
+
+.type-four-react .slick-center, .type-six-angular .slick-center {
+    transform: scale(1.2)
+}
+
+.type-four-react .slick-center .four-react-carousel-item img, .type-six-angular .slick-center .four-react-carousel-item img {
+    opacity: 1;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none; /* IE 6-9 */
+}
+
+.type-four-react .slick-center .react-carousel-image-description, .type-six-angular .slick-center .react-carousel-image-description {
+    display: block;
+}
+
+.type-four-react .slick-slide:not(.slick-active) {
+    margin: 20px 0;
+}
+
+.type-four-react .slick-dots li.slick-active button:before {
+    background: #FFFFFF;
+}
+
+.type-four-react .slick-dots li button:before {
+    background: #ADD6FA;
+    border-radius: 50%;
+}
+
+.type-four-react .slick-dots {
+    bottom: -50px;
+}
+
+
+/*======================================================================================================================*/
+/*type 7 React*/
+.type-seven-react, .type-seven-angular {
+    background: #EDF4FB;
+    padding-top: 66px;
+    padding-bottom: 96px;
+}
+
+.type-seven-react .type-tyrphs-content, .type-seven-angular .type-tyrphs-content {
+    margin-top: 133px;
+}
+
+.type-seven-react .type-tyrphs-title-1 {
+    background: #ADD6FA;
+    border-color: #ADD6FA;
+}
+
+
+/*======================================================================================================================*/
+                                                    /*Angular*/
+/*======================================================================================================================*/
+
+/*type 1 Angular*/
+
+.type-one-angular {
+    position: relative;
+}
+
+.type-one-angular .content-title-2 h1 {
+    color: #000000;
+}
+
+.type-one-angular .header-content-price span {
+    color: #3298F2;
+}
+
+.type-one-angular .header-content-button button {
+    background: #FF9638;
+}
+
+
+/*======================================================================================================================*/
+/*type 2 Angular*/
+
+.type-two-angular {
+    position: relative;
+    background: #EDF4FB;
+    padding-top: 51px;
+    padding-bottom: 72px;
+}
+
+.type-two-angular .type-title {
+    text-align: left;
+}
+
+.type-two-angular .three-react-bg-lecture, .type-two-angular .three-react-bg-practice {
+    right: 0;
+}
+
+.type-two-angular .three-react-bg-lecture {
+    bottom: 50px;
+    top: auto;
+}
+
+.type-two-angular .three-react-bg-practice {
+    top: 50px;
+}
+
+/*======================================================================================================================*/
+/*type 3 Angular*/
+
+.type-three-angular {
+    position: relative;
+    background: #303030;
+    padding-top: 46px;
+    padding-bottom: 60px;
+}
+
+.two-react-content {
+    flex-direction: column;
+}
+
+.type-three-angular .two-react-content-text:first-child {
+    margin-bottom: 35px;
+}
+
+.type-three-angular .two-react-content-text-image {
+    bottom: 60px;
+    right: -70px;
+}
+
+.type-three-angular .two-react-content-text-image img {
+    transform: rotate(-80deg);
+}
+
+.type-three-angular .two-react-content-text:last-child .two-react-content-text-image {
+    left: auto;
+    right: -44px;
+    bottom: 50px;
+}
+
+.three-angular-content-image {
+    position: absolute;
+    right: 10%;
+    bottom: -4px;
+}
+
+.three-angular-content-image-mobile {
+    display: none;
+}
+
+.type-three-angular .two-react-content-text {
+    width: 100%;
+}
+
+.type-three-angular .two-react-content-text-image {
+    bottom: -39px;
+    right: auto;
+    left: 42px;
+}
+
+
+
+
+/*======================================================================================================================*/
+/*type 6 Angular*/
+.type-six-angular {
+    padding-top: 67px;
+    padding-bottom: 98px;
+}
+
+.type-six-angular .react-carousel-image-description span {
+    color: #000000;
+}
+
+.type-six-angular .slick-prev:before, .slick-next:before {
+    color: #3298F2;
+}
+
+.type-six-angular .four-react-carousel-item {
+    padding-bottom: 35px;
+    padding-top: 45px;
+}
+
+/*======================================================================================================================*/
+/*type 7 Angular*/
+
+.type-seven-angular .type-tyrphs-title-1 {
+    background: #F4CEAD;
+    border-color: #F4CEAD;
+}
 
 
 

@@ -477,6 +477,7 @@
 
     .type-tyrphs-content-mobile {
         display: block;
+        margin-top: 20px;
     }
 
     .type-tyrphs-item {
@@ -1700,9 +1701,184 @@
         left: -9999px;
     }
 
+    .react .type-title-h2, .angular .type-title-h2 {
+        font-size: 26px;
+        text-align: center;
+    }
 
+    .type-three-react {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
 
+    .three-react-bg-lecture, .three-react-bg-practice, .header-content-type, .one-react-right-content {
+        display: none;
+    }
 
+    .icon-react {
+        top: -37px;
+        left: 37px;
+    }
+
+    .type-one-react {
+        background: #FF9638;
+    }
+
+    .one-react-left-content {
+        padding-bottom: 60px;
+    }
+
+    .type-one-react .content-title-1 h3, .type-one-angular .content-title-1 h3 {
+        font-size: 19px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    .type-one-react .content-title-2 h1 {
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+    }
+
+    .type-one-react .header-content-title, .type-one-angular .header-content-title {
+        border: none;
+    }
+
+    .one-react-title-bg {
+        font-size: 96px;
+        line-height: 117px;
+        text-transform: uppercase;
+        color: #F9F9F9;
+        opacity: 0.1;
+        top: 5px;
+        left: 0;
+    }
+
+    .type-one-react .header-content {
+        margin-top: 67px;
+    }
+
+    .header-content-price span, .header-content-quantity span {
+        color: #ffffff;
+    }
+
+    .header-content-button button {
+        padding: 20px 0;
+        width: 70%;
+        background: #FFE200;
+        position: relative;
+        left: 50%;
+        margin-left: -35%;
+        color: #000000;
+    }
+
+    .two-react-content-image {
+        margin-left: -10px;
+    }
+
+    .two-react-content-image img {
+        width: 250px;
+    }
+
+    .two-react-content {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .two-react-content-text {
+        width: 80%;
+    }
+
+    .two-react-content-text:last-child {
+        margin-top: 35px;
+        left: 19%;
+    }
+
+    .two-react-content-text-image {
+        bottom: -41px;
+        right: 75%;
+    }
+
+    .two-react-content-text-image img {
+        width: 39px;
+        transform: scale(-1, 1);
+    }
+
+    .transform-scale img {
+        transform: scale(1, 1);
+    }
+
+    .react-carousel-image-description {
+        font-size: 14px;
+    }
+
+    .type-four-react {
+        padding-bottom: 60px;
+        padding-top: 50px;
+    }
+
+    .type-one-angular {
+        background: #3298F2;
+    }
+
+    .type-one-angular .header-content {
+        border-color: #E6EDF3;
+    }
+
+    .type-one-angular .icon-react {
+        top: -45px;
+    }
+
+    .type-one-angular .header-content-price span {
+        color: #ffffff;
+    }
+
+    .type-one-angular .header-content-button button {
+        background: #FFE200;
+    }
+
+    .type-two-angular {
+        padding-bottom: 10px;
+    }
+
+    .type-three-angular {
+        padding-bottom: 342px;
+    }
+
+    .three-angular-content-image-mobile {
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .three-angular-content-image {
+        display: none;
+    }
+
+    .type-three-angular .two-react-content-text:first-child {
+        margin-bottom: 0;
+    }
+
+    .type-three-angular .two-react-content-text:last-child {
+        width: 90%;
+        left: 9%;
+    }
+
+    .type-three-angular .two-react-content-text:last-child .two-react-content-text-image {
+        bottom: -39px;
+        right: auto;
+        left: 60px;
+    }
+
+    .type-six-angular .slick-active .slick-dots li button {
+        display: none;
+    }
+
+    .type-six-angular .four-react-carousel-item {
+
+    }
 
 }
 
@@ -1733,7 +1909,7 @@
         background: #EDF4FB;
     }
 
-    .type-title-h3 {
+    .type-title-h3, .react .type-title-h3 {
         font-size: 18px;
         line-height: 23px;
         margin-bottom: 10px;
@@ -1923,7 +2099,7 @@
         margin-bottom: 25px;
     }
 
-    .type-title-h3 {
+    .type-title-h3, .react .type-title-h3, .angular .type-title-h3 {
         font-size: 16px;
         line-height: 23px;
         margin-bottom: 20px;
@@ -1943,7 +2119,7 @@
         text-align: center;
     }
 
-    .type-title-h2 {
+    .type-title-h2, .react .type-title-h2, .angular .type-title-h2 {
         font-size: 20px;
         line-height: 28px;
     }
@@ -2113,6 +2289,16 @@
     .bg-intetics {
         background: url(../image/brand/sprites.png) -43px -85px;
     }
+
+    .two-react-text {
+        font-size: 15px;
+    }
+
+    .two-react-content-text {
+        padding: 30px 17px;
+    }
+
+
 
 
 
@@ -2504,6 +2690,26 @@
 
     .type-description-mobile {
         padding: 20px;
+    }
+
+    .two-react-content-text {
+        width: 90%;
+    }
+
+    .two-react-content-text:last-child {
+        left: 9%;
+    }
+
+    .two-react-content-text:last-child .two-react-content-text-image {
+        left: 50px;
+    }
+
+    .two-react-content-image {
+        margin-left: -75px;
+    }
+
+    .two-react-text {
+        font-size: 13px;
     }
 
 

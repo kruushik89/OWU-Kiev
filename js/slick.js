@@ -154,3 +154,22 @@ $(".four-index-slider-wrap").slick({
     ]
 });
 
+$('.four-react-carousel').slick({
+    centerMode: true,
+    centerPadding: '50px',
+    slidesToShow: 3,
+    responsive: [
+
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1,
+                dots: true
+            }
+        }
+    ]
+});
+
