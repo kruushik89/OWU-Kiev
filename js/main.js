@@ -81,19 +81,6 @@ $(document).ready(function () {
             $('html, body').animate({scrollTop: $(scrollElem).offset().top}, 500);
         }
     });
-
-    //плавний скрол до якоря до форми
-    function animationScroll(element, time) {
-        $(element).click(function () {
-            let scrollElem = $(this).attr('href');
-            if ($(scrollElem).length != 0) {
-                $('html, body').animate({scrollTop: $(scrollElem).offset().top}, time);
-            }
-        });
-    }
-
-    animationScroll('.type-3-item button a', 1500);
-
 });
 
 

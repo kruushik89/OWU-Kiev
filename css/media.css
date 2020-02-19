@@ -69,6 +69,10 @@
         margin-bottom: 30px;
     }
 
+    .type-six .brand-content, .type-nine-python .brand-content {
+        width: 100%;
+    }
+
     .brand-content {
         width: 77%;
     }

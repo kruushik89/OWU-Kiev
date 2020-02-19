@@ -2824,21 +2824,19 @@ form {
     width: 80%;
 }
 
-.seven-python-item-button button {
-    width: 100%;
-    border: 2px solid #3298F2;
-    box-sizing: border-box;
-    border-radius: 6px;
-    background: none;
-}
-
-.seven-python-item-button button a {
+.seven-python-item-button a {
     font-size: 16px;
     color: #000000;
     font-weight: bold;
     padding: 15px 0;
     display: block;
     text-decoration: none;
+    width: 100%;
+    border: 2px solid #3298F2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: none;
+    text-align: center;
 }
 
 .seven-python-item-button button a:hover {
@@ -5126,7 +5124,8 @@ form {
     padding-top: 80px;
     padding-bottom: 100px;
 }
-.type-six-index .slick-dots, .type-six .slick-dots, .type-four-java .slick-dots, .type-four-test .slick-dots {
+.type-six-index .slick-dots, .type-six .slick-dots, .type-four-java .slick-dots, .type-four-test .slick-dots,
+.type-nine-python .slick-dots {
     justify-content: center;
 }
 
@@ -5173,6 +5172,7 @@ form {
 
 .btn-form-index button {
     background: #3298F2;
+    border: 2px solid #3298F2;
     border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
@@ -5182,6 +5182,12 @@ form {
     margin: 54px auto 0;
     width: 50%;
     display: block;
+    transition: all .3s;
+}
+
+.btn-form-index button:hover {
+    background: none;
+    color: #000000;
 }
 
 .form-free select {
@@ -5880,12 +5886,12 @@ form {
 }
 
 .four-react-carousel-item {
-    width: 65%!important;
+    width: 74%!important;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
     left: 50%;
-    margin-left: -32.5%;
+    margin-left: -37%;
 }
 
 .four-react-carousel-item img {
@@ -5983,6 +5989,9 @@ form {
 /*======================================================================================================================*/
                                                     /*Angular*/
 /*======================================================================================================================*/
+.angular .section-title {
+    text-align: center;
+}
 
 /*type 1 Angular*/
 
@@ -6040,7 +6049,7 @@ form {
     padding-bottom: 60px;
 }
 
-.two-react-content {
+.type-three-angular .two-react-content {
     flex-direction: column;
 }
 
@@ -6097,12 +6106,12 @@ form {
     color: #000000;
 }
 
-.type-six-angular .slick-prev:before, .slick-next:before {
+.type-six-angular .slick-prev:before, .type-six-angular .slick-next:before {
     color: #3298F2;
 }
 
 .type-six-angular .four-react-carousel-item {
-    padding-bottom: 35px;
+    padding-bottom: 45px;
     padding-top: 45px;
 }
 
