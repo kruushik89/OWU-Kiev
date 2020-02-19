@@ -26,7 +26,7 @@
 
         <div class="wrapper-top flex-d justify-content-between">
             <div class="header-logo-item">
-                <img src="image/logo/logo1.png" alt="Logo">
+                <a href="index.html"><img src="image/logo/logo1.png" alt="Logo"></a>
             </div>
 
             <div class="header-menu-content flex-d">
@@ -35,16 +35,16 @@
                         <ul class="nav-menu d-flex justify-content-around">
                             <li class="nav-menu-has-children">курсы
                                 <ul class="dropdown-menu">
-                                    <li><a href="index.html">Java Script</a></li>
+                                    <li><a href="js.html">JavaScript</a></li>
                                     <li><a href="java.html">Java</a></li>
                                     <li><a href="python.html">Python</a></li>
                                     <li><a href="test.html">QA/QC тестирования</a></li>
+                                    <li><a href="free.html">Бесплатные основы програмирования</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">акции</a></li>
                             <li><a href="#">отзывы</a></li>
-                            <li><a href="#">галерея</a></li>
-                            <li><a href="#">о нас</a></li>
+                            <li><a href="about.html">о нас</a></li>
                             <li><a href="#">блог</a></li>
                             <li><a href="#">контакты</a></li>
                         </ul>
@@ -53,30 +53,7 @@
             </div>
 
             <div class="header-callback">
-                <button class="enroll">Заказать обратный звонок</button>
-            </div>
-            <div class="menu-mobile">
-                <nav>
-                    <ul>
-                        <li id="course"><a class="flag">курсы</a>
-                            <ul class="dropdown-menu-mobile">
-                                <li><a href="index.html">Java Script</a></li>
-                                <li><a href="java.html">Java</a></li>
-                                <li><a href="python.html">Python</a></li>
-                                <li><a href="test.html">QA/QC тестирования</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">акции</a></li>
-                        <li><a href="#">отзывы</a></li>
-                        <li><a href="#">галерея</a></li>
-                        <li><a href="#">о нас</a></li>
-                        <li><a href="#">блог</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header-callback-menu">
-                    <button class="enroll">заказать обратный звонок</button>
-                </div>
+                <button class="button-modal">Заказать обратный звонок</button>
             </div>
         </div>
     </div>
@@ -85,15 +62,26 @@
     <div class="menu-mobile">
         <nav>
             <ul>
-                <li><a href="#">курсы</a></li>
-                <li><a href="#">акции</a></li>
+                <li id="course"><a class="flag" href="#">курсы</a>
+                    <ul class="dropdown-menu-mobile">
+                        <li><a href="js.html">JavaScript</a></li>
+                        <li><a href="java.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="test.html">QA/QC тестирования</a></li>
+                        <li><a href="free.html">Бесплатные основы програмирования</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">акции 1</a></li>
                 <li><a href="#">отзывы</a></li>
                 <li><a href="#">галерея</a></li>
-                <li><a href="#">о нас</a></li>
+                <li><a href="about.html">о нас</a></li>
                 <li><a href="#">блог</a></li>
                 <li><a href="#">контакты</a></li>
             </ul>
         </nav>
+        <div class="header-callback-menu">
+            <button class="button-modal">заказать обратный звонок</button>
+        </div>
     </div>
     <div class="bottom-line"></div>
 </header>
@@ -328,7 +316,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number"><img src="image/num-python/1.1.png" alt="1"></div>
+                                <div class="six-item-number num-one"></div>
                                 Группы до N человек
                             </div>
                             <div class="two-free-item-text">
@@ -340,7 +328,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number"><img src="image/num-python/2.2.png" alt="2"></div>
+                                <div class="six-item-number num-two"></div>
                                 х месяцев поддержки
                             </div>
                             <div class="two-free-item-text">
@@ -361,7 +349,7 @@
                     <div class="col-xl-3 col-lg-3 free-item-right">
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number-num-right"><img src="image/num-python/3.3.png" alt="3">
+                                <div class="six-item-number num-three">
                                 </div>
                                 Пошаговый формат
                             </div>
@@ -373,8 +361,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number-num-right"><img src="image/num-python/4.4.png" alt="4">
-                                </div>
+                                <div class="six-item-number num-four"></div>
                                 карьера «под ключ»
                             </div>
                             <div class="two-free-item-text">
@@ -676,7 +663,7 @@
                                 <div class="list-item">DevOps Tools & Services</div>
                             </div>
                             <div class="btn-page">
-                                <button class="enroll">Записаться на курс</button>
+                                <button class="button-modal">Записаться на курс</button>
                             </div>
 
                         </div>
@@ -1510,7 +1497,7 @@
 
                             </div>
                             <div class="btn-page">
-                                <button class="enroll">Записаться на курс</button>
+                                <button class="button-modal">Записаться на курс</button>
                             </div>
                         </div>
                     </div>
@@ -1635,14 +1622,16 @@
         <!--        type 10-->
         <section class="type-ten-kids">
             <div class="wrapper">
-                <div class="type-nine-title">
-                    <div class="type-title-h3 c-FF9638">
-                        <h3>Тарифы OktenWeb</h3>
-                    </div>
-                    <div class="type-title-h2">
-                        <h2>Твой билет в IT-индустрию</h2>
-                    </div>
-                </div>
+               <div class="col-12">
+                   <div class="type-nine-title">
+                       <div class="type-title-h3 c-FF9638">
+                           <h3>Тарифы OktenWeb</h3>
+                       </div>
+                       <div class="type-title-h2">
+                           <h2>Твой билет в IT-индустрию</h2>
+                       </div>
+                   </div>
+               </div>
 
                 <div class="type-tyrphs-content">
 
@@ -1667,7 +1656,7 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен</button>
                             </div>
                         </div>
                     </div>
@@ -1694,7 +1683,7 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен</button>
                             </div>
                         </div>
                     </div>
@@ -1732,7 +1721,7 @@
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен
+                                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен
                                                 </button>
                                             </div>
                                         </div>
@@ -1761,7 +1750,7 @@
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен
+                                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен
                                                 </button>
                                             </div>
                                         </div>

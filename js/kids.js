@@ -7,7 +7,6 @@ btnMenu.onclick = () => {
 
 // end menu
 
-let typeBtn3 = document.querySelectorAll('.type-3-item button');
 // c-hamburger
 document.querySelector('.c-hamburger').addEventListener('click', function (e) {
     e.preventDefault();

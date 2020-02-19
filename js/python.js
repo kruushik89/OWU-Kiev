@@ -32,49 +32,31 @@ function addWhiteBorder(param) {
 addWhiteBorder(typeBtn3);
 let listContent = document.querySelectorAll('.list-content');
 let arr = Array.from(listContent);
-$(document).ready(function () {
-    $('.list-inner').on('click',function (event) {
 
-        let $child = $(this).children('.list-item');
-        $('.list-item').removeClass('active-python');
-        $child.addClass('active-python');
-        let $id_child = $(this).attr('id');
+// ИНТЕНСИВ ДЛЯ НОВИЧКОВ
+$(document).ready(function() {
+    $('.list-item a').on('click',function (e) {
+        let $parent = $(this).parent('.list-item').parent('.list-inner').attr('id');
+        $('.list-item a').removeClass('active-python');
+        $(this).addClass('active-python');
         $('.item-list-content').removeClass('display-block');
-        $('.item-list-content#p' + $id_child).addClass('display-block');
-
+        $('.item-list-content#p'+$parent).addClass('display-block');
     });
 
     // ===============================================================================
     // Програма для курсу
     $('.list-content').on('click', function () {
         let heigh = $(this.lastElementChild.scrollHeight);
-        $('.list-content').css('border-color', '#A7A7A7');
+        $('.list-content').css('border-color','');
         $(this).css('border-color', '#FDDB58');
         let child = $(this).children('.list-content-title');
         $('.list-content-title').removeClass('active-python');
         child.addClass('active-python');
         let child2 = $(this).children('.list-content-text');
         $('.list-content-text').css('height', 0);
-        child2.css('height', heigh[0] + 'px');
+        child2.css('height', heigh[0]+'px');
 
     });
-
-// ===============================================================================
-
-
-    //плавний скрол до якоря до форми
-    function animationScroll(element, time) {
-        $(element).click(function () {
-            let scrollElem = $(this).attr('href');
-            if ($(scrollElem).length != 0) {
-                $('html, body').animate({scrollTop: $(scrollElem).offset().top}, time);
-            }
-        });
-    }
-
-    animationScroll('.seven-python-item-button button a', 1500);
-
-    animationScroll('.list-item a', 500);
 });
 
 
@@ -95,19 +77,18 @@ function y(a, b) {
 }
 
 // modal
-let rec = document.querySelector('.rec-courses');
-let modal = document.querySelector('.body-modal');
-let nineBtn = document.querySelectorAll('.nine-btn button');
+let modalWindow = document.querySelector('.body-modal');
+let modalButton = document.querySelectorAll('.button-modal');
 
-for (let i = 0; i < nineBtn.length; i++) {
-    nineBtn[i].onclick = function () {
-        modal.classList.add('d-block');
+for (let i = 0; i < modalButton.length; i++) {
+    modalButton[i].onclick = function () {
+        modalWindow.classList.add('d-block');
     }
 }
 
-let close = document.querySelector('.close-image');
-close.onclick = () => {
-    modal.classList.remove('d-block');
+let closeButton = document.querySelector('.close-image');
+closeButton.onclick = () => {
+    modalWindow.classList.remove('d-block');
 };
 // end modal
 

@@ -39,7 +39,7 @@
 
         <div class="wrapper-top flex-d justify-content-between">
             <div class="header-logo-item">
-                <img src="image/logo/logo1.png" alt="Logo">
+                <a href="index.html"><img src="image/logo/logo1.png" alt="Logo"></a>
             </div>
 
             <div class="header-menu-content flex-d">
@@ -48,16 +48,17 @@
                         <ul class="nav-menu d-flex justify-content-around">
                             <li class="nav-menu-has-children">курсы
                                 <ul class="dropdown-menu">
+                                    <li><a href="js.html">JavaScript</a></li>
                                     <li><a href="java.html">Java</a></li>
                                     <li><a href="python.html">Python</a></li>
                                     <li><a href="test.html">QA/QC тестирования</a></li>
+                                    <li><a href="kids.html">Детский курс</a></li>
                                     <li><a href="free.html">Бесплатные основы програмирования</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">акции</a></li>
                             <li><a href="#">отзывы</a></li>
-                            <li><a href="#">галерея</a></li>
-                            <li><a href="#">о нас</a></li>
+                            <li><a href="about.html">о нас</a></li>
                             <li><a href="#">блог</a></li>
                             <li><a href="#">контакты</a></li>
                         </ul>
@@ -66,7 +67,7 @@
             </div>
 
             <div class="header-callback">
-                <button class="enroll">Заказать обратный звонок</button>
+                <button class="button-modal">Заказать обратный звонок</button>
             </div>
         </div>
     </div>
@@ -77,22 +78,24 @@
             <ul>
                 <li id="course"><a class="flag" href="#">курсы</a>
                     <ul class="dropdown-menu-mobile">
+                        <li><a href="js.html">JavaScript</a></li>
                         <li><a href="java.html">Java</a></li>
                         <li><a href="python.html">Python</a></li>
                         <li><a href="test.html">QA/QC тестирования</a></li>
+                        <li><a href="kids.html">Детский курс</a></li>
                         <li><a href="free.html">Бесплатные основы програмирования</a></li>
                     </ul>
                 </li>
                 <li><a href="#">акции 1</a></li>
                 <li><a href="#">отзывы</a></li>
                 <li><a href="#">галерея</a></li>
-                <li><a href="#">о нас</a></li>
+                <li><a href="about.html">о нас</a></li>
                 <li><a href="#">блог</a></li>
                 <li><a href="#">контакты</a></li>
             </ul>
         </nav>
         <div class="header-callback-menu">
-            <button class="enroll">заказать обратный звонок</button>
+            <button class="button-modal">заказать обратный звонок</button>
         </div>
     </div>
     <div class="bottom-line"></div>
@@ -100,7 +103,6 @@
 
 <main>
     <div id="page" class="about">
-
         <!--        type 1-->
         <section class="type-one-about">
             <div class="type-1-wrapper flex-d">
@@ -109,7 +111,7 @@
                         <div class="wrapper-title-2">
                             <h2>OktenWeb University</h2>
                         </div>
-                        <h3>Школа программирования на базе <br> Digital-агентства OktenWeb</h3>
+                        <h3>Школа программирования на базе Digital-агентства OktenWeb</h3>
                     </div>
                     <div class="header-content-text">
                         <div class="header-text">
@@ -156,9 +158,9 @@
                         <div class="img-brand bg-incora"></div>
                         <div class="img-brand bg-binariks"></div>
                         <div class="img-brand bg-global"></div>
-                        <div class="img-brand bg-rolique"></div>
-                        <div class="img-brand bg-eleks"></div>
                         <div class="img-brand bg-intetics"></div>
+                        <div class="img-brand bg-eleks"></div>
+                        <div class="img-brand bg-rolique"></div>
                         <div class="img-brand bg-soft"></div>
                     </div>
 
@@ -411,37 +413,59 @@
 
                     <div class="gallery">
                         <div class="item-gallery">
-                            <div class="item-gallery-bg"></div>
-                            <a class="fancybox" rel="gallery1" href="http://farm2.staticflickr.com/1669/23976340262_a5ca3859f6_b.jpg">
-                                <img src="http://farm2.staticflickr.com/1669/23976340262_a5ca3859f6_m.jpg" alt="" />
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-java.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-java.jpg" alt="" />
                             </a>
                         </div>
                         <div class="item-gallery">
-                            <a class="fancybox" rel="gallery1" href="http://farm1.staticflickr.com/756/22625719192_fdc3369588_b.jpg">
-                                <img src="http://farm1.staticflickr.com/756/22625719192_fdc3369588_m.jpg" alt="" />
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-javascript.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-javascript.jpg" alt="" />
                             </a>
                         </div>
                         <div class="item-gallery">
-                            <a class="fancybox" rel="gallery1" href="http://farm9.staticflickr.com/8542/29466009773_a809b99d19_b.jpg">
-                                <img src="http://farm9.staticflickr.com/8542/29466009773_a809b99d19_m.jpg" alt="" />
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-oktenweb.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-oktenweb.jpg" alt="" />
                             </a>
                         </div>
                         <div class="item-gallery">
-                            <a class="fancybox" rel="gallery1" href="http://farm2.staticflickr.com/1514/23919332220_60b7867d60_b.jpg">
-                                <img src="http://farm2.staticflickr.com/1514/23919332220_60b7867d60_m.jpg" alt="" />
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-owu.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-owu.jpg" alt="" />
                             </a>
                         </div>
                         <div class="item-gallery">
-                            <a class="fancybox" rel="gallery1" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg">
-                                <img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-ovu.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-ovu.jpg" alt="" />
                             </a>
                         </div>
 
                         <div class="item-gallery">
-                            <img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
-                            <div class="gallery-link">
-                                <a href="#">Смотреть всю галерею</a>
-                            </div>
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-z-programuvannya.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-z-programuvannya.jpg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-z-programuvannya.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2017/11/krashhi-kursy-u-lvovi-z-programuvannya.jpg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2018/04/kursy-programuvannya-lviv-foto3.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2018/04/kursy-programuvannya-lviv-foto3.jpg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2018/04/kursy-programuvannya-lviv-foto-2.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2018/04/kursy-programuvannya-lviv-foto-2.jpg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="item-gallery">
+                            <a class="fancybox" rel="gallery1" href="https://owu.com.ua/wp-content/uploads/2018/04/kursy-programuvannya-lviv-foto1.jpg">
+                                <img src="https://owu.com.ua/wp-content/uploads/2018/04/kursy-programuvannya-lviv-foto1.jpg" alt="" />
+                            </a>
                         </div>
 
                     </div>
@@ -551,9 +575,20 @@
                             <div class="radio-title">
                                 <h4>Оберіть бажаний курс*</h4>
                             </div>
-                            <label><input type="radio" name="1" checked> Базовый</label>
-                            <label><input type="radio" name="1"> Базовый + практика</label>
-                            <label><input type="radio" name="1"> Индивидуальный</label>
+                            <label class="container-label">
+                                <input type="radio" checked="checked" name="radio-modal"> Базовый
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-label">
+                                <input type="radio" name="radio-modal">
+                                Базовый + практика
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-label">
+                                <input type="radio" name="radio-modal">
+                                Индивидуальный
+                                <span class="checkmark"></span>
+                            </label>
 
                         </div>
                         <div class="forms">
@@ -580,5 +615,6 @@
 
 <script src="js/slick.js"></script>
 <script src="js/about.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

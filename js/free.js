@@ -33,24 +33,6 @@ arrAccordionText.forEach(function (el) {
 
 //end accordion type 3
 
-// menu
-let btnMenu = document.querySelector('.c-hamburger');
-let menu = document.querySelector('.menu-mobile');
-btnMenu.onclick = () => {
-    menu.classList.toggle('left-0');
-};
-
-// end menu
-
-let typeBtn3 = document.querySelectorAll('.type-3-item button');
-// c-hamburger
-document.querySelector('.c-hamburger').addEventListener('click', function (e) {
-    e.preventDefault();
-    this.classList.toggle('is-active');
-});
-// end c-hamburger
-
-
 // function accord oktenveb university
 function accord3() {
     let b = document.querySelectorAll('.five-item-title-mob');
@@ -83,19 +65,6 @@ function accord3() {
 
 accord3();
 
-// dropdown menu mobile
-let course = document.querySelector('#course');
-
-course.addEventListener('click', function (e) {
-
-    e.target.nextElementSibling.classList.toggle('is-visible-mobile');
-
-    if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
-        e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
-    } else {
-        e.target.nextElementSibling.style.height = 0;
-    }
-});
 
 
 

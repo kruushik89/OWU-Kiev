@@ -76,7 +76,6 @@ $('.center-4').slick({
 $(".lazy").slick({
     lazyLoad: 'ondemand', // ondemand progressive anticipated
     dots: true,
-    // autoplay: true,
     arrows: false,
     infinite: true,
     slidesToShow: 1,
@@ -94,6 +93,37 @@ $(".four-about-slider-wrap").slick({
         {
             breakpoint: 768,
             settings: {
+                lazyLoad: 'ondemand', // ondemand progressive anticipated
+                dots: true,
+                arrows: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
+
+$(".six-about-content-mobile").slick({
+    lazyLoad: 'ondemand', // ondemand progressive anticipated
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
+
+$(".gallery").slick({
+    lazyLoad: 'ondemand', // ondemand progressive anticipated
+    dots: false,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
                 slidesToShow: 1,
                 centerMode: true,
                 arrows: false,
@@ -102,7 +132,7 @@ $(".four-about-slider-wrap").slick({
     ]
 });
 
-$(".six-about-content-mobile").slick({
+$(".four-index-slider-wrap").slick({
     lazyLoad: 'ondemand', // ondemand progressive anticipated
     dots: false,
     arrows: true,
@@ -113,9 +143,12 @@ $(".six-about-content-mobile").slick({
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 1,
-                centerMode: true,
+                lazyLoad: 'ondemand', // ondemand progressive anticipated
+                dots: true,
                 arrows: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         }
     ]

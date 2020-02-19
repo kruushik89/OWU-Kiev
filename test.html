@@ -26,7 +26,7 @@
 
         <div class="wrapper-top flex-d justify-content-between">
             <div class="header-logo-item">
-                <img src="image/logo/logo1.png" alt="Logo">
+                <a href="index.html"><img src="image/logo/logo1.png" alt="Logo"></a>
             </div>
 
             <div class="header-menu-content flex-d">
@@ -35,16 +35,16 @@
                         <ul class="nav-menu d-flex justify-content-around">
                             <li class="nav-menu-has-children">курсы
                                 <ul class="dropdown-menu">
-                                    <li><a href="index.html">Java Script</a></li>
+                                    <li><a href="js.html">JavaScript</a></li>
                                     <li><a href="java.html">Java</a></li>
                                     <li><a href="python.html">Python</a></li>
+                                    <li><a href="kids.html">Детский курс</a></li>
                                     <li><a href="free.html">Бесплатные основы програмирования</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">акции</a></li>
                             <li><a href="#">отзывы</a></li>
-                            <li><a href="#">галерея</a></li>
-                            <li><a href="#">о нас</a></li>
+                            <li><a href="about.html">о нас</a></li>
                             <li><a href="#">блог</a></li>
                             <li><a href="#">контакты</a></li>
                         </ul>
@@ -53,30 +53,7 @@
             </div>
 
             <div class="header-callback">
-                <button class="enroll">Заказать обратный звонок</button>
-            </div>
-            <div class="menu-mobile">
-                <nav>
-                    <ul>
-                        <li id="course"><a class="flag" href="#">курсы</a>
-                            <ul class="dropdown-menu-mobile">
-                                <li><a href="index.html">Java Script</a></li>
-                                <li><a href="java.html">Java</a></li>
-                                <li><a href="python.html">Python</a></li>
-                                <li><a href="free.html">Бесплатные основы програмирования</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">акции</a></li>
-                        <li><a href="#">отзывы</a></li>
-                        <li><a href="#">галерея</a></li>
-                        <li><a href="#">о нас</a></li>
-                        <li><a href="#">блог</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header-callback-menu">
-                    <button class="enroll">заказать обратный звонок</button>
-                </div>
+                <button class="button-modal">Заказать обратный звонок</button>
             </div>
         </div>
     </div>
@@ -85,15 +62,26 @@
     <div class="menu-mobile">
         <nav>
             <ul>
-                <li><a href="#">курсы</a></li>
-                <li><a href="#">акции</a></li>
+                <li id="course"><a class="flag" href="#">курсы</a>
+                    <ul class="dropdown-menu-mobile">
+                        <li><a href="js.html">JavaScript</a></li>
+                        <li><a href="java.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="kids.html">Детский курс</a></li>
+                        <li><a href="free.html">Бесплатные основы програмирования</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">акции 1</a></li>
                 <li><a href="#">отзывы</a></li>
                 <li><a href="#">галерея</a></li>
-                <li><a href="#">о нас</a></li>
+                <li><a href="about.html">о нас</a></li>
                 <li><a href="#">блог</a></li>
                 <li><a href="#">контакты</a></li>
             </ul>
         </nav>
+        <div class="header-callback-menu">
+            <button class="button-modal">заказать обратный звонок</button>
+        </div>
     </div>
     <div class="bottom-line"></div>
 </header>
@@ -307,7 +295,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number"><img src="image/num-python/1.1.png" alt="1"></div>
+                                <div class="six-item-number num-one"></div>
                                 Группы до N человек
                             </div>
                             <div class="two-free-item-text">
@@ -319,7 +307,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number"><img src="image/num-python/2.2.png" alt="2"></div>
+                                <div class="six-item-number num-two"></div>
                                 х месяцев поддержки
                             </div>
                             <div class="two-free-item-text">
@@ -340,8 +328,7 @@
                     <div class="col-xl-3 col-lg-3 free-item-right">
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number-num-right"><img src="image/num-python/3.3.png" alt="3">
-                                </div>
+                                <div class="six-item-number num-three"></div>
                                 Пошаговый формат
                             </div>
                             <div class="two-free-item-text">
@@ -352,8 +339,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number-num-right"><img src="image/num-python/4.4.png" alt="4">
-                                </div>
+                                <div class="six-item-number num-four"></div>
                                 карьера «под ключ»
                             </div>
                             <div class="two-free-item-text">
@@ -369,7 +355,7 @@
                 <div class="type-five-content-mob flex-d">
                     <div class="type-five-content-item-mob bg-fff">
                         <div class="five-item-title-mob">
-                            <span></span>
+                            <span class="rotate-180"></span>
                             Уделяем время каждому
                         </div>
                         <div class="five-item-text-mob is-visible">
@@ -458,74 +444,79 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="section-three-content">
-                        <div class="img-vector">
-                            <img src="image/other/Vector.png" alt="">
-                        </div>
-                        <!--                    slider section three-->
-                        <div class="section-three-slider">
-                            <div class="slider lazy">
+                        <div class="col-xl-4">
+                            <div class="img-vector">
+                                <img src="image/other/Vector.png" alt="">
+                            </div>
+                            <!--                    slider section three-->
+                            <div class="section-three-slider">
+                                <div class="slider lazy">
 
-                                <div class="carousel-item-slider">
-                                    <div class="carousel-item-slider-desktop">
-                                        <img src="image/video.png" alt="Video">
+                                    <div class="carousel-item-slider">
+                                        <div class="carousel-item-slider-desktop">
+                                            <img src="image/video.png" alt="Video">
+                                        </div>
+                                        <div class="type-six-video-mob">
+                                            <img src="image/vieo-mob.png" alt="Video mobile">
+                                        </div>
                                     </div>
-                                    <div class="type-six-video-mob">
-                                        <img src="image/vieo-mob.png" alt="Video mobile">
+                                    <div class="carousel-item-slider">
+                                        <div class="carousel-item-slider-desktop">
+                                            <img src="image/video.png" alt="Video">
+                                        </div>
+                                        <div class="type-six-video-mob">
+                                            <img src="image/vieo-mob.png" alt="Video mobile">
+                                        </div>
                                     </div>
+                                    <div class="carousel-item-slider">
+                                        <div class="carousel-item-slider-desktop">
+                                            <img src="image/video.png" alt="Video">
+                                        </div>
+                                        <div class="type-six-video-mob">
+                                            <img src="image/vieo-mob.png" alt="Video mobile">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item-slider">
+                                        <div class="carousel-item-slider-desktop">
+                                            <img src="image/video.png" alt="Video">
+                                        </div>
+                                        <div class="type-six-video-mob">
+                                            <img src="image/vieo-mob.png" alt="Video mobile">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item-slider">
+                                        <div class="carousel-item-slider-desktop">
+                                            <img src="image/video.png" alt="Video">
+                                        </div>
+                                        <div class="type-six-video-mob">
+                                            <img src="image/vieo-mob.png" alt="Video mobile">
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="carousel-item-slider">
-                                    <div class="carousel-item-slider-desktop">
-                                        <img src="image/video.png" alt="Video">
-                                    </div>
-                                    <div class="type-six-video-mob">
-                                        <img src="image/vieo-mob.png" alt="Video mobile">
-                                    </div>
-                                </div>
-                                <div class="carousel-item-slider">
-                                    <div class="carousel-item-slider-desktop">
-                                        <img src="image/video.png" alt="Video">
-                                    </div>
-                                    <div class="type-six-video-mob">
-                                        <img src="image/vieo-mob.png" alt="Video mobile">
-                                    </div>
-                                </div>
-                                <div class="carousel-item-slider">
-                                    <div class="carousel-item-slider-desktop">
-                                        <img src="image/video.png" alt="Video">
-                                    </div>
-                                    <div class="type-six-video-mob">
-                                        <img src="image/vieo-mob.png" alt="Video mobile">
-                                    </div>
-                                </div>
-                                <div class="carousel-item-slider">
-                                    <div class="carousel-item-slider-desktop">
-                                        <img src="image/video.png" alt="Video">
-                                    </div>
-                                    <div class="type-six-video-mob">
-                                        <img src="image/vieo-mob.png" alt="Video mobile">
-                                    </div>
+
+                                <div class="loonar">
+                                    Отзыв <span>Loonar</span> о выпускнике OktenWeb
                                 </div>
 
                             </div>
 
-                            <div class="loonar">
-                                Отзыв <span>Loonar</span> о выпускнике OktenWeb
-                            </div>
-
+                            <!--                    end slider section three                  -->
                         </div>
 
-                        <!--                    end slider section three                  -->
-
-                        <div class="section-three-brand">
-                            <div class="img-brand bg-intetics"></div>
-                            <div class="img-brand bg-dtek"></div>
-                            <div class="img-brand bg-incora"></div>
-                            <div class="img-brand bg-rolique"></div>
-                            <div class="img-brand bg-loonar"></div>
-                            <div class="img-brand bg-binariks"></div>
-                            <div class="img-brand bg-core"></div>
-                            <div class="img-brand bg-top"></div>
+                        <div class="col-xl-8">
+                            <div class="brand-content">
+                                <div class="img-brand bg-epam"></div>
+                                <div class="img-brand bg-incora"></div>
+                                <div class="img-brand bg-binariks"></div>
+                                <div class="img-brand bg-global"></div>
+                                <div class="img-brand bg-rolique"></div>
+                                <div class="img-brand bg-eleks"></div>
+                                <div class="img-brand bg-intetics"></div>
+                                <div class="img-brand bg-soft"></div>
+                            </div>
                         </div>
                     </div>
 
@@ -631,7 +622,7 @@
                                 <div class="list-item">DevOps Tools & Services</div>
                             </div>
                             <div class="btn-page">
-                                <button class="enroll">Записаться на курс</button>
+                                <button class="button-modal">Записаться на курс</button>
                             </div>
 
                         </div>
@@ -1465,7 +1456,7 @@
 
                             </div>
                             <div class="btn-page">
-                                <button class="enroll">Записаться на курс</button>
+                                <button class="button-modal">Записаться на курс</button>
                             </div>
                         </div>
                     </div>
@@ -1703,7 +1694,7 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен</button>
                             </div>
                         </div>
                     </div>
@@ -1730,7 +1721,7 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен</button>
                             </div>
                         </div>
                     </div>
@@ -1768,7 +1759,7 @@
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен
+                                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен
                                                 </button>
                                             </div>
                                         </div>
@@ -1797,7 +1788,7 @@
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class="enroll"><span>Записаться на курс <br></span> 11500 гривен
+                                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен
                                                 </button>
                                             </div>
                                         </div>
@@ -1925,5 +1916,6 @@
 
 <script src="js/slick.js"></script>
 <script src="js/test.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
