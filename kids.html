@@ -187,8 +187,10 @@
         <section class="type-two-kids">
             <div class="wrapper">
                 <div class="type-two-kids-content-wrap">
-                    <div class="col-xl-4 image-two-kids">
-                        <img src="image/logo/type-kids.png" alt="Girl">
+                    <div class="col-xl-4">
+                        <div class="image-two-kids">
+                            <img src="image/logo/type-kids.png" alt="Girl">
+                        </div>
                     </div>
                     <div class="col-xl-8">
                         <div class="type-title">
@@ -442,37 +444,26 @@
 
         <!--        type 5-->
         <section class="type-five-kids">
+            <div class="five-kids-bg">
+                партнери
+            </div>
             <div class="wrapper">
                 <div class="col-12">
                     <div class="type-title">
-                        <div class="type-title-h3">
-                            <h3>Получи опыт работы в нашей компании</h3>
+                        <div class="type-title-h3 c-3298F2">
+                            <h3>Сотрудничаем с ведущими студиями в Украине</h3>
                         </div>
-                        <div class="type-title-h2 c-FF9638">
-                            <h2>5 месяцев практики в OktenWeb</h2>
+                        <div class="type-title-h2">
+                            <h2>Наши партнеры</h2>
                         </div>
                     </div>
 
                     <div class="brand-content">
-                        <div class="img-brand bg-epam"></div>
-                        <div class="img-brand bg-incora"></div>
-                        <div class="img-brand bg-binariks"></div>
-                        <div class="img-brand bg-rolique"></div>
-                        <div class="img-brand bg-eleks"></div>
-                        <div class="img-brand bg-intetics"></div>
-                        <div class="img-brand bg-global"></div>
-                        <div class="img-brand bg-soft"></div>
+                        <img src="image/brand/all.png" alt="Brand">
                     </div>
 
                     <div class="brand-content-mobile">
-                        <div class="img-brand bg-epam"></div>
-                        <div class="img-brand bg-global"></div>
-                        <div class="img-brand bg-incora"></div>
-                        <div class="img-brand bg-binariks"></div>
-                        <div class="img-brand bg-rolique"></div>
-                        <div class="img-brand bg-eleks"></div>
-                        <div class="img-brand bg-intetics"></div>
-                        <div class="img-brand bg-soft"></div>
+                        <img src="image/brand/mobile.png" alt="Brand mobile">
                     </div>
 
                 </div>
@@ -1534,7 +1525,7 @@
                         </div>
 
                         <div class="section-ten-btn rec-courses">
-                            <button>Записаться на онлайн курс</button>
+                            <button class="button-modal">Записаться на онлайн курс</button>
                         </div>
                     </div>
                 </div>
@@ -1661,7 +1652,7 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class=""><span>Записаться на курс <br></span> 11500 гривен</button>
                             </div>
                         </div>
                     </div>
@@ -1688,7 +1679,7 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class=""><span>Записаться на курс <br></span> 11500 гривен</button>
                             </div>
                         </div>
                     </div>
@@ -1726,7 +1717,7 @@
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен
+                                                <button class=""><span>Записаться на курс <br></span> 11500 гривен
                                                 </button>
                                             </div>
                                         </div>
@@ -1755,7 +1746,7 @@
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class="button-modal"><span>Записаться на курс <br></span> 11500 гривен
+                                                <button class=""><span>Записаться на курс <br></span> 11500 гривен
                                                 </button>
                                             </div>
                                         </div>
@@ -1785,7 +1776,7 @@
                         </div>
 
                         <div class="section-ten-btn rec-courses">
-                            <button>Записаться на онлайн курс</button>
+                            <button class="button-modal">Записаться на онлайн курс</button>
                         </div>
                     </div>
                 </div>
@@ -1852,13 +1843,24 @@
                         <div class="title-modal">
                             <h2>Записатися на курс</h2>
                         </div>
-                        <div class="radio">
+                        <div class="radio-form">
                             <div class="radio-title">
                                 <h4>Оберіть бажаний курс*</h4>
                             </div>
-                            <label><input type="radio" name="1" checked> Базовый</label>
-                            <label><input type="radio" name="1"> Базовый + практика</label>
-                            <label><input type="radio" name="1"> Индивидуальный</label>
+                            <label class="container-label">
+                                <input type="radio" checked="checked" name="radio-modal"> Базовый
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-label">
+                                <input type="radio" name="radio-modal">
+                                Базовый + практика
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-label">
+                                <input type="radio" name="radio-modal">
+                                Индивидуальный
+                                <span class="checkmark"></span>
+                            </label>
 
                         </div>
                         <div class="forms">
@@ -1885,6 +1887,7 @@
 </main>
 
 <script src="js/slick.js"></script>
+<script src="js/main.js"></script>
 <script src="js/kids.js"></script>
 </body>
 </html>

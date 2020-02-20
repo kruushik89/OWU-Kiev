@@ -88,6 +88,10 @@ button {
     transform: rotate(180deg);
 }
 
+.section-title {
+    text-align: center;
+}
+
 
 .hidden-block .two-content-2 {
     height: auto !important;
@@ -1994,7 +1998,7 @@ ol.carousel-indicators {
 .type-tyrphs-item {
     position: relative;
     background: #FFFFFF;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     padding: 60px 30px 50px;
     flex: 1 1 auto;
     min-height: 1px;
@@ -2083,11 +2087,18 @@ ol.carousel-indicators {
     border: 1px solid #EDF4FB;
     box-sizing: border-box;
     border-radius: 3px;
-    font-weight: 300;
     font-size: 14px;
+    padding: 5px 0 5px 15px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #292929;
+}
+
+.item-tyrphs-form form input::placeholder {
     line-height: 19px;
     color: #787878;
-    padding: 5px 0 5px 15px;
+    font-weight: 300;
 }
 
 .tyrphs-count {
@@ -2507,14 +2518,13 @@ form {
 }
 
 .type-two-python .type-2-title, .type-seven-java .type-2-title {
-    margin: 0 auto;
+    margin: 0 auto 65px;
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 37px;
     text-transform: uppercase;
     width: 55%;
-    margin-bottom: 65px;
 }
 
 .type-two-python .type-2-title-text-python, .type-seven-java .type-2-title-text-python {
@@ -2984,6 +2994,10 @@ form {
 
 
 /*type 1 java*/
+
+.type-one-java {
+    height: 93vh;
+}
 
 .type-one-java .info-content-number {
     color: #FF9638;
@@ -3672,6 +3686,7 @@ form {
     position: relative;
     background: #F9F9F9;
     padding-top: 100px;
+    padding-bottom: 107px;
 }
 
 .brand-content {
@@ -3679,7 +3694,19 @@ form {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    margin: 100px auto 0;
+    margin: 0 auto;
+}
+
+.brand-content img {
+    width: 100%;
+}
+
+.brand-content-mobile {
+    display: none;
+}
+
+.brand-content-mobile img {
+    width: 100%;
 }
 
 .type-four-free .brand-content, .type-two-about .brand-content, .type-five-kids .brand-content {
@@ -4024,7 +4051,7 @@ form {
 .test .type-title-h3, .kids .type-title-h3 {
     font-size: 30px;
     margin-bottom: 15px;
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .test .type-title-h2 {
@@ -4177,7 +4204,7 @@ form {
     position: relative;
     background: #EDF4FB;
     padding-top: 80px;
-    padding-bottom: 72px;
+    padding-bottom: 140px;
 }
 
 .type-four-test .type-description {
@@ -4490,14 +4517,20 @@ form {
 }
 
 .type-one-kids .header-info-img {
-    left: -70px;
+    left: -81px;
     bottom: -39px;
 }
 
 /*type 2 kids*/
 .type-two-kids {
+    position: relative;
     background: #292929;
     padding: 64px 0;
+}
+
+.image-two-kids {
+    position: absolute;
+    bottom: -67px;
 }
 
 .type-two-kids-content-wrap {
@@ -4581,8 +4614,19 @@ form {
 
 /*type 5 kids*/
 .type-five-kids {
+    position: relative;
     background: #F9F9F9;
     padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.five-kids-bg {
+    position: absolute;
+    right: 0;
+    font-weight: 900;
+    font-size: 144px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 
@@ -4892,7 +4936,7 @@ form {
     color: #000000;
     text-align: center;
     padding: 36px 0;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0 0 20px 20px;
     cursor: pointer;
     transition: .3s;
 }
@@ -5122,7 +5166,7 @@ form {
     position: relative;
     background: #EDF4FB;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 140px;
 }
 .type-six-index .slick-dots, .type-six .slick-dots, .type-four-java .slick-dots, .type-four-test .slick-dots,
 .type-nine-python .slick-dots {
@@ -5297,6 +5341,7 @@ form {
 /*type 2 about*/
 .type-two-about {
     padding-top: 123px;
+    padding-bottom: 160px;
 }
 
 /*======================================================================================================================*/
@@ -5440,9 +5485,9 @@ form {
     color: #000000;
     padding: 31px 28px 0;
     border-radius: 20px;
-    -webkit-box-shadow: 10px -8px 5px 0px rgba(230,237,243,0.97);
-    -moz-box-shadow: 10px -8px 5px 0px rgba(230,237,243,0.97);
-    box-shadow: 10px -8px 5px 0px rgba(230,237,243,0.97);
+    -webkit-box-shadow: 10px -8px 5px 0rgba(230,237,243,0.97);
+    -moz-box-shadow: 10px -8px 5px 0 rgba(230,237,243,0.97);
+    box-shadow: 10px -8px 5px 0 rgba(230,237,243,0.97);
 }
 
 .four-about-slider-item-title-before {
@@ -5887,8 +5932,8 @@ form {
 
 .four-react-carousel-item {
     width: 74%!important;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 30px;
     position: relative;
     left: 50%;
     margin-left: -37%;
@@ -6111,8 +6156,8 @@ form {
 }
 
 .type-six-angular .four-react-carousel-item {
-    padding-bottom: 45px;
-    padding-top: 45px;
+    padding-bottom: 48px;
+    padding-top: 48px;
 }
 
 /*======================================================================================================================*/

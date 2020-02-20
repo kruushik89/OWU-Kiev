@@ -14,21 +14,6 @@ document.querySelector('.c-hamburger').addEventListener('click', function (e) {
 });
 // end c-hamburger
 
-// dropdown menu mobile
-let course = document.querySelector('#course');
-
-course.addEventListener('click', function (e) {
-
-    e.target.nextElementSibling.classList.toggle('is-visible-mobile');
-
-    if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
-        e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
-    } else {
-        e.target.nextElementSibling.style.height = 0;
-    }
-});
-// end dropdown menu mobile
-
 // add white border from item
 let twoKidsBtn = document.querySelectorAll('.kids-two-item-button');
 let arrKidsBtn = Array.from(twoKidsBtn);

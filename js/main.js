@@ -37,22 +37,34 @@ closeButton.onclick = () => {
 
 // mobile drop nav menu
 let courseMobile = document.querySelector('#course');
-courseMobile.addEventListener('click', function (e) {
+// courseMobile.addEventListener('click', function (e) {
+//     console.log( e.target.children[0]);
+//     e.target.e.target.children[0].classList.toggle('is-visible-mobile');
+//
+//     if (e.target.e.target.children[0].classList.contains('is-visible-mobile')) {
+//         e.target.e.target.children[0].style.height = e.target.e.target.children[0].scrollHeight + 'px';
+//     } else {
+//         e.target.e.target.children[0].style.height = 0;
+//     }
+// });
 
-    e.target.nextElementSibling.classList.toggle('is-visible-mobile');
+courseMobile.onclick = () =>{
+    console.log('work');
+    let dropDown = document.querySelector('.dropdown-menu-mobile');
+    dropDown.classList.toggle('is-visible-mobile');
 
-    if (e.target.nextElementSibling.classList.contains('is-visible-mobile')) {
-        e.target.nextElementSibling.style.height = e.target.nextElementSibling.scrollHeight + 'px';
+    if (dropDown.classList.contains('is-visible-mobile')) {
+        dropDown.style.height = dropDown.scrollHeight + 'px';
     } else {
-        e.target.nextElementSibling.style.height = 0;
+        dropDown.style.height = '';
     }
-});
+};
 // end mobile drop nav menu
 
 // =========================================================================================================================
 
 // add white border from item
-let typeBtn3 = document.querySelectorAll('.type-3-item a');
+    let typeBtn3 = document.querySelectorAll('.type-3-item a');
 
 function addWhiteBorder(param) {
     param.forEach(el => {

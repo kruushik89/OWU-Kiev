@@ -68,7 +68,7 @@ $(document).ready(function() {
         });
     }
 
-    animationScroll('.type-3-item a', 1500);
+    animationScroll('.seven-python-item-button a', 1500);
 });
 
 
