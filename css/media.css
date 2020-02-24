@@ -13,10 +13,6 @@
         width: 67%;
     }
 
-    .type-two-python .type-2-title-text-python {
-        text-align: justify;
-    }
-
     .type-two-python .type-2-wrapper {
         justify-content: space-between;
     }
@@ -115,10 +111,6 @@
 
     .btn-form-index button {
         width: 65%;
-    }
-
-    .type-1-wrapper-title {
-        width: 90%;
     }
 
 }
@@ -694,6 +686,7 @@
         position: relative;
         margin-bottom: 35px;
         width: 95% !important;
+        margin-left: 10px;
     }
 
     .seven-python-item-button {
@@ -875,23 +868,18 @@
 
     .type-eleven-python {
         padding-top: 50px;
-        padding-bottom: 90px;
+        padding-bottom: 125px;
     }
 
     .type-eleven-python .slick-dots {
         bottom: -55px;
     }
-
-    .type-seven-python {
-        padding-bottom: 0;
-    }
-
     .type-1-wrapper-mobile {
         padding-bottom: 80px;
     }
 
     .type-one-python .type-1-wrapper-course-mob {
-        padding-top: 150px;
+        padding-top: 70px;
     }
 
     .wrapper-title-1-img-mobile {
@@ -962,10 +950,6 @@
         display: none;
     }
 
-    .type-one-free, .type-one-kids {
-        height: auto;
-    }
-
     .type-one-free .type-1-wrapper-mobile, .type-one-test .type-1-wrapper-mobile, .type-one-kids .type-1-wrapper-mobile {
         position: relative;
         background: #3298F2;
@@ -1032,7 +1016,8 @@
         color: #ff9638;
     }
 
-    .type-one-free .info-content, .type-one-test .info-content, .type-one-kids .info-content, .type-one-java .info-content {
+    .type-one-free .info-content, .type-one-test .info-content, .type-one-kids .info-content, .type-one-java .info-content,
+    .type-one-python .info-content {
         flex-direction: row;
         width: auto;
         margin-bottom: 20px;
@@ -1104,10 +1089,16 @@
 
     .seven-free-item {
         margin-bottom: 36px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+
     }
 
     .seven-free-one::before, .seven-free-two::before, .seven-free-three::before {
         background: none;
+        position: absolute;
+        top: 0;
         font-weight: bold;
         font-size: 24px;
         line-height: 30px;
@@ -1115,7 +1106,6 @@
         width: 0;
         height: 0;
         left: -26px;
-        top: -5px;
     }
 
     .seven-free-one::before {
@@ -1232,7 +1222,12 @@
     .type-four-test {
         background: #ffffff;
         padding-top: 0;
-        padding-bottom: 72px;
+        padding-bottom: 100px;
+    }
+
+    .lazy .slick-dots {
+        justify-content: space-around;
+        bottom: -105px;
     }
 
     .type-four-test .type-six-title-text {
@@ -1263,7 +1258,7 @@
 
     .six-test-wrap-item-image {
         flex-basis: 50%;
-        margin-top: 40px;
+        margin-top: 70px;
     }
 
     .six-test-image {
@@ -1369,12 +1364,17 @@
 
     .type-three-kids .free-text {
         width: 100%;
-        margin-bottom: 73px;
+    }
+
+    .kids .type-title-h2 {
+        font-size: 30px;
+        line-height: 30px;
     }
 
     .type-three-kids {
         background: #ffffff;
-        padding-top: 77px;
+        padding-top: 50px;
+        padding-bottom: 60px;
     }
 
     .type-three-kids .type-title-h2 {
@@ -1523,12 +1523,8 @@
     }
 
     .orange-button {
-        margin-top: 61px;
+        margin: 61px auto 0;
         position: relative;
-    }
-
-    .orange .type-title-text {
-        text-align: justify;
     }
 
     .five-index-image {
@@ -1718,8 +1714,9 @@
     }
 
     .react .type-title-h2, .angular .type-title-h2 {
-        font-size: 26px;
+        font-size: 30px;
         text-align: center;
+        line-height: 30px;
     }
 
     .type-three-react {
@@ -1825,7 +1822,7 @@
     }
 
     .react-carousel-image-description {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .type-four-react {
@@ -1888,7 +1885,7 @@
         left: 60px;
     }
 
-    .type-six-angular .slick-active .slick-dots li button, .five-kids-bg, .brand-content {
+    .type-six-angular .slick-active .slick-dots li button, .five-kids-bg, .brand-content, .free-img {
         display: none;
     }
 
@@ -1932,7 +1929,7 @@
     }
 
     .lazy .slick-dots {
-        bottom: -100px;
+        bottom: -110px;
         justify-content: space-evenly;
     }
 
@@ -1943,6 +1940,61 @@
     .orange .type-title, .blue .type-title {
         text-align: center;
     }
+
+    .python-image-content {
+        margin-bottom: 50px;
+    }
+
+    .type-two-about {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .orange .type-title-text, .blue .type-title-text, .white .type-title-text {
+        width: 100%;
+    }
+
+    .type-six-test .section-title {
+        text-align: center;
+    }
+
+    .type-five .type-title-h2 {
+        font-size: 26px;
+    }
+
+    .test .type-title-h3, .kids .type-title-h3 {
+        font-size: 22px;
+    }
+
+    .type-five-test .type-title-h3 {
+        color: #ffffff;
+    }
+
+    .type-five-test .type-title-h2 {
+        color: #3298f2;
+    }
+
+    .type-six-test .type-title-h2 {
+        color: #FF9638;
+    }
+
+    .type-six-test .type-title-h3 {
+        color: #000000;
+    }
+
+    .error-content {
+        display: none;
+    }
+
+    .error-content-mobile {
+        display: block;
+    }
+
+    .error-image img {
+        width: 90%;
+    }
+
+
 
 }
 
@@ -2115,7 +2167,7 @@
     }
 
     .type-title-h3, .react .type-title-h3, .angular .type-title-h3 {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 23px;
         margin-bottom: 20px;
     }
@@ -2126,7 +2178,7 @@
     }
 
     .free .type-title-h2, .test .type-title-h2 {
-        font-size: 24px;
+        font-size: 26px;
         line-height: 25px;
     }
 
@@ -2445,11 +2497,6 @@
         border-radius: 50%;
     }
 
-    .lazy .slick-dots {
-        justify-content: space-around;
-        bottom: -90px;
-    }
-
     .slick-dots {
         bottom: -35px;
     }
@@ -2577,6 +2624,10 @@
 
     .type-one-free .info-content-text, .type-one-test .info-content-text, .type-one-kids .info-content-text {
         text-align: left;
+    }
+
+    .type-nine-test .item-tyrphs-title-2 {
+        font-size: 21px;
     }
 }
 
@@ -2750,7 +2801,4 @@
         width: 200px;
     }
 
-    .wrapper-title-2 {
-        width: 65%;
-    }
 }

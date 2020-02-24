@@ -19,7 +19,6 @@ $('.center').slick({
 $('.center-2').slick({
     infinite: true,
     dots: true,
-    // autoplay: true,
     slidesToShow: 1,
     arrows: false,
     slidesToScroll: 1,

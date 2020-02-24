@@ -4,10 +4,8 @@ let menu = document.querySelector('.menu-mobile');
 btnMenu.onclick = () => {
     menu.classList.toggle('left-0');
 };
-
 // end menu
 
-let typeBtn3 = document.querySelectorAll('.type-3-item button');
 // c-hamburger
 document.querySelector('.c-hamburger').addEventListener('click', function (e) {
     e.preventDefault();
@@ -16,20 +14,23 @@ document.querySelector('.c-hamburger').addEventListener('click', function (e) {
 // end c-hamburger
 
 // add white border from item
-function addWhiteBorder(param) {
+let typeBtn3 = document.querySelectorAll('.seven-python-item-button');
+function addWhiteBorder(param, borderColor) {
     param.forEach(el => {
         el.addEventListener('mouseenter', function (e) {
-            e.target.offsetParent.classList.add('border-white');
+            e.target.offsetParent.classList.add(borderColor);
         });
         el.addEventListener('mouseleave', function (e) {
-            e.target.offsetParent.classList.remove('border-white');
+            e.target.offsetParent.classList.remove(borderColor);
         });
     });
 }
 
+addWhiteBorder(typeBtn3, 'border-3298F2');
+
 // end add white border from item
 
-addWhiteBorder(typeBtn3);
+
 let listContent = document.querySelectorAll('.list-content');
 let arr = Array.from(listContent);
 
@@ -71,7 +72,6 @@ $(document).ready(function() {
     animationScroll('.seven-python-item-button a', 1500);
 });
 
-
 let javaListTitle = document.querySelectorAll('.java-complex-list-title');
 let javaListText = document.querySelectorAll('.java-complex-list-text');
 
@@ -103,8 +103,6 @@ closeButton.onclick = () => {
     modalWindow.classList.remove('d-block');
 };
 // end modal
-
-// Collapse
 
 // accordion 1
 function accord() {

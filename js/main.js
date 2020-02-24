@@ -37,19 +37,8 @@ closeButton.onclick = () => {
 
 // mobile drop nav menu
 let courseMobile = document.querySelector('#course');
-// courseMobile.addEventListener('click', function (e) {
-//     console.log( e.target.children[0]);
-//     e.target.e.target.children[0].classList.toggle('is-visible-mobile');
-//
-//     if (e.target.e.target.children[0].classList.contains('is-visible-mobile')) {
-//         e.target.e.target.children[0].style.height = e.target.e.target.children[0].scrollHeight + 'px';
-//     } else {
-//         e.target.e.target.children[0].style.height = 0;
-//     }
-// });
 
 courseMobile.onclick = () =>{
-    console.log('work');
     let dropDown = document.querySelector('.dropdown-menu-mobile');
     dropDown.classList.toggle('is-visible-mobile');
 
@@ -141,7 +130,6 @@ function hoverForms() {
     });
 }
 
-hoverForms();
 
 // =========================================================================================================================
 
