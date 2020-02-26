@@ -6,8 +6,8 @@
     <title>Отзывы</title>
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
     <script src="libs/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="libs/slick-1.8.1/slick/slick.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
+    <script src="libs/slick-1.8.1/slick/slick.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="libs/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
@@ -45,7 +45,7 @@
                                 </ul>
                             </li>
                             <li><a href="#">акции</a></li>
-                            <li><a href="#">отзывы</a></li>
+                            <li><a href="reviews.html">отзывы</a></li>
                             <li><a href="about.html">о нас</a></li>
                             <li><a href="#">блог</a></li>
                             <li><a href="#">контакты</a></li>
@@ -77,7 +77,7 @@
                     </ul>
                 </li>
                 <li><a href="#">акции 1</a></li>
-                <li><a href="#">отзывы</a></li>
+                <li><a href="reviews.html">отзывы</a></li>
                 <li><a href="#">галерея</a></li>
                 <li><a href="about.html">о нас</a></li>
                 <li><a href="#">блог</a></li>
@@ -94,7 +94,8 @@
 <main>
     <div id="page">
 
-        <!--        type 1-->
+
+<!--                type 1-->
         <section class="type-one-reviews">
             <div class="wrapper">
                 <div class="col-12">
@@ -123,8 +124,98 @@
 
                 </div>
             </div>
+
+            <div class="load-more-button"><button id="load-more">Больше отзывов</button></div>
+
         </section>
-        <!--        end type-1-->
+<!--                end type-1-->
+
+        <!--                type 2-->
+        <section class="type-two-reviews">
+            <div class="wrapper">
+                <div class="col-12">
+                    <div class="type-title">
+                        <div class="type-title-h3 c-3298F2">
+                            <h3>Наши продукты</h3>
+                        </div>
+                        <div class="type-title-h2">
+                            <h2>Выбери курс и запишись на занятия</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="six-about-content">
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Java <br> complex</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Javascript <br> complex</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Python <br> complex</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Qa/Qc тестування</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+                </div>
+
+                <!--               mobile-->
+                <div class="six-about-content-mobile">
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Java <br> complex</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Javascript <br> complex</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Python <br> complex</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+
+                    <div class="six-about-wrap-item">
+                        <div class="six-about-item-image"></div>
+                        <div class="six-about-item-title">Qa/Qc тестування</div>
+                        <div class="six-about-item-button button-modal">
+                            Записаться
+                        </div>
+                    </div>
+                </div>
+                <!--               end mobile-->
+            </div>
+        </section>
+        <!--                end type 2-->
 
 
         <!--footer-->
@@ -226,8 +317,8 @@
     </div>
 </main>
 
-
 <script src="js/main.js"></script>
 <script src="js/reviews.js"></script>
+<script src="js/slick.js"></script>
 </body>
 </html>

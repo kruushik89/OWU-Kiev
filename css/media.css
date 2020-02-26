@@ -9,6 +9,18 @@
         padding-left: 23px;
     }
 
+    .section-two-content-1, .section-two-content-2 {
+        width: 30%;
+    }
+
+    .type-four-image-1 {
+        margin-left: -27%;
+    }
+
+    .type-four-image-2 {
+        margin-right: -27%;
+    }
+
     .type-two-python .type-2-title {
         width: 67%;
     }
@@ -111,6 +123,10 @@
 
     .btn-form-index button {
         width: 65%;
+    }
+
+    .btn-header-free button {
+        padding: 20px;
     }
 
 }
@@ -488,6 +504,10 @@
         margin-left: 12px;
     }
 
+    .type-seven-react .type-tyrphs-item, .type-seven-angular .type-tyrphs-item {
+        margin-left: 0;
+    }
+
     .item-tyrphs-form {
         margin-bottom: 0;
     }
@@ -848,10 +868,6 @@
         width: 95% !important;
     }
 
-    .type-nine, .type-ten-java {
-        padding-top: 50px;
-    }
-
     .title-modal h2 {
         font-size: 18px;
         line-height: 20px;
@@ -868,7 +884,7 @@
 
     .type-eleven-python {
         padding-top: 50px;
-        padding-bottom: 125px;
+        padding-bottom: 160px;
     }
 
     .type-eleven-python .slick-dots {
@@ -1017,7 +1033,7 @@
     }
 
     .type-one-free .info-content, .type-one-test .info-content, .type-one-kids .info-content, .type-one-java .info-content,
-    .type-one-python .info-content {
+    .type-one-python .info-content, .type-1 .info-content{
         flex-direction: row;
         width: auto;
         margin-bottom: 20px;
@@ -1222,7 +1238,7 @@
     .type-four-test {
         background: #ffffff;
         padding-top: 0;
-        padding-bottom: 100px;
+        padding-bottom: 60px;
     }
 
     .lazy .slick-dots {
@@ -1921,7 +1937,7 @@
     }
 
     .type-tyrphs-content-mobile .slick-dots {
-        bottom: -90px;
+        bottom: -115px;
     }
 
     .type-one-java {
@@ -1982,7 +1998,7 @@
         color: #000000;
     }
 
-    .error-content {
+    .error-content, .eight-java-100, .two-free-bg, .type-four-test .section-three-content {
         display: none;
     }
 
@@ -1994,8 +2010,31 @@
         width: 90%;
     }
 
+    .type-3-item a {
+        background: #3298F2;
+    }
 
+    .type-nine, .type-ten-java {
+        padding-bottom: 160px;
+    }
 
+    .type-one-angular .content-title-2 h1 {
+        color: #ffffff;
+        font-size: 30px;
+    }
+
+    .react-carousel-image-description {
+        line-height: 22px;
+    }
+
+    .review-video-items {
+        margin-left: 0;
+        width: 40%;
+    }
+
+    .wrap-video {
+        justify-content: space-around;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -2098,10 +2137,6 @@
         margin-bottom: 0;
     }
 
-    .type-ten-java .slick-dots {
-        bottom: -90px;
-    }
-
 
 }
 
@@ -2188,7 +2223,7 @@
 
     .type-six {
         background: #292929;
-        padding: 40px 0 80px;
+        padding: 40px 0 110px;
     }
 
     .list-item {
@@ -2341,7 +2376,7 @@
     }
 
     .type-tyrphs-item{
-        height: 575px;
+        height: 595px;
     }
 
     .bg-intetics {

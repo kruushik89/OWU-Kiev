@@ -1,11 +1,12 @@
+
+// ИНТЕНСИВ ДЛЯ НОВИЧКОВ
 $(document).ready(function() {
-    $('.list-inner').on('click',function () {
-        let $child = $(this).children('.list-item');
-        $('.list-item').removeClass('active-test');
-        $child.addClass('active-test');
-        let $id_child = $(this).attr('id');
+    $('.list-item a').on('click',function (e) {
+        let $parent = $(this).parent('.list-item').parent('.list-inner').attr('id');
+        $('.list-item a').removeClass('active-java');
+        $(this).addClass('active-java');
         $('.item-list-content').removeClass('display-block');
-        $('.item-list-content#p'+$id_child).addClass('display-block');
+        $('.item-list-content#p'+$parent).addClass('display-block');
     });
 
     // ===============================================================================
@@ -13,17 +14,15 @@ $(document).ready(function() {
     $('.list-content').on('click', function () {
         let heigh = $(this.lastElementChild.scrollHeight);
         $('.list-content').css('border-color','');
-        $(this).css('border-color', '#FF9638');
+        $(this).css('border-color', '#f48120');
         let child = $(this).children('.list-content-title');
-        $('.list-content-title').removeClass('active-test');
-        child.addClass('active-test');
+        $('.list-content-title').removeClass('active-java');
+        child.addClass('active-java');
         let child2 = $(this).children('.list-content-text');
         $('.list-content-text').css('height', 0);
         child2.css('height', heigh[0]+'px');
 
     });
-
-
 });
 
 // function accord oktenveb university

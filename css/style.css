@@ -299,6 +299,7 @@ header .dropdown-menu li {
     z-index: 66;
     transition: all 0.3s;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header-menu ul li:hover, .header-menu ul li a:hover {
@@ -629,7 +630,7 @@ header .dropdown-menu li {
 .type-1-wrapper-course {
     position: relative;
     background: #EDF4FB;
-    padding: 70px 20px 70px 70px;
+    padding: 70px 20px 120px 70px;
     width: 60%;
 }
 
@@ -697,7 +698,9 @@ header .dropdown-menu li {
 }
 
 .btn-header-content {
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -176px;
     width: 352px;
     text-align: center;
 }
@@ -775,6 +778,10 @@ header .dropdown-menu li {
     letter-spacing: 1px;
 }
 
+.type-1 .info-content-text {
+    color: #292929;
+}
+
 .info-content-number {
     width: 75px;
     height: 75px;
@@ -813,7 +820,6 @@ header .dropdown-menu li {
     font-weight: 900;
     font-size: 28px;
     line-height: 40px;
-    text-transform: uppercase;
     color: #292929;
 }
 
@@ -1021,7 +1027,7 @@ header .dropdown-menu li {
     color: #EDF4FB;
     font-size: 16px;
     line-height: 24px;
-    text-align: justify;
+    text-align: left;
 }
 
 .type-3-item button {
@@ -1067,14 +1073,14 @@ header .dropdown-menu li {
     position: absolute;
     bottom: -60px;
     left: 50%;
-    margin-left: -28%;
+    margin-left: -25%;
 }
 
 .type-four-image-2 {
     position: absolute;
     bottom: -60px;
     right: 50%;
-    margin-right: -28%;
+    margin-right: -25%;
 }
 
 /*type 4 content*/
@@ -1090,7 +1096,7 @@ header .dropdown-menu li {
 }
 
 .section-two-content-1, .section-two-content-2 {
-    width: 40%;
+    width: 25%;
     padding: 35px 60px 30px;
 }
 
@@ -1813,7 +1819,6 @@ ol.carousel-indicators {
     padding: 20px;
     background: #FFE200;
     border-radius: 5px;
-    font-family: 'Russo One', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -1876,6 +1881,10 @@ ol.carousel-indicators {
     color: #292929;
 }
 
+.type-eight .image-title {
+    color: #ffffff;
+}
+
 .eight-image-2 img {
     margin-left: 23px;
 }
@@ -1885,6 +1894,10 @@ ol.carousel-indicators {
     background: #292929;
     padding-top: 93px;
     padding-bottom: 60px;
+}
+
+.type-eight .type-eight-wrap {
+    padding-top: 150px;
 }
 
 .type-eight-wrap .review-image {
@@ -1940,7 +1953,6 @@ ol.carousel-indicators {
     z-index: 9;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 25%;
 }
 
@@ -2112,7 +2124,7 @@ ol.carousel-indicators {
     box-sizing: border-box;
     border-radius: 3px;
     font-size: 14px;
-    padding: 10px 0 10px 15px;
+    padding: 17px 0 17px 10px;
     font-weight: 600;
     line-height: 17px;
     letter-spacing: 0.05em;
@@ -2220,7 +2232,7 @@ ol.carousel-indicators {
 }
 
 .section-ten-text {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
@@ -2240,7 +2252,6 @@ ol.carousel-indicators {
     font-size: 21px;
     line-height: 30px;
     margin-bottom: 34px;
-    text-align: justify;
 }
 
 /*end type 10*/
@@ -2548,7 +2559,7 @@ form {
     font-size: 30px;
     line-height: 37px;
     text-transform: uppercase;
-    width: 55%;
+    width: 70%;
 }
 
 .type-two-python .type-2-title-text-python, .type-seven-java .type-2-title-text-python {
@@ -2625,7 +2636,7 @@ form {
 .four-item-wrap-python-text, .five-item-wrap-python-text, .type-five-python-footer {
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 21px;
     color: #FFFFFF;
 }
 
@@ -2671,7 +2682,8 @@ form {
     margin-bottom: 20px;
     padding: 15px 0 0 50px;
     transition: 1s;
-    border: 3px solid #000000;
+    border: 2px solid #000000;
+    border-radius: 20px;
 }
 
 .four-item-wrap-python-title-mob span {
@@ -3344,7 +3356,8 @@ form {
     padding-bottom: 134px;
 }
 
-.type-six-java .activ, .type-six-java .list-item a:hover, .type-six-java .list-content-title h4:hover, .type-six-java .list-content-title:hover {
+.type-six-java .activ, .type-six-java .list-item a:hover, .type-six-java .list-content-title h4:hover,
+.type-six-java .list-content-title:hover, .type-five-test .list-content-title:hover {
     color: #f48120;
 }
 
@@ -3499,10 +3512,6 @@ form {
 /*free*/
 /*type 1 free*/
 
-.type-one-free {
-    height: 93vh;
-}
-
 .content-title-free {
     font-weight: 900;
     font-size: 26px;
@@ -3581,8 +3590,20 @@ form {
 /*======================================================================================================================*/
 /*type 2 free*/
 .type-two-free {
+    position: relative;
     padding-top: 115px;
     padding-bottom: 106px;
+}
+
+.two-free-bg {
+    position: absolute;
+    font-weight: 900;
+    font-size: 288px;
+    line-height: 351px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    top: 0;
+    right: 0;
 }
 
 .free-item-left, .free-item-right {
@@ -3623,8 +3644,12 @@ form {
     color: #000000;
 }
 
+.type-two-free .type-title, .type-four-kids .type-title {
+    margin-bottom: 180px;
+}
 
-/*======================================================================================================================*/
+
+    /*======================================================================================================================*/
 /*type 3 free*/
 
 .header-type-three-free {
@@ -4080,7 +4105,7 @@ form {
 /*========================================= form =========================================*/
 
 .form-free input:hover {
-    border: 2px solid #3298F2;
+    border: 1px solid #3298F2;
 }
 
 .form-free input:focus, .item-tyrphs-form form input:focus {
@@ -4133,6 +4158,7 @@ form {
 
 .type-one-test .info-content-number {
     border: 4px solid #84C1F7;
+    color: #FF9638;
 }
 
 .type-one-test .content-title-2 h1, .type-one-kids .content-title-2 h1 {
@@ -4481,6 +4507,10 @@ form {
     padding-bottom: 82px;
 }
 
+.mobile-before-footer .title-text {
+    color: #ffffff;
+}
+
 .mobile-before-footer-btn button {
     width: 90%;
     margin: 0 auto;
@@ -4582,6 +4612,15 @@ form {
 .type-one-kids .header-info-img {
     left: -81px;
     bottom: -39px;
+}
+
+
+.type-one-kids .header-info-img img {
+    width: 700px;
+}
+
+.type-one-kids .type-1-wrapper-course {
+    padding-bottom: 240px;
 }
 
 /*type 2 kids*/
@@ -4838,6 +4877,7 @@ form {
 
 .type-one-index .type-1-wrapper-course {
     padding-top: 130px;
+    padding-bottom: 170px;
 }
 
 
@@ -5169,7 +5209,7 @@ form {
     width: 55%;
 }
 
-.white .type-title-text {
+.white .type-title-text, .orange .type-title-text {
     color: #000000;
 }
 
@@ -5258,8 +5298,6 @@ form {
     text-align: center;
 }
 
-
-
 /*======================================================================================================================*/
 /*type 8 index*/
 .type-eight-index .section-title {
@@ -5297,7 +5335,7 @@ form {
     color: #F2F2F2;
     padding: 20px;
     margin: 54px auto 0;
-    width: 50%;
+    width: 70%;
     display: block;
     transition: all .3s;
 }
@@ -5391,7 +5429,9 @@ form {
     width: 45%;
 }
 
-
+.type-nine-index .free-form-content .type-title-h2 {
+    color: #FF9638;
+}
 
 
 /*======================================================================================================================*/
@@ -5406,6 +5446,10 @@ form {
 
 .header-text strong {
     font-weight: bold;
+}
+
+.type-one-about .type-1-wrapper-course {
+    padding-bottom: 230px;
 }
 
 
@@ -6032,8 +6076,8 @@ form {
 .react-carousel-image-description {
     display: none;
     text-align: center;
-    font-weight: 500;
-    line-height: 26px;
+    font-weight: 800;
+    line-height: 24px;
     color: #000000;
     margin-top: 33px;
 }
@@ -6117,6 +6161,10 @@ form {
     position: relative;
 }
 
+.type-one-angular  .content-title-1 {
+    text-transform: uppercase;
+}
+
 .type-one-angular .content-title-2 h1 {
     color: #000000;
 }
@@ -6127,6 +6175,10 @@ form {
 
 .type-one-angular .header-content-button button {
     background: #FF9638;
+}
+
+.type-one-angular .header-content-quantity span {
+    color: #FF9638;
 }
 
 
@@ -6246,21 +6298,27 @@ form {
 /*======================================================================================================================*/
                                                             /*Review*/
 /*======================================================================================================================*/
+/*type 1 reviews*/
+
+.type-one-reviews {
+    padding-top: 64px;
+    padding-bottom: 120px;
+}
 
 .wrap-video {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .review-video-items {
     width: 22%;
     margin-bottom: 40px;
+    margin-left: 30px;
 }
 
 .review-video-items a {
     display: block;
-
 }
 
 .review-video-items a img {
@@ -6268,6 +6326,53 @@ form {
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #3298f2;
+    transition: all ease .3s;
+}
+
+.review-video-items a img:hover {
+ border-color: #FF9638;
+}
+
+.type-one-reviews .type-title-text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.load-more-button {
+    position: relative;
+}
+
+.load-more-button button {
+    position: absolute;
+    left: 50%;
+    margin-left: -176px;
+    background: #3298F2;
+    border-radius: 10px;
+    width: 352px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F7F7F7;
+    border: 2px solid #3298F2;
+    transition: .3s;
+}
+
+.load-more-button button:hover {
+    background: none;
+    color: #000000;
+}
+
+    /*type 2 reviews*/
+.type-two-reviews {
+    background: #EDF4FB;
+    padding-top: 66px;
+    padding-bottom: 78px;
+}
+
+.type-two-reviews .slick-dots {
+    bottom: -45px;
 }
 
 /*======================================================================================================================*/
@@ -6313,6 +6418,8 @@ form {
 .error-content-mobile {
     display: none;
 }
+
+
 
 
 
