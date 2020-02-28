@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(".fancybox").fancybox({
-        openEffect	: 'none',
-        closeEffect	: 'none'
+        openEffect	: 'elastic',
+        closeEffect	: 'elastic'
     });
 });

@@ -1,10 +1,6 @@
 /*==========  Desktop First Method  ==========*/
 
 @media screen and (max-width: 1600px){
-
-}
-
-@media screen and (max-width: 1600px){
     .type-two-python-header-item {
         padding-left: 23px;
     }
@@ -129,12 +125,21 @@
         padding: 20px;
     }
 
+    .type-one-index .type-1-wrapper-course {
+        padding-bottom: 0;
+    }
+
+
+
+
 }
 
 @media screen and (max-width: 1400px) {
     .six-wrap-item-right {
         justify-content: flex-start;
     }
+
+
 
     .six-wrap-item-left {
         justify-content: flex-end;
@@ -206,7 +211,6 @@
     .five-java-item-image-1 img{
         width: 100%;
     }
-
 
 
 }
@@ -590,6 +594,7 @@
     .btn-page {
         left: 50%;
         margin-left: -185px;
+        bottom: -80px;
     }
 
     .arr, .arr-2 {
@@ -2035,6 +2040,24 @@
     .wrap-video {
         justify-content: space-around;
     }
+
+    .type-one-index .header-content-text {
+        width: 100%;
+    }
+
+    .list-mobile {
+        display: block;
+        width: 100%;
+        padding: 0 0 0 50px;
+        position: relative;
+    }
+
+
+    .type-seven-image-mob {
+        position: absolute;
+        right: 0;
+        top: 10%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -2073,11 +2096,6 @@
     .type-five-content-mob {
         display: block;
     }
-
-    .list-item {
-        width: 135px;
-    }
-
     .type-seven-title {
         margin-bottom: 20px;
     }
@@ -2231,19 +2249,6 @@
         margin-left: 20px;
         margin-top: 5px;
         color: #ffffff;
-    }
-
-    .list-mobile {
-        display: block;
-        width: 100%;
-        padding: 0 0 0 50px;
-        position: relative;
-    }
-
-    .type-seven-image-mob {
-        position: absolute;
-        right: 0;
-        top: 10%;
     }
 
     .type-tyrphs-title-1, .tyrphs-btn button {
@@ -2835,5 +2840,6 @@
     .list-item {
         width: 200px;
     }
+
 
 }

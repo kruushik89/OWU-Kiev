@@ -623,6 +623,11 @@ header .dropdown-menu li {
     position: relative;
 }
 
+.type-1 .wrapper-title-1 {
+    background: #EDF4FB;
+    z-index: 2;
+}
+
 .type-one-java .info-content-number {
     border: 4px solid #84C1F7;
 }
@@ -1724,10 +1729,12 @@ ol.carousel-indicators {
     top: 5px;
 }
 
+.item-list-content-wrap {
+    position: relative;
+}
 
 .item-list-content {
     width: 500px;
-    margin-left: 40px;
     display: none;
 }
 
@@ -1807,8 +1814,8 @@ ol.carousel-indicators {
 
 .btn-page {
     position: absolute;
-    right: 18%;
-    bottom: -60px;
+    right: 0;
+    bottom: 0;
 }
 
 .btn-page button {
@@ -1859,7 +1866,7 @@ ol.carousel-indicators {
     width: 70%;
     position: absolute;
     left: 50%;
-    bottom: -80px;
+    bottom: -90px;
     margin-left: -35%;
     z-index: 9;
 }
@@ -1879,6 +1886,7 @@ ol.carousel-indicators {
     line-height: 17px;
     text-align: center;
     color: #292929;
+    margin-top: 10px;
 }
 
 .type-eight .image-title {
@@ -3595,6 +3603,10 @@ form {
     padding-bottom: 106px;
 }
 
+.type-two-free .two-free-content-image img {
+    width: 559px;
+}
+
 .two-free-bg {
     position: absolute;
     font-weight: 900;
@@ -3609,7 +3621,7 @@ form {
 .free-item-left, .free-item-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .free-item-left {
@@ -3640,7 +3652,7 @@ form {
 .two-free-item-text {
     font-weight: 300;
     font-size: 16px;
-    line-height: 17px;
+    line-height: 21px;
     color: #000000;
 }
 
@@ -4113,7 +4125,7 @@ form {
     font-size: 16px;
     line-height: 17px;
     letter-spacing: 0.05em;
-    border: 2px solid #3298F2;
+    border: 1px solid #3298F2;
     box-sizing: border-box;
     border-radius: 3px;
 }
@@ -4802,6 +4814,10 @@ form {
     padding-top: 80px;
 }
 
+.type-eight-kids .section-ten-text, .type-eleven-kids .section-ten-text {
+    font-size: 18px;
+}
+
 
 /*type 9 kids*/
 .type-nine-kids .section-title {
@@ -4811,6 +4827,14 @@ form {
 .type-ten-kids .type-tyrphs-title-1 {
     width: 280px;
     margin-left: -140px;
+}
+
+.type-eleven-kids .section-ten-title h2 {
+    text-transform: uppercase;
+}
+
+.type-eleven-kids .section-ten-title {
+    margin-bottom: 10px;
 }
 
 
@@ -4871,13 +4895,22 @@ form {
     padding: 0;
 }
 
+.type-one-index .header-content-text {
+    width: 70%;
+}
+
 .header-text p:last-child {
     margin-top: 15px;
 }
 
 .type-one-index .type-1-wrapper-course {
     padding-top: 130px;
-    padding-bottom: 170px;
+}
+
+.type-one-index .btn-header-content {
+    position: relative;
+    left: auto;
+    margin: 0 auto;
 }
 
 
@@ -5311,6 +5344,13 @@ form {
     background: #EDF4FB;
     padding-top: 83px;
     padding-bottom: 44px;
+}
+
+.type-nine-index .free-form-content .type-title-h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: inherit;
 }
 
 .nine-index-forms-content {
@@ -6076,8 +6116,9 @@ form {
 .react-carousel-image-description {
     display: none;
     text-align: center;
-    font-weight: 800;
-    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
     color: #000000;
     margin-top: 33px;
 }
@@ -6308,13 +6349,12 @@ form {
 .wrap-video {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .review-video-items {
     width: 22%;
     margin-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .review-video-items a {
