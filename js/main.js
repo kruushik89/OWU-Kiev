@@ -116,35 +116,53 @@ function hoverForms() {
     let formsHover = document.querySelectorAll('.type-tyrphs-item');
     formsHover.forEach(function (el) {
         el.addEventListener('mouseenter', function (e) {
+            console.log(e);
             e.target.children[0].style.backgroundColor = '#3298f2';
             e.target.children[0].style.color = '#ffffff';
-
+            e.target.style.borderColor = '#3298f2';
 
         });
 
         el.addEventListener('mouseleave', function (e) {
             e.target.children[0].style.backgroundColor = '';
             e.target.children[0].style.color = '';
+            e.target.style.borderColor = '';
         })
 
     });
 }
 
+hoverForms('.type-tyrphs-item');
+
 
 // =========================================================================================================================
 
 //border blue in index.html type 3
-let threeItemFooter = document.querySelectorAll('.three-index-item-footer');
+let threeItemFooter = document.querySelectorAll('.three-index-item-content');
 
 threeItemFooter.forEach(function (el) {
+    
     el.addEventListener('mouseenter', function (e) {
-        e.target.offsetParent.style.border = '1px solid #3298F2';
-        e.target.offsetParent.children[0].style.border = '1px solid #3298F2';
+        e.target.style.border = '1px solid #3298F2';
+        e.target.children[0].style.border = '1px solid #3298F2';
     });
 
     el.addEventListener('mouseleave', function (e) {
-        e.target.offsetParent.style.border = '';
-        e.target.offsetParent.children[0].style.border = '';
+        e.target.style.border = '';
+        e.target.children[0].style.border = '';
+    })
+});
+
+let fourItem = document.querySelectorAll('.four-index-slider-item');
+
+fourItem.forEach(function (el) {
+
+    el.addEventListener('mouseenter', function (e) {
+        e.target.style.border = '1px solid #FF9638';
+    });
+
+    el.addEventListener('mouseleave', function (e) {
+        e.target.style.border = '';
     })
 });
 //end border blue in index.html type 3

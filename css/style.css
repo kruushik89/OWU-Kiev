@@ -1,6 +1,10 @@
 /*@import "reset.css";*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700, 700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
 
+* {
+    outline: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,6 +30,12 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
 }
 
 body {
@@ -711,16 +721,26 @@ header .dropdown-menu li {
 }
 
 .btn-header-content button, .btn-header-mobile button {
-    border: none;
     line-height: 19px;
     color: #292929;
     padding: 20px;
     background: #FFE200;
+    border: 2px solid #FFE200;
     border-radius: 5px;
     font-weight: bold;
     font-size: 17px;
     width: 100%;
     margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.btn-header-content button:hover {
+    background: none;
+}
+
+.type-1 .btn-header-content button:hover, .type-one-java .btn-header-content button:hover,
+.type-one-python .btn-header-content button:hover {
+    background: #EDF4FB;
 }
 
 .header-content-text {
@@ -1820,7 +1840,7 @@ ol.carousel-indicators {
 
 .btn-page button {
     width: 370px;
-    border: none;
+    border: 2px solid #FFE200;
     line-height: 19px;
     color: #292929;
     padding: 20px;
@@ -1828,6 +1848,11 @@ ol.carousel-indicators {
     border-radius: 5px;
     font-weight: bold;
     font-size: 18px;
+    transition: all .3s;
+}
+
+.btn-page button:hover {
+    background: none;
 }
 
 .type-seven-image {
@@ -1989,12 +2014,17 @@ ol.carousel-indicators {
     display: block;
     background: #3298F2;
     border-radius: 10px;
-    border: none;
+    border: 2px solid #3298F2;
     width: 370px;
     padding: 25px 0;
     color: #fff;
     text-decoration: none;
     text-align: center;
+    transition: all .3s;
+}
+
+.description-btn a:hover {
+    background: none;
 }
 
 /*type 8 mobile*/
@@ -2049,6 +2079,8 @@ ol.carousel-indicators {
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid transparent;
+    transition: all .3s;
 }
 
 .type-tyrphs-title-1 {
@@ -2081,6 +2113,7 @@ ol.carousel-indicators {
 }
 
 .item-tyrphs-description {
+    height: 140px;
     margin-bottom: 25px;
 }
 
@@ -2259,7 +2292,7 @@ ol.carousel-indicators {
 .section-ten-text {
     font-size: 21px;
     line-height: 30px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 /*end type 10*/
@@ -2453,6 +2486,7 @@ form {
 
 .type-one-python .btn-header-content button {
     background: #3298F2;
+    border-color: #3298F2;
 }
 
 
@@ -2763,9 +2797,9 @@ form {
 }
 
 .six-item-text {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 19px;
     color: #000000;
 }
 
@@ -3075,8 +3109,9 @@ form {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #F9F9F9;
-    left: -163px;
+    right: -55px;
     top: 38px;
+    z-index: 9;
 }
 
 .one-java-bg-complex {
@@ -3332,7 +3367,7 @@ form {
 .five-java-item-image-1 {
     position: absolute;
     left: 0;
-    top: 220px;
+    top: 190px;
 }
 
 .five-java-item-image-2 {
@@ -3441,23 +3476,23 @@ form {
 }
 
 .type-eight-java .six-item-number.num-one, .type-six-python .six-item-number.num-one {
-    background: url(../image/nums.png) 10px -406px;
+    background: url(../image/nums.png) -1px -1px;
 }
 
 .type-eight-java .six-item-number.num-two, .type-six-python .six-item-number.num-two {
-    background: url(../image/nums.png) -115px -406px;
+    background: url(../image/nums.png) -200px 0;
 }
 
 .type-eight-java .six-item-number.num-three, .type-six-python .six-item-number.num-three {
-    background: url(../image/nums.png) -286px -406px;
+    background: url(../image/nums.png) -401px -1px;
 }
 
 .type-eight-java .six-item-number.num-four, .type-six-python .six-item-number.num-four {
-    background: url(../image/nums.png) -455px -406px;
+        background: url(../image/nums.png) 0 -195px;
 }
 
 .type-eight-java .six-item-number.num-five, .type-six-python .six-item-number.num-five {
-    background: url(../image/nums.png) -630px -406px;
+        background: url(../image/nums.png) -195px -195px;
 }
 
 .free-img {
@@ -3529,6 +3564,10 @@ form {
     margin-bottom: 36px;
 }
 
+.content-title-free span {
+    display: block;
+}
+
 .type-one-free .content-title-2{
     margin-bottom: 53px;
 }
@@ -3578,7 +3617,7 @@ form {
     position: absolute;
     right: -3px;
     width: 60%;
-    top: 188px;
+    top: 50px;
 }
 
 .info-content-text-free {
@@ -3586,8 +3625,8 @@ form {
     font-weight: 800;
     font-size: 21px;
     color: #FF9638;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 25px;
+    padding-top: 25px;
     padding-bottom: 20px;
     padding-left: 32px;
     -webkit-border-radius: 6px;
@@ -3656,7 +3695,7 @@ form {
     color: #000000;
 }
 
-.type-two-free .type-title, .type-four-kids .type-title {
+.type-two-free .type-title {
     margin-bottom: 180px;
 }
 
@@ -3789,7 +3828,7 @@ form {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 10px auto 0;
 }
 
 .brand-content img {
@@ -3928,6 +3967,7 @@ form {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    z-index: 1;
 }
 
 .seven-free-item::before {
@@ -3950,14 +3990,17 @@ form {
 
 .seven-free-one::before{
     background: url(../image/nums.png) 10px -730px;
+    z-index: -1;
 }
 
 .seven-free-two::before{
     background: url(../image/nums.png) -112px -730px;
+    z-index: -1;
 }
 
 .seven-free-three::before{
     background: url(../image/nums.png) -282px -730px;
+    z-index: -1;
 }
 
 .type-seven-free .type-title-h2 {
@@ -4120,7 +4163,7 @@ form {
     border: 1px solid #3298F2;
 }
 
-.form-free input:focus, .item-tyrphs-form form input:focus {
+.form-free input:focus, .item-tyrphs-form form input:focus, .form-free input:hover, .item-tyrphs-form form input:hover {
     font-weight: 600;
     font-size: 16px;
     line-height: 17px;
@@ -4159,7 +4202,19 @@ form {
 /*type 1 test*/
 .type-one-test .type-1-wrapper-course {
     background: #ffffff;
+    margin-top: 60px;
 }
+
+.one-test-bg {
+    position: absolute;
+    color: #F9F9F9;
+    font-weight: 900;
+    font-size: 288px;
+    text-transform: uppercase;
+    top: -63px;
+    right: 60px;
+}
+
 .type-one-test {
     height: 93vh;
 }
@@ -4745,6 +4800,7 @@ form {
     font-size: 144px;
     text-transform: uppercase;
     color: #FFFFFF;
+    top: -62px;
 }
 
 
@@ -4811,7 +4867,7 @@ form {
 .type-eight-kids, .type-eleven-kids {
     position: relative;
     background: #FF9638;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .type-eight-kids .section-ten-text, .type-eleven-kids .section-ten-text {
@@ -4861,6 +4917,21 @@ form {
 /*index*/
 /*type 1 index*/
 
+
+.type-one-index {
+    background-image: url(../image/index-screen.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.type-one-index-mobile {
+    display: none;
+}
+
+.type-one-index .header-content-info {
+    width: 40%;
+}
+
 .header-video-image {
     position: relative;
     left: -20%;
@@ -4905,6 +4976,7 @@ form {
 
 .type-one-index .type-1-wrapper-course {
     padding-top: 130px;
+    background: none;
 }
 
 .type-one-index .btn-header-content {
@@ -4912,10 +4984,61 @@ form {
     left: auto;
     margin: 0 auto;
 }
+.blue-two {
+    text-align: center;
+    background: #3298F2;
+    padding-top: 52px;
+    padding-bottom: 70px;
+}
 
+.blue-two .type-title-h2 {
+    font-size: 48px;
+}
+
+.blue-two .type-title-h3 {
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+.header-content-info-text {
+    font-size: 260px;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    background: -o-linear-gradient(transparent, transparent);
+    background: url(../image/florian-olivo-4hbJ-eymZ1o-unsplash.jpg) no-repeat 100% 50%;
+    background-size: cover;
+    -webkit-background-clip: text;
+    animation: 20s linear 0s infinite alternate move_eye;
+    width: 1000px;
+    position: absolute;
+    top: 90px;
+    left: -60px;
+}
+
+@keyframes move_eye { from { background-position-x: -200px; } to { background-position-x: 0; }  }
+
+.header-content-info-text-two {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #303030;
+    position: absolute;
+    top: 305px;
+    left: -33px;
+}
+
+.video-play-index {
+    position: absolute;
+    top: 450px;
+    left: -285px;
+}
 
 /*======================================================================================================================*/
 /*type 2 index*/
+
+
 .type-two-index {
     padding-top: 74px;
     padding-bottom: 105px;
@@ -4991,11 +5114,15 @@ form {
     padding-bottom: 141px;
 }
 
+.three-content-index-wrap {
+    width: 33.33%;
+}
+
 .three-index-item-content {
     position: relative;
-    width: 33.33%;
+
     background: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     transition: .3s;
     border: 1px solid #EDF4FB;
 }
@@ -5109,13 +5236,17 @@ form {
 
 }
 
-.four-index-slider-item {
+.wrap-slider-item {
     width: 85% !important;
     margin-left: 40px;
+}
+
+.four-index-slider-item {
     background: #212121;
     border: 1px solid #454545;
+    border-bottom: none;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     text-align: center;
     display: flex !important;
     flex-direction: column;
@@ -5214,6 +5345,7 @@ form {
 .four-index-slider-item-footer {
     display: flex;
     width: 100%;
+    text-align: center;
 }
 
 .orange, .blue, .white {
@@ -5269,9 +5401,10 @@ form {
     transition: .3s;
 }
 
-.orange-button button:hover {
+.orange-button button:hover, .orange-button a:hover {
     background: none;
 }
+
 
 .blue-button-one button:hover {
     color: #3298F2;
@@ -5807,7 +5940,7 @@ form {
 
 .six-about-wrap-item {
     position: relative;
-    width: 20%;
+    width: 21%;
     border: 1px solid #9DC6EA;
     box-sizing: border-box;
     border-radius: 20px;
@@ -5834,6 +5967,10 @@ form {
     text-align: center;
     cursor: pointer;
     transition: .3s;
+}
+
+.six-about-item-button:hover {
+    border-color: #3298F2;
 }
 
 .six-about-content {
@@ -6222,6 +6359,10 @@ form {
     color: #FF9638;
 }
 
+.one-react-content .one-react-title-bg {
+    font-size: 252px;
+}
+
 
 /*======================================================================================================================*/
 /*type 2 Angular*/
@@ -6349,6 +6490,7 @@ form {
 .wrap-video {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .review-video-items {

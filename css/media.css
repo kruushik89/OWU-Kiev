@@ -129,7 +129,27 @@
         padding-bottom: 0;
     }
 
+    .content-title-free span {
+        display: inline-block;
+    }
 
+    .type-one-index {
+        background-position-x: 570px;
+    }
+
+    .header-content-info-text {
+        font-size: 240px;
+        left: -100px;
+    }
+
+    .header-content-info-text-two {
+        font-size: 34px;
+        left: -66px;
+    }
+
+    .video-play-index img {
+        width: 150px;
+    }
 
 
 }
@@ -138,7 +158,6 @@
     .six-wrap-item-right {
         justify-content: flex-start;
     }
-
 
 
     .six-wrap-item-left {
@@ -505,7 +524,7 @@
         margin-top: 45px;
         padding: 60px 12px 20px;
         justify-content: space-between;
-        margin-left: 12px;
+        /*margin-left: 12px;*/
     }
 
     .type-seven-react .type-tyrphs-item, .type-seven-angular .type-tyrphs-item {
@@ -986,11 +1005,19 @@
         margin-bottom: 20px;
     }
 
-    .type-one-free .mobile-title-h2, .type-one-test .mobile-title-h2, .type-one-kids .mobile-title-h2 {
+     .type-one-test .mobile-title-h2, .type-one-kids .mobile-title-h2 {
         font-weight: 900;
         font-size: 30px;
         line-height: 37px;
         text-transform: uppercase;
+    }
+
+    .type-one-free .mobile-title-h2 {
+        font-size: 25px;
+    }
+
+    .type-two-free .type-title {
+        margin-bottom: 50px;
     }
 
 
@@ -1460,6 +1487,14 @@
 
     .type-one-index {
         height: auto;
+        background-image: url(../image/bg-mobile.png);
+        background-position: 50% 41%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .type-one-index .header-content-info {
+        display: none;
     }
 
     .type-one-index .type-1-wrapper,  .type-one-about .type-1-wrapper {
@@ -1468,25 +1503,23 @@
     }
 
     .type-one-index .type-1-wrapper-course {
-        padding: 50px 15px 150px;
+        padding: 50px 15px 60px;
         width: 100%;
     }
 
     .type-one-index .type-1-wrapper-title {
         margin-bottom: 35px;
+        text-align: center;
     }
 
     .type-one-index .wrapper-title-2 {
-        font-size: 24px;
+        font-size: 19px;
         line-height: 30px;
+        width: 100%;
     }
 
     .type-one-index .header-content-text p {
         font-weight: 500;
-    }
-
-    .type-one-index .btn-header-content {
-        text-align: left;
     }
 
     .header-video-image {
@@ -1515,7 +1548,7 @@
     }
 
     .type-two-index {
-        padding-top: 180px;
+        padding-top: 50px;
         padding-bottom: 0;
         background: #ffffff;
     }
@@ -1527,7 +1560,6 @@
     .three-index-item-content {
         width: 100%;
         border: 1px solid #3298F2;
-        margin-bottom: 58px;
     }
 
     .three-index-wrap-item {
@@ -2043,6 +2075,7 @@
 
     .type-one-index .header-content-text {
         width: 100%;
+        text-align: justify;
     }
 
     .list-mobile {
@@ -2052,11 +2085,41 @@
         position: relative;
     }
 
-
     .type-seven-image-mob {
         position: absolute;
         right: 0;
         top: 10%;
+    }
+
+    .header-content-info-text {
+        position: inherit;
+        font-size: 120px;
+        text-align: left;
+    }
+
+    .header-content-info-text-two {
+        position: inherit;
+        font-size: 24px;
+    }
+
+    .video-play-index {
+        position: inherit;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .video-play-index img {
+        width: 125px;
+    }
+
+    .type-one-index-mobile {
+        display: block;
+    }
+
+    .three-content-index-wrap {
+        width: 100%;
+        margin-bottom: 58px;
     }
 }
 
@@ -2669,9 +2732,17 @@
     .type-nine-test .item-tyrphs-title-2 {
         font-size: 21px;
     }
+
+    .type-one-index .btn-header-content {
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 400px) {
+    .type-title-h2 {
+        font-size: 24px;
+    }
+
     .type-two-python .type-2-title {
         font-size: 23px;
     }
@@ -2779,6 +2850,14 @@
         font-size: 13px;
     }
 
+    .header-content-info-text-two {
+        font-size: 22px;
+    }
+
+    .header-content-info-text {
+        font-size: 108px;
+    }
+
 
 }
 
@@ -2843,3 +2922,4 @@
 
 
 }
+
