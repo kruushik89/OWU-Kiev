@@ -217,6 +217,7 @@ function hoverForms() {
         el.addEventListener('mouseenter', function (e) {
             e.target.children[0].style.backgroundColor = '#3298f2';
             e.target.children[0].style.color = '#ffffff';
+            e.target.style.borderColor = '#3298f2';
 
 
         });
@@ -224,10 +225,13 @@ function hoverForms() {
         el.addEventListener('mouseleave', function (e) {
             e.target.children[0].style.backgroundColor = '';
             e.target.children[0].style.color = '';
+            e.target.style.borderColor = '';
         })
 
     });
 }
+
+hoverForms();
 
 
 

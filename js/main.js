@@ -15,23 +15,6 @@ document.querySelector('.c-hamburger').addEventListener('click', function (e) {
 });
 // end c-hamburger
 
-// =========================================================================================================================
-
-// modal
-let modalWindow = document.querySelector('.body-modal');
-let modalButton = document.querySelectorAll('.button-modal');
-
-for (let i = 0; i < modalButton.length; i++) {
-    modalButton[i].onclick = function () {
-        modalWindow.classList.add('d-block');
-    }
-}
-
-let closeButton = document.querySelector('.close-image');
-closeButton.onclick = () => {
-    modalWindow.classList.remove('d-block');
-};
-// end modal
 
 // =========================================================================================================================
 
@@ -49,6 +32,25 @@ courseMobile.onclick = () =>{
     }
 };
 // end mobile drop nav menu
+
+
+// =========================================================================================================================
+
+// modal
+let modalWindow = document.querySelector('.body-modal');
+let modalButton = document.querySelectorAll('.button-modal');
+
+for (let i = 0; i < modalButton.length; i++) {
+    modalButton[i].onclick = function () {
+        modalWindow.classList.add('d-block');
+    }
+}
+
+let closeButton = document.querySelector('.close-image');
+closeButton.onclick = () => {
+    modalWindow.classList.remove('d-block');
+};
+// end modal
 
 // =========================================================================================================================
 

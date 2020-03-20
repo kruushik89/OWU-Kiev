@@ -234,10 +234,6 @@ body {
     height: 100vh;
 }
 
-#page {
-    margin-top: 2px;
-}
-
 .type-seven .list-item:hover, .type-seven .list-content-title h4:hover {
     color: #3298f2;
 }
@@ -257,8 +253,7 @@ body {
 header {
     width: 100%;
     height: 70px;
-    background: #F9F9F9;
-    opacity: 0.85;
+    background: rgba(249, 249, 249, .85);
 }
 
 header .dropdown-menu li {
@@ -335,9 +330,10 @@ header .dropdown-menu li {
 
 /*dropdown menu*/
 .dropdown-menu {
-    top: 63px;
+    top: 68px;
     left: -28px;
     border: none;
+    padding: 0.8rem 0;
 }
 
 
@@ -513,8 +509,10 @@ header .dropdown-menu li {
 
 .bottom-line {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #49B3FB;
+    position: absolute;
+    bottom: 0;
 }
 
 /*end nav menu*/
@@ -660,6 +658,7 @@ header .dropdown-menu li {
 
 .header-content-title {
     position: relative;
+    z-index: 1;
 }
 
 .type-1-wrapper-title {
@@ -1772,7 +1771,9 @@ ol.carousel-indicators {
     border: 1px solid #3298F2;
 }
 
-.list-content-title:hover {
+
+
+.list-content:hover .list-content-title {
     color: #3298f2;
 }
 
@@ -2148,7 +2149,8 @@ ol.carousel-indicators {
 
 .item-tyrphs-form form {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
 }
 
 .item-input-group input:first-child {
@@ -2160,6 +2162,7 @@ ol.carousel-indicators {
 }
 
 .item-tyrphs-form form input, .form-free input, .form-free select {
+    width: 100%;
     margin-bottom: 10px;
     border: 1px solid #EDF4FB;
     box-sizing: border-box;
@@ -2170,6 +2173,15 @@ ol.carousel-indicators {
     line-height: 17px;
     letter-spacing: 0.05em;
     color: #292929;
+}
+
+.item-tyrphs-form form input:nth-child(1) {
+    width: 70%;
+}
+
+.item-tyrphs-form form input:nth-child(2) {
+    width: 29%;
+    margin-left: 1%;
 }
 
 .item-tyrphs-form form input::placeholder, .form-free input::placeholder, .form-free select::placeholder {
@@ -2396,10 +2408,10 @@ footer {
 
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+/*form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
 .forms input {
     background-color: transparent;
@@ -3109,7 +3121,7 @@ form {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #F9F9F9;
-    right: -55px;
+    right: -54px;
     top: 38px;
     z-index: 9;
 }
@@ -3157,6 +3169,10 @@ form {
     font-size: 21px;
     line-height: 30px;
     color: #292929;
+}
+
+.type-one-java .header-content-title {
+    z-index: 10;
 }
 
 
@@ -4202,7 +4218,7 @@ form {
 /*type 1 test*/
 .type-one-test .type-1-wrapper-course {
     background: #ffffff;
-    margin-top: 60px;
+    padding: 70px 20px 74px 70px;
 }
 
 .one-test-bg {
@@ -4215,10 +4231,6 @@ form {
     right: 60px;
 }
 
-.type-one-test {
-    height: 93vh;
-}
-
 .type-one-test .info-content-text, .type-one-python .info-content-text {
     color: #292929;
 }
@@ -4228,13 +4240,19 @@ form {
     color: #FF9638;
 }
 
-.type-one-test .content-title-2 h1, .type-one-kids .content-title-2 h1 {
+.type-one-kids .content-title-2 h1 {
     font-weight: 900;
     font-size: 48px;
     line-height: 59px;
     color: #333333;
     position: relative;
     z-index: 1;
+}
+
+.type-one-test .content-title-2 h1 {
+    font-size: 36px;
+    color: #333333;
+    line-height: 38px;
 }
 
 .type-one-test .content-title-free, .type-one-kids .content-title-free {
@@ -5025,7 +5043,7 @@ form {
     text-transform: uppercase;
     color: #303030;
     position: absolute;
-    top: 305px;
+    top: 330px;
     left: -33px;
 }
 
@@ -5382,7 +5400,8 @@ form {
     width: 315px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 50%;
+    margin-top: -32px;
 }
 
 .orange-button a, .blue-button-one button, .blue-button-two a, .orange-button button {
@@ -5590,7 +5609,8 @@ form {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    margin-top: -32px;
     right: 0;
 }
 
