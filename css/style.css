@@ -102,6 +102,13 @@ button {
     text-align: center;
 }
 
+.slick-slide img {
+    width: 100%;
+    object-fit: cover;
+    height: 276px;
+    border-radius: 20px;
+}
+
 
 .hidden-block .two-content-2 {
     height: auto !important;
@@ -629,6 +636,7 @@ header .dropdown-menu li {
 .type-1-wrapper {
     height: 100%;
     position: relative;
+    background: #EDF4FB;
 }
 
 .type-1 .wrapper-title-1 {
@@ -642,8 +650,7 @@ header .dropdown-menu li {
 
 .type-1-wrapper-course {
     position: relative;
-    background: #EDF4FB;
-    padding: 70px 20px 120px 70px;
+    padding: 40px 20px 120px 70px;
     width: 60%;
 }
 
@@ -1031,6 +1038,11 @@ header .dropdown-menu li {
     border-radius: 6px;
     padding: 35px 15px 50px;
     height: 100%;
+    transition: 0.3s;
+}
+
+.type-3-item:hover {
+    border: 1px solid #ffffff;
 }
 
 .type-3-item-title {
@@ -1577,7 +1589,7 @@ ol.carousel-indicators {
 }
 
 .slick-dots {
-    bottom: -130px;
+    bottom: -105px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -1764,7 +1776,6 @@ ol.carousel-indicators {
     padding: 10px 20px;
     margin-bottom: 10px;
     cursor: pointer;
-    transition: .5s;
 }
 
 .list-content:hover {
@@ -1957,19 +1968,61 @@ ol.carousel-indicators {
 
 .video-item {
     width: 270px;
-    height: 140px;
-    background: #C4C4C4;
+    position: relative;
 }
 
-.video-item img, .main-video img {
+.play {
+    position: absolute;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    margin-left: -42.5px;
+    top: 50%;
+    margin-top: -42.5px;
+}
+
+.play:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    border-color: #FF9638;
+}
+
+.play:hover i {
+    color: #FF9638;
+    transition: 0.3s;
+}
+
+.play i {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.main-video a {
+    display: block;
+}
+
+.main-video img {
+    height: 459px;
     width: 100%;
+    object-fit: cover;
+}
+
+.video-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+
 }
 
 .main-video {
     width: 525px;
-    height: 460px;
-    background: #C4C4C4;
     margin-left: 15px;
+    position: relative;
 }
 
 .eight-mobile-image-left, .eight-mobile-image-right {
@@ -2125,7 +2178,6 @@ ol.carousel-indicators {
     line-height: 20px;
     color: #000000;
     padding-left: 50px;
-    padding-right: 70px;
     margin-bottom: 15px;
 }
 
@@ -2221,12 +2273,6 @@ ol.carousel-indicators {
     color: #333333;
 }
 
-.tyrphs-btn button span {
-    font-weight: 900;
-    font-size: 16px;
-    color: #F2F2F2;
-}
-
 .type-tyrphs-content-mobile {
     display: none;
 }
@@ -2266,7 +2312,8 @@ ol.carousel-indicators {
 }
 
 .section-ten-btn button:hover {
-    background: none;
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 .section-ten-btn{
@@ -2463,6 +2510,7 @@ footer {
 /*------------------------------------------------------------------------------------------------------------------------*/
 .type-one-python {
     position: relative;
+    display: flex;
 }
 
 .type-one-python .info-content-number {
@@ -2471,13 +2519,14 @@ footer {
 
 .wrapper-title-1-img-python {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    right: -125px;
     z-index: 1;
+    top: 87px;
 }
 
 .type-one-python .wrapper-title-1 {
     position: static;
+    z-index: 2;
 }
 
 .type-one-python .wrapper-title-2 {
@@ -2489,6 +2538,7 @@ footer {
 
 .type-one-python .type-1-wrapper-course {
     padding: 70px 20px 70px 100px;
+    width: 80%;
 }
 
 
@@ -2499,6 +2549,10 @@ footer {
 .type-one-python .btn-header-content button {
     background: #3298F2;
     border-color: #3298F2;
+}
+
+.type-one-python  .type-1-wrapper {
+    width: 60%;
 }
 
 
@@ -2827,11 +2881,11 @@ footer {
 
 .six-wrap-item-right {
     display: flex;
-    justify-content: flex-end;
 }
 
 .six-wrap-item-left {
     display: flex;
+    justify-content: flex-end;
 }
 
 .six-item-number {
@@ -2877,6 +2931,71 @@ footer {
     border-left: 4px solid #3298F2;
     padding-left: 15px;
 }
+
+.type-six-python .six-wrap-item {
+    width: 80%;
+}
+
+.type-six-python .six-wrap-item-left, .type-six-python .six-wrap-item-right {
+    display: flex;
+    justify-content: center;
+}
+
+.six-item-number-python {
+    width: 173px;
+    height: 75px;
+}
+
+/*.type-six-python .six-item-number {*/
+/*    height: 140px;*/
+/*    position: absolute;*/
+/*    top: -108px;*/
+/*    left: -50px;*/
+/*    width: 110px;*/
+/*}*/
+
+.type-six-python .six-item-number-python.num-one {
+    background: url(../image/new-number.png) -1px -5px;
+}
+
+.type-six-python .six-item-number-python.num-two {
+    background: url(../image/new-number.png) -185px -5px;
+}
+
+.type-six-python .six-item-number-python.num-three {
+    background: url(../image/new-number.png) -369px -5px;
+}
+
+.type-six-python .six-item-number-python.num-four {
+    background: url(../image/new-number.png) -538px -5px;
+}
+
+.type-six-python .six-item-number-python.num-five {
+    background: url(../image/new-number.png) -185px -5px;
+}
+
+.six-item-title-python {
+    display: flex;
+    align-items: center;
+}
+
+.six-item-title-python-text {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3298F2;
+    margin-left: 10px;
+}
+
+.sec-seven-content-image img {
+    width: 100%;
+}
+
+/*.type-six-python .six-item-title {*/
+/*    background-color: #ffffff;*/
+/*    z-index: 1;*/
+/*}*/
 
 /*======================================================================================================================*/
 /*type 7 python*/
@@ -2987,9 +3106,10 @@ footer {
     border: 1px solid #FDDB58;
 }
 
-.type-eight-python .list-content-title:hover {
+.type-eight-python .list-content:hover .list-content-title {
     color: #fddb58;
 }
+
 
 .type-eight-python .list-content-title {
     color: #ffffff;
@@ -3044,6 +3164,10 @@ footer {
     position: absolute;
     bottom: -190px;
     right: 0;
+}
+
+.type-four-java .lazy .slick-dots {
+    bottom: -85px;
 }
 
 /*======================================================================================================================*/
@@ -3424,6 +3548,10 @@ footer {
     border-color: #f48120;
 }
 
+.type-six-java .list-content:hover .list-content-title, .type-five-test .list-content:hover .list-content-title {
+    color: #f48120;
+}
+
 .type-six-java .list-item a, .type-six-java .list-content-title {
     color: #ffffff;
     text-decoration: none;
@@ -3433,6 +3561,10 @@ footer {
     position: absolute;
     bottom: -44px;
     left: 65px;
+}
+
+.type-six-java .btn-page button:hover {
+    color: #ffffff;
 }
 
 
@@ -3483,7 +3615,7 @@ footer {
     margin-bottom: 200px;
 }
 
-.type-eight-java .six-item-number, .type-six-python .six-item-number, .type-three-test .six-item-number, .type-two-free .six-item-number {
+.type-eight-java .six-item-number, .type-three-test .six-item-number, .type-two-free .six-item-number {
     position: absolute;
     top: -50px;
     left: -75px;
@@ -3491,7 +3623,7 @@ footer {
     height: 110px;
 }
 
-.type-eight-java .six-item-number.num-one, .type-six-python .six-item-number.num-one {
+.type-eight-java .six-item-number.num-one {
     background: url(../image/nums.png) -1px -1px;
 }
 
@@ -3804,7 +3936,7 @@ footer {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
-    background: none;
+    background: #FFD43D;
     border-radius: 5px;
     border: 2px solid #FFD43D;
     transition: .3s;
@@ -3817,7 +3949,7 @@ footer {
 }
 
 .btn-modal button:hover {
-    background: #FFD43D;
+    background: none;
 }
 
 .free-three-content .type-title {
@@ -3844,7 +3976,7 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    margin: 10px auto 0;
+    margin: 0 auto;
 }
 
 .brand-content img {
@@ -3938,7 +4070,7 @@ footer {
 
 .type-six-free .description-btn a, .type-eight-test .description-btn a{
     display: block;
-    background: none;
+    background: #3298F2;
     border: 2px solid #3298F2;
     border-radius: 10px;
     width: 370px;
@@ -3950,7 +4082,7 @@ footer {
 
 .type-six-free .description-btn a:hover, .type-eight-test .description-btn a:hover {
     transition: .3s;
-    background: #3298F2;
+    background: none;
 }
 
 /*======================================================================================================================*/
@@ -4036,6 +4168,8 @@ footer {
     border-radius: 10px;
     padding-top: 57px;
     padding-bottom: 112px;
+    z-index: 1;
+    position: relative;
 }
 
 .form-content {
@@ -4175,11 +4309,7 @@ footer {
 
 /*========================================= form =========================================*/
 
-.form-free input:hover {
-    border: 1px solid #3298F2;
-}
-
-.form-free input:focus, .item-tyrphs-form form input:focus, .form-free input:hover, .item-tyrphs-form form input:hover {
+.form-free input:focus, .item-tyrphs-form form input:focus {
     font-weight: 600;
     font-size: 16px;
     line-height: 17px;
@@ -4242,8 +4372,8 @@ footer {
 
 .type-one-kids .content-title-2 h1 {
     font-weight: 900;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: 36px;
+    line-height: 40px;
     color: #333333;
     position: relative;
     z-index: 1;
@@ -4312,7 +4442,7 @@ footer {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
+    text-align: justify;
     color: #000000;
     margin: 60px auto 0;
 }
@@ -4359,6 +4489,10 @@ footer {
 
 .type-three-test .two-free-content {
     padding-top: 50px;
+}
+
+.type-three-test .free-item-left .two-free-wrap-item:first-child, .type-three-test .free-item-right .two-free-wrap-item:first-child {
+    margin-bottom: 100px;
 }
 
 
@@ -4494,7 +4628,7 @@ footer {
 }
 
 .video-six-test {
-    height: 100%;
+    position: relative;
 }
 
 .video-six-test img {
@@ -4554,23 +4688,25 @@ footer {
 .type-nine-test .tyrphs-btn button {
     width: 90%;
     margin-left: -45%;
-    background: none;
+    background: #3298F2;
     border: 2px solid #3298F2;
-    color: #000000;
+    color: #ffffff;
 }
 
 .type-nine-test .tyrphs-btn button:hover {
-    background: #3298F2;
-    color: #ffffff;
+    background: none;
+    color: #000000;
 }
 
 .tyrphs-btn button span {
-    color: #000000;
     transition: .3s;
+    font-weight: 900;
+    font-size: 16px;
+    color: #F2F2F2;
 }
 
 .type-nine-test .tyrphs-btn button:hover span {
-    color: #ffffff;
+    color: #000000;
 }
 
   .type-nine-test .item-tyrphs-form form input:hover {
@@ -4749,6 +4885,10 @@ footer {
     padding: 40px 36px 66px;
     height: 100%;
     transition: .3s;
+}
+
+.kids-two-wrap-item:hover {
+    border-color: #FFE200;
 }
 
 .two-kids-content {
@@ -4935,11 +5075,15 @@ footer {
 /*index*/
 /*type 1 index*/
 
+.type-one-index .type-1-wrapper {
+    background: none;
+}
 
 .type-one-index {
     background-image: url(../image/index-screen.png);
     background-repeat: no-repeat;
     background-position-x: right;
+    position: relative;
 }
 
 .type-one-index-mobile {
@@ -5019,7 +5163,7 @@ footer {
 }
 
 .header-content-info-text {
-    font-size: 260px;
+    font-size: 272px;
     font-weight: 900;
     -webkit-text-fill-color: transparent;
     background: -o-linear-gradient(transparent, transparent);
@@ -5036,21 +5180,20 @@ footer {
 @keyframes move_eye { from { background-position-x: -200px; } to { background-position-x: 0; }  }
 
 .header-content-info-text-two {
-    font-weight: 900;
-    font-size: 38px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #303030;
+    width: 100%;
     position: absolute;
     top: 330px;
     left: -33px;
 }
 
+.header-content-info-text-two img {
+    width: 100%;
+}
+
 .video-play-index {
     position: absolute;
     top: 450px;
-    left: -285px;
+    right: 45%;
 }
 
 /*======================================================================================================================*/
@@ -6255,6 +6398,7 @@ footer {
 
 .four-react-carousel-item img {
     width: 100%;
+    height: 100%;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -6623,8 +6767,20 @@ footer {
 
 
 
+/*======================================================================================================================*/
+                                                    /*Modal video*/
+/*======================================================================================================================*/
+.modal-dialog {
+    max-width: 50vw;
+}
 
+.modal-content {
+    height: 50vh;
+}
 
+.video-reviews {
+    height: 100%;
+}
 
 
 

@@ -1,4 +1,3 @@
-
 let buttonMenu = document.querySelector('.c-hamburger');
 
 let menuMobile = document.querySelector('.menu-mobile');
@@ -21,7 +20,7 @@ document.querySelector('.c-hamburger').addEventListener('click', function (e) {
 // mobile drop nav menu
 let courseMobile = document.querySelector('#course');
 
-courseMobile.onclick = () =>{
+courseMobile.onclick = () => {
     let dropDown = document.querySelector('.dropdown-menu-mobile');
     dropDown.classList.toggle('is-visible-mobile');
 
@@ -55,20 +54,20 @@ closeButton.onclick = () => {
 // =========================================================================================================================
 
 // add white border from item
-    let typeBtn3 = document.querySelectorAll('.type-3-item a');
+//     let typeBtn3 = document.querySelectorAll('.type-3-item a');
+//
+// function addWhiteBorder(param) {
+//     param.forEach(el => {
+//         el.addEventListener('mouseenter', function (e) {
+//             e.target.offsetParent.classList.add('border-white');
+//         });
+//         el.addEventListener('mouseleave', function (e) {
+//             e.target.offsetParent.classList.remove('border-white');
+//         });
+//     });
+// }
 
-function addWhiteBorder(param) {
-    param.forEach(el => {
-        el.addEventListener('mouseenter', function (e) {
-            e.target.offsetParent.classList.add('border-white');
-        });
-        el.addEventListener('mouseleave', function (e) {
-            e.target.offsetParent.classList.remove('border-white');
-        });
-    });
-}
-
-addWhiteBorder(typeBtn3);
+// addWhiteBorder(typeBtn3);
 // end add white border from item
 
 
@@ -85,7 +84,6 @@ $(document).ready(function () {
         }
     });
 });
-
 
 
 // =========================================================================================================================
@@ -143,7 +141,7 @@ hoverForms('.type-tyrphs-item');
 let threeItemFooter = document.querySelectorAll('.three-index-item-content');
 
 threeItemFooter.forEach(function (el) {
-    
+
     el.addEventListener('mouseenter', function (e) {
         e.target.style.border = '1px solid #3298F2';
         e.target.children[0].style.border = '1px solid #3298F2';
@@ -171,9 +169,8 @@ fourItem.forEach(function (el) {
 
 
 // =========================================================================================================================
-                                                    // about
+// about
 // =========================================================================================================================
-
 
 
 // type 6 border change color
@@ -193,6 +190,38 @@ sixButton.forEach(function (el) {
 });
 // end type 6 border change color
 
+
+let playVideo = document.querySelectorAll('.play i');
+
+playVideo.forEach((el) => {
+
+    el.addEventListener('click', (e) => {
+        console.log(e.target.dataset.id);
+        let videoReview = document.querySelector('.video-reviews');
+        let id = e.target.dataset.id;
+        let videoReviewWrap = '';
+
+
+        videoReviewWrap = `
+            <iframe width="100%" height="100%" src="https://youtube.com/embed/${id}"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen id="Youtube"></iframe>
+        `;
+
+        videoReview.innerHTML = videoReviewWrap;
+    });
+
+});
+
+
+// stop video youtube
+$(document).ready(function() {
+    $('#pauseYoutube').on('click', function() {
+        console.log("work");
+        $('#Youtube').remove();
+    });
+});
 
 
 
