@@ -59,6 +59,15 @@ $(document).ready(function() {
 
     });
 
+    $(document).on("scroll",function(){
+        if($(document).scrollTop()>= 1){
+            $("header").addClass("small");
+        } else{
+            $("header").removeClass("small");
+        }
+    });
+
+
     //плавний скрол до якоря до форми
     function animationScroll(element, time) {
         $(element).click(function () {
@@ -231,7 +240,37 @@ function hoverForms() {
     });
 }
 
-hoverForms();
+// hoverForms();
+
+let playVideo = document.querySelectorAll('.play i');
+
+playVideo.forEach((el) => {
+
+    el.addEventListener('click', (e) => {
+        let videoReview = document.querySelector('.video-reviews');
+        let id = e.target.dataset.id;
+        let videoReviewWrap = '';
+
+
+        videoReviewWrap = `
+            <iframe width="100%" height="100%" src="https://youtube.com/embed/${id}"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen id="Youtube"></iframe>
+        `;
+
+        videoReview.innerHTML = videoReviewWrap;
+    });
+
+});
+
+
+// stop video youtube
+$(document).ready(function() {
+    $('#pauseYoutube').on('click', function() {
+        $('#Youtube').remove();
+    });
+});
 
 
 

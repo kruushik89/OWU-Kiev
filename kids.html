@@ -21,7 +21,7 @@
 
 <body>
 
-<header class="sticky-top">
+<header class="fixed-top">
     <div class="wrapper">
         <div class="c-hamburger c-hamburger-line">
             <span>Menu</span>
@@ -29,7 +29,10 @@
 
         <div class="wrapper-top flex-d justify-content-between">
             <div class="header-logo-item">
-                <a href="index.html"><img src="image/logo/logoFooter.png" alt="Logo"></a>
+                <a href="index.html">
+                    <img src="image/logo/logo-around.png" alt="Logo">
+                    <img src="image/logo/logo-owu.png" alt="Logo">
+                </a>
             </div>
 
             <div class="header-menu-content flex-d">
@@ -59,7 +62,8 @@
             </div>
 
             <div class="header-callback">
-                <button class="button-modal">Заказать обратный звонок</button>
+
+                <button class="button-modal"><img class="phone-icon" src="image/phone-icon.png" alt="Phone icon"> Заказать обратный звонок</button>
             </div>
         </div>
     </div>
@@ -202,7 +206,7 @@
                                 <h3>Кому подходит курс web-основи для підлітків?</h3>
                             </div>
                             <div class="two-kids-content flex-d c-fff">
-                                <div class="col-xl-5">
+                                <div class="col-xl-6">
                                     <div class="kids-two-wrap-item">
                                         <div class="kids-two-item-title">Людям с нулевым опытом</div>
                                         <div class="kids-two-item-text">Python изучают даже дети. Буквально. У нас есть
@@ -217,7 +221,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-5">
+                                <div class="col-xl-6">
                                     <div class="kids-two-wrap-item">
                                         <div class="kids-two-item-title">Людям с нулевым опытом</div>
                                         <div class="kids-two-item-text">Python изучают даже дети. Буквально. У нас есть
@@ -301,14 +305,21 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="video-six-test">
-                        <div class="play"><a href="https://youtube.com/watch?v=ozMvQn_UDO0" target="_blank">
-                            <i class="fas fa-play"></i>
-                        </a>
-                        </div>
+
+                        <div class="play">
+                            <i class="fas fa-play" data-toggle="modal"
+                               data-target="#exampleModalCenter" data-id="ozMvQn_UDO0">
+
+                            </i></div>
+
                         <img src="https://i.ytimg.com/vi/ozMvQn_UDO0/maxresdefault.jpg"
                              alt="Надія курс тестування відгук oktenweb">
                     </div>
+                    
                 </div>
+            </div>
+            <div class="type-six-test-image">
+                <img src="image/text/teens-owu.png" alt="Teens OWU">
             </div>
         </section>
         <!--        end type 3-->
@@ -329,11 +340,10 @@
             <div class="wrapper">
                 <div class="two-free-content flex-d">
                     <div class="col-xl-3 col-lg-3 free-item-left">
-
                         <div class="two-free-wrap-item">
-                            <div class="two-free-item-title">
+                            <div class="two-free-item-title c-FF9638">
                                 <div class="six-item-number num-one"></div>
-                                Группы до N человек
+                                Группы до N <br> человек
                             </div>
                             <div class="two-free-item-text">
                                 Мы не гонимся за максимальной прибылью, как это делают другие IT-школы. Группа
@@ -343,9 +353,9 @@
 
 
                         <div class="two-free-wrap-item">
-                            <div class="two-free-item-title">
+                            <div class="two-free-item-title c-green">
                                 <div class="six-item-number num-two"></div>
-                                х месяцев поддержки
+                                х месяцев <br> поддержки
                             </div>
                             <div class="two-free-item-text">
                                 OktenWeb University — белая компания. Мы платим налоги, оформляем договор со студентами,
@@ -364,10 +374,10 @@
 
                     <div class="col-xl-3 col-lg-3 free-item-right">
                         <div class="two-free-wrap-item">
-                            <div class="two-free-item-title">
+                            <div class="two-free-item-title c-aqua ">
                                 <div class="six-item-number num-three">
                                 </div>
-                                Пошаговый формат
+                                Пошаговый <br> формат
                             </div>
                             <div class="two-free-item-text">
                                 Программу составляют программисты и работодатели. Нужная информация отделяется от
@@ -376,9 +386,9 @@
                         </div>
 
                         <div class="two-free-wrap-item">
-                            <div class="two-free-item-title">
+                            <div class="two-free-item-title c-yellow">
                                 <div class="six-item-number num-four"></div>
-                                карьера «под ключ»
+                                карьера <br> «под ключ»
                             </div>
                             <div class="two-free-item-text">
                                 N% лучших студентов получают персональную рекомендацию, которая становится мощным плюсом
@@ -1520,9 +1530,6 @@
                                     </div>
 
                                 </div>
-                                <div class="btn-page">
-                                    <button class="button-modal">Записаться на курс</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1582,8 +1589,9 @@
                         <div class="slider center-3">
                             <div class="videos">
                                 <div class="main-video">
-                                    <div class="play"><a href="https://youtube.com/watch?v=X8gRuaJv6RU" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play"><i
+                                            class="fas fa-play" data-toggle="modal"
+                                            data-target="#exampleModalCenter"></i></div>
 
                                     <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
                                          alt="Ігор курс  javascript complex відгук oktenweb">
@@ -1593,20 +1601,24 @@
 
                             <div class="videos">
                                 <div class="main-video">
-                                    <div class="play"><a href="https://youtube.com/watch?v=Uhl0vMMDq3I" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
-                                    <img src="https://i.ytimg.com/vi/Uhl0vMMDq3I/maxresdefault.jpg"
-                                         alt="Роман  курс  javascript complex відгук oktenweb">
+                                    <div class="play"><i
+                                            class="fas fa-play" data-toggle="modal"
+                                            data-target="#exampleModalCenter"></i></div>
+
+                                    <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
+                                         alt="Ігор курс  javascript complex відгук oktenweb">
                                 </div>
 
                             </div>
 
                             <div class="videos">
                                 <div class="main-video">
-                                    <div class="play"><a href="https://youtube.com/watch?v=bFF-FCOtC5Q" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
-                                    <img src="https://i.ytimg.com/vi/bFF-FCOtC5Q/maxresdefault.jpg"
-                                         alt="Іван курс JavaScript Complex">
+                                    <div class="play"><i
+                                            class="fas fa-play" data-toggle="modal"
+                                            data-target="#exampleModalCenter"></i></div>
+
+                                    <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
+                                         alt="Ігор курс  javascript complex відгук oktenweb">
                                 </div>
 
                             </div>
@@ -1620,33 +1632,62 @@
                         <div class="section-eight-video">
                             <div class="items-video">
                                 <div class="video-item">
-                                    <div class="play"><a href="https://youtube.com/watch?v=X8gRuaJv6RU" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play">
+                                        <i class="fas fa-play" data-toggle="modal"
+                                           data-target="#exampleModalCenter" data-id="X8gRuaJv6RU">
+
+                                        </i></div>
 
                                     <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
                                          alt="Ігор курс  javascript complex відгук oktenweb">
 
                                 </div>
+
                                 <div class="video-item">
-                                    <div class="play"><a href="https://youtube.com/watch?v=Uhl0vMMDq3I" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="Uhl0vMMDq3I"></i>
+                                    </div>
+
                                     <img src="https://i.ytimg.com/vi/Uhl0vMMDq3I/maxresdefault.jpg"
                                          alt="Роман  курс  javascript complex відгук oktenweb">
                                 </div>
 
                                 <div class="video-item">
-                                    <div class="play"><a href="https://youtube.com/watch?v=bFF-FCOtC5Q" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="bFF-FCOtC5Q"></i>
+                                    </div>
                                     <img src="https://i.ytimg.com/vi/bFF-FCOtC5Q/maxresdefault.jpg"
                                          alt="Іван курс JavaScript Complex">
                                 </div>
-                            </div>
 
-                            <div class="main-video">
-                                <div class="play"><a href="https://youtube.com/watch?v=eoxRY0K7-Os" target="_blank"><i
-                                        class="fas fa-play"></i></a></div>
-                                <img src="https://i.ytimg.com/vi/K76K1NzHuxI/maxresdefault.jpg"
-                                     alt="Данило курс javascript complex відгук oktenweb">
+                                <div class="video-item">
+                                    <div class="play">
+                                        <i class="fas fa-play" data-toggle="modal"
+                                           data-target="#exampleModalCenter" data-id="X8gRuaJv6RU">
+
+                                        </i></div>
+
+                                    <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
+                                         alt="Ігор курс  javascript complex відгук oktenweb">
+
+                                </div>
+
+                                <div class="video-item">
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="Uhl0vMMDq3I"></i>
+                                    </div>
+
+                                    <img src="https://i.ytimg.com/vi/Uhl0vMMDq3I/maxresdefault.jpg"
+                                         alt="Роман  курс  javascript complex відгук oktenweb">
+                                </div>
+
+                                <div class="video-item">
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="bFF-FCOtC5Q"></i>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/bFF-FCOtC5Q/maxresdefault.jpg"
+                                         alt="Іван курс JavaScript Complex">
+                                </div>
                             </div>
                         </div>
 
@@ -1688,13 +1729,14 @@
 
                     <div class="col-xl-4 type-tyrphs-items">
                         <div class="type-tyrphs-item">
-                            <div class="type-tyrphs-title-1">Online</div>
-                            <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
+                            <div class="type-tyrphs-title-1">Базовый</div>
                             <div class="item-tyrphs-description">
                                 <div class="tyrphs-description">580 часов</div>
                                 <div class="tyrphs-description">6 месяцев</div>
                                 <div class="tyrphs-description">8 часов в неделю</div>
+                                <div class="tyrphs-description" id="notrain">Traineeship</div>
                             </div>
+                            <div class="price">11 500 грн</div>
                             <div class="item-tyrphs-form">
                                 <form>
 
@@ -1707,21 +1749,21 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class=""><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class="">Записаться на курс</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xl-4 type-tyrphs-items">
                         <div class="type-tyrphs-item">
-                            <div class="type-tyrphs-title-1">cтационар во львове</div>
-                            <div class="item-tyrphs-title-2 c-3298F2">Java Complex</div>
+                            <div class="type-tyrphs-title-1">Индивидуальний</div>
                             <div class="item-tyrphs-description">
                                 <div class="tyrphs-description-individual">Объем, нагрузка и длительность определяются
                                     студентом. Вы занимаетесь с личным
                                     наставником.
                                 </div>
                             </div>
+                            <div class="price">11 500 грн</div>
                             <div class="item-tyrphs-form">
                                 <form>
 
@@ -1734,7 +1776,7 @@
                             </div>
                             <div class="tyrphs-count">Осталось N мест</div>
                             <div class="tyrphs-btn">
-                                <button class=""><span>Записаться на курс <br></span> 11500 гривен</button>
+                                <button class="">Записаться на курс</button>
                             </div>
                         </div>
                     </div>
@@ -1754,24 +1796,26 @@
                                 <div class="panel" id="one-panel">
                                     <div class="type-tyrphs-items">
                                         <div class="type-tyrphs-item">
-                                            <div class="item-tyrphs-title-2 c-FF9638">QA/QC тестирование</div>
                                             <div class="item-tyrphs-description">
                                                 <div class="tyrphs-description">580 часов</div>
                                                 <div class="tyrphs-description">6 месяцев</div>
                                                 <div class="tyrphs-description">8 часов в неделю</div>
+                                                <div class="tyrphs-description" id="notrain-mob">Traineeship</div>
                                             </div>
+                                            <div class="price">11 500 грн</div>
                                             <div class="item-tyrphs-form">
                                                 <form>
+
                                                     <input type="text" placeholder="ФИО">
                                                     <input type="number" placeholder="Возраст">
+
                                                     <input type="email" placeholder="E-mail">
                                                     <input type="text" placeholder="099 7177 570">
                                                 </form>
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class=""><span>Записаться на курс <br></span> 11500 гривен
-                                                </button>
+                                                <button class="">Записаться на курс</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1779,7 +1823,6 @@
                                 <div class="panel" id="two-panel">
                                     <div class="type-tyrphs-items">
                                         <div class="type-tyrphs-item">
-                                            <div class="item-tyrphs-title-2 c-FF9638">QA/QC тестирование</div>
                                             <div class="item-tyrphs-description">
                                                 <div class="tyrphs-description-individual">Объем, нагрузка и
                                                     длительность определяются
@@ -1787,18 +1830,20 @@
                                                     наставником.
                                                 </div>
                                             </div>
+                                            <div class="price">11 500 грн</div>
                                             <div class="item-tyrphs-form">
                                                 <form>
+
                                                     <input type="text" placeholder="ФИО">
                                                     <input type="number" placeholder="Возраст">
+
                                                     <input type="email" placeholder="E-mail">
                                                     <input type="text" placeholder="099 7177 570">
                                                 </form>
                                             </div>
                                             <div class="tyrphs-count">Осталось N мест</div>
                                             <div class="tyrphs-btn">
-                                                <button class=""><span>Записаться на курс <br></span> 11500 гривен
-                                                </button>
+                                                <button class="">Записаться на курс</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1932,6 +1977,27 @@
             </div>
         </div>
         <!--        end modal window-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="pauseYoutube">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-reviews">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
 

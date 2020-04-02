@@ -83,6 +83,15 @@ $(document).ready(function () {
             $('html, body').animate({scrollTop: $(scrollElem).offset().top}, 500);
         }
     });
+
+
+    $(document).on("scroll",function(){
+        if($(document).scrollTop()>= 1){
+            $("header").addClass("small");
+        } else{
+            $("header").removeClass("small");
+        }
+    });
 });
 
 
@@ -138,33 +147,46 @@ hoverForms('.type-tyrphs-item');
 // =========================================================================================================================
 
 //border blue in index.html type 3
-let threeItemFooter = document.querySelectorAll('.three-index-item-content');
 
-threeItemFooter.forEach(function (el) {
 
-    el.addEventListener('mouseenter', function (e) {
-        e.target.style.border = '1px solid #3298F2';
-        e.target.children[0].style.border = '1px solid #3298F2';
-    });
+let threeItemBtn = document.querySelectorAll('.three-index-item-footer');
 
-    el.addEventListener('mouseleave', function (e) {
-        e.target.style.border = '';
-        e.target.children[0].style.border = '';
-    })
+threeItemBtn.forEach(el => {
+    el.onmouseenter = (e) => {
+        e.target.previousElementSibling.style.border = '1px solid #3298F2';
+        e.target.previousElementSibling.children[0].style.border = '1px solid #3298F2';
+    };
+
+    el.onmouseleave = (e) => {
+        e.target.previousElementSibling.style.border = '';
+        e.target.previousElementSibling.children[0].style.border = '';
+    };
 });
 
-let fourItem = document.querySelectorAll('.four-index-slider-item');
 
-fourItem.forEach(function (el) {
+let fourItemBtn = document.querySelectorAll('.four-index-slider-item-footer');
 
-    el.addEventListener('mouseenter', function (e) {
-        e.target.style.border = '1px solid #FF9638';
-    });
+fourItemBtn.forEach(el => {
+    el.onmouseenter = (e) => {
+        console.log(e);
+        e.target.previousElementSibling.style.border = '1px solid #FF9638';
+    };
 
-    el.addEventListener('mouseleave', function (e) {
-        e.target.style.border = '';
-    })
+    el.onmouseleave = (e) => {
+        e.target.previousElementSibling.style.border = '';
+    };
 });
+
+// fourItem.forEach(function (el) {
+//
+//     el.addEventListener('mouseenter', function (e) {
+//         e.target.style.border = '1px solid #FF9638';
+//     });
+//
+//     el.addEventListener('mouseleave', function (e) {
+//         e.target.style.border = '';
+//     })
+// });
 //end border blue in index.html type 3
 
 
@@ -196,7 +218,6 @@ let playVideo = document.querySelectorAll('.play i');
 playVideo.forEach((el) => {
 
     el.addEventListener('click', (e) => {
-        console.log(e.target.dataset.id);
         let videoReview = document.querySelector('.video-reviews');
         let id = e.target.dataset.id;
         let videoReviewWrap = '';
@@ -218,10 +239,49 @@ playVideo.forEach((el) => {
 // stop video youtube
 $(document).ready(function() {
     $('#pauseYoutube').on('click', function() {
-        console.log("work");
         $('#Youtube').remove();
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

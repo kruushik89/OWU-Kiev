@@ -20,7 +20,7 @@
 
 <body>
 
-<header class="sticky-top">
+<header class="fixed-top">
     <div class="wrapper">
         <div class="c-hamburger c-hamburger-line">
             <span>Menu</span>
@@ -28,7 +28,10 @@
 
         <div class="wrapper-top flex-d justify-content-between">
             <div class="header-logo-item">
-                <a href="index.html"><img src="image/logo/logoFooter.png" alt="Logo"></a>
+                <a href="index.html">
+                    <img src="image/logo/logo-around.png" alt="Logo">
+                    <img src="image/logo/logo-owu.png" alt="Logo">
+                </a>
             </div>
 
             <div class="header-menu-content flex-d">
@@ -58,7 +61,8 @@
             </div>
 
             <div class="header-callback">
-                <button class="button-modal">Заказать обратный звонок</button>
+
+                <button class="button-modal"><img class="phone-icon" src="image/phone-icon.png" alt="Phone icon"> Заказать обратный звонок</button>
             </div>
         </div>
     </div>
@@ -214,7 +218,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number num-one"></div>
+                                <div class="two-free-item-number">01</div>
                                 Группы до N человек
                             </div>
                             <div class="two-free-item-text">
@@ -226,7 +230,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number num-two"></div>
+                                <div class="two-free-item-number">02</div>
                                 х месяцев поддержки
                             </div>
                             <div class="two-free-item-text">
@@ -247,7 +251,7 @@
                     <div class="col-xl-3 col-lg-3 free-item-right">
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number num-three"></div>
+                                <div class="two-free-item-number">03</div>
                                 Пошаговый формат
                             </div>
                             <div class="two-free-item-text">
@@ -258,7 +262,7 @@
 
                         <div class="two-free-wrap-item">
                             <div class="two-free-item-title">
-                                <div class="six-item-number num-four"></div>
+                                <div class="two-free-item-number">04</div>
                                 карьера «под ключ»
                             </div>
                             <div class="two-free-item-text">
@@ -457,7 +461,7 @@
                         <img src="image/logo/type2.png" alt="Logo type-2">
                     </div>
 
-                    <div class="col-xl-5 flex-d align-items-end">
+                    <div class="col-xl-6 flex-d align-items-end">
                         <div class="type-2-wrapper-title">
                             <div class="title-descript">
                                 <h3>Иван Иванов</h3>
@@ -505,8 +509,9 @@
                         <div class="slider center-3">
                             <div class="videos">
                                 <div class="main-video">
-                                    <div class="play"><a href="https://youtube.com/watch?v=X8gRuaJv6RU" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play"><i
+                                            class="fas fa-play" data-toggle="modal"
+                                            data-target="#exampleModalCenter"></i></div>
 
                                     <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
                                          alt="Ігор курс  javascript complex відгук oktenweb">
@@ -516,20 +521,24 @@
 
                             <div class="videos">
                                 <div class="main-video">
-                                    <div class="play"><a href="https://youtube.com/watch?v=Uhl0vMMDq3I" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
-                                    <img src="https://i.ytimg.com/vi/Uhl0vMMDq3I/maxresdefault.jpg"
-                                         alt="Роман  курс  javascript complex відгук oktenweb">
+                                    <div class="play"><i
+                                            class="fas fa-play" data-toggle="modal"
+                                            data-target="#exampleModalCenter"></i></div>
+
+                                    <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
+                                         alt="Ігор курс  javascript complex відгук oktenweb">
                                 </div>
 
                             </div>
 
                             <div class="videos">
                                 <div class="main-video">
-                                    <div class="play"><a href="https://youtube.com/watch?v=bFF-FCOtC5Q" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
-                                    <img src="https://i.ytimg.com/vi/bFF-FCOtC5Q/maxresdefault.jpg"
-                                         alt="Іван курс JavaScript Complex">
+                                    <div class="play"><i
+                                            class="fas fa-play" data-toggle="modal"
+                                            data-target="#exampleModalCenter"></i></div>
+
+                                    <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
+                                         alt="Ігор курс  javascript complex відгук oktenweb">
                                 </div>
 
                             </div>
@@ -543,33 +552,62 @@
                         <div class="section-eight-video">
                             <div class="items-video">
                                 <div class="video-item">
-                                    <div class="play"><a href="https://youtube.com/watch?v=X8gRuaJv6RU" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play">
+                                        <i class="fas fa-play" data-toggle="modal"
+                                           data-target="#exampleModalCenter" data-id="X8gRuaJv6RU">
+
+                                        </i></div>
 
                                     <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
                                          alt="Ігор курс  javascript complex відгук oktenweb">
 
                                 </div>
+
                                 <div class="video-item">
-                                    <div class="play"><a href="https://youtube.com/watch?v=Uhl0vMMDq3I" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="Uhl0vMMDq3I"></i>
+                                    </div>
+
                                     <img src="https://i.ytimg.com/vi/Uhl0vMMDq3I/maxresdefault.jpg"
                                          alt="Роман  курс  javascript complex відгук oktenweb">
                                 </div>
 
                                 <div class="video-item">
-                                    <div class="play"><a href="https://youtube.com/watch?v=bFF-FCOtC5Q" target="_blank"><i
-                                            class="fas fa-play"></i></a></div>
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="bFF-FCOtC5Q"></i>
+                                    </div>
                                     <img src="https://i.ytimg.com/vi/bFF-FCOtC5Q/maxresdefault.jpg"
                                          alt="Іван курс JavaScript Complex">
                                 </div>
-                            </div>
 
-                            <div class="main-video">
-                                <div class="play"><a href="https://youtube.com/watch?v=eoxRY0K7-Os" target="_blank"><i
-                                        class="fas fa-play"></i></a></div>
-                                <img src="https://i.ytimg.com/vi/K76K1NzHuxI/maxresdefault.jpg"
-                                     alt="Данило курс javascript complex відгук oktenweb">
+                                <div class="video-item">
+                                    <div class="play">
+                                        <i class="fas fa-play" data-toggle="modal"
+                                           data-target="#exampleModalCenter" data-id="X8gRuaJv6RU">
+
+                                        </i></div>
+
+                                    <img src="https://i.ytimg.com/vi/X8gRuaJv6RU/maxresdefault.jpg"
+                                         alt="Ігор курс  javascript complex відгук oktenweb">
+
+                                </div>
+
+                                <div class="video-item">
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="Uhl0vMMDq3I"></i>
+                                    </div>
+
+                                    <img src="https://i.ytimg.com/vi/Uhl0vMMDq3I/maxresdefault.jpg"
+                                         alt="Роман  курс  javascript complex відгук oktenweb">
+                                </div>
+
+                                <div class="video-item">
+                                    <div class="play"><i class="fas fa-play" data-toggle="modal"
+                                                         data-target="#exampleModalCenter" data-id="bFF-FCOtC5Q"></i>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/bFF-FCOtC5Q/maxresdefault.jpg"
+                                         alt="Іван курс JavaScript Complex">
+                                </div>
                             </div>
                         </div>
 

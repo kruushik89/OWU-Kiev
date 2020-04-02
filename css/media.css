@@ -95,6 +95,8 @@
 
     .type-seven-test .type-2-title {
         font-size: 22px;
+        margin-bottom: 45px;
+        margin-top: 60px;
     }
 
     .type-seven-test .type-2-title::after {
@@ -127,6 +129,7 @@
 
     .type-one-index .type-1-wrapper-course {
         padding-bottom: 0;
+        padding-top: 100px;
     }
 
     .content-title-free span {
@@ -140,10 +143,12 @@
     .header-content-info-text {
         font-size: 240px;
         left: -100px;
+        top: 45px;
     }
 
     .header-content-info-text-two {
         left: -66px;
+        top: 250px;
     }
 
     .video-play-index img {
@@ -154,10 +159,126 @@
         right: 49%;
     }
 
+    .six-item-number-index {
+        flex-basis: 40%;
+    }
 
+    .six-item-number-index.num-four {
+        background: url(../image/new-number.png) -514px -445px;
+    }
+
+    .lazy .slick-dots li {
+        margin: 0 15px;
+    }
+
+    .type-three-index-bg-two img {
+        width: 250px;
+    }
+
+    .type-three-index-bg-one img {
+        width: 400px;
+    }
+
+    .type-one-python .wrapper-title-2 {
+        width: 100%;
+    }
+
+    .type-one-python .type-1-wrapper-course {
+        padding: 100px 20px 30px 100px;
+    }
+
+    .header-info-img img, .type-four-python-image img {
+        width: 400px;
+    }
+
+    .header-info-img {
+        left: -160px;
+    }
+
+    .type-four-python {
+        padding-bottom: 0;
+    }
+
+    .four-item-wrap-python-title {
+        margin-bottom: 10px;
+    }
+
+    .four-item-wrap-python {
+        margin-bottom: 25px;
+    }
+
+    .type-six-python {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .type-six-python .type-title {
+        margin-bottom: 0;
+    }
+
+    .seven-python-wrap {
+        width: 28%;
+    }
+
+    .content-white .type-title {
+        width: 40%;
+    }
+
+    .type-1 .wrapper-title-2 {
+        width: 90%;
+    }
+
+    .section-two-content-item {
+        margin-bottom: 20px;
+    }
+
+    .java-complex-list-item {
+        margin-bottom: 30px;
+    }
+
+    .one-react-left-content {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .header-content {
+        margin-top: 50px;
+    }
+
+    .header-content-price {
+        margin-bottom: 70px;
+    }
+
+    .type-three-kids {
+        padding: 40px 0;
+    }
+
+    .type-seven-kids .section-five {
+        padding: 50px 0 70px;
+    }
+
+    .free-three-content {
+        padding-top: 50px;
+    }
+
+    .img-vector img {
+        height: 324px;
+    }
+
+    .items-video {
+        width: 100%;
+    }
+
+    .type-three-test .two-free-item-title {
+        background: url(../image/background.png) -130px -1px;
+    }
+
+    .type-three-test .six-item-number {
+        left: 20px;
+    }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1370px) {
     .six-wrap-item-right {
         justify-content: flex-start;
     }
@@ -190,7 +311,40 @@
     .header-content-info-text-two {
         top: 280px;
     }
+
+    .btn-header-content-python {
+        width: 85%;
+    }
+
+    .bg-blue-text {
+        font-size: 75px;
+    }
+
+    .six-item-number-index {
+        flex-basis: 50%;
+    }
+
+    .orange-image {
+        right: -45px;
+    }
+
+    .header-info-img {
+        left: -153px;
+    }
+
+    .header-info-img img {
+        width: 385px;
+    }
+
+    .type-one-python .type-1-wrapper-title {
+        margin-bottom: 0;
+    }
+
+    .type-one-python .header-content-text {
+        margin-top: 0;
+    }
 }
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -249,8 +403,8 @@
     }
 
     .video-play-index {
-        top: 450px;
-        right: 42%;
+        top: 395px;
+        right: 41%;
     }
 
     .header-content-info-text {
@@ -267,6 +421,18 @@
 
     .header-content-info-text-two {
         top: 195px;
+    }
+
+    .type-one-index .header-content-text {
+        width: 85%;
+    }
+
+    .six-item-number-index {
+        flex-basis: 160px;
+    }
+
+    .description-btn a {
+        width: 340px;
     }
 
 }
@@ -326,7 +492,7 @@
         display: none;
     }
 
-    .header-content-text {
+    .header-content-text, .type-one-java .header-content-text {
         width: 100%;
         margin-bottom: 78px;
         text-align: left;
@@ -454,8 +620,14 @@
     }
 
     .type-six-video-mob {
+        position: relative;
         display: flex;
         justify-content: center;
+    }
+
+    .type-six-video-mob .play {
+        width: 85px;
+        height: 85px;
     }
 
     ol.carousel-indicators {
@@ -643,7 +815,7 @@
         margin-top: 24px;
     }
 
-    .section-five {
+    .section-five, .type-seven .section-five, .type-six-java .section-five, .type-seven-kids .section-five {
         padding: 50px 0 100px;
     }
 
@@ -833,7 +1005,7 @@
     }
 
     .type-four-java {
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
 
     .four-java-bg-text-owu, .four-java-bg-text-web {
@@ -1604,7 +1776,7 @@
 
     .type-three-index {
         padding-top: 50px;
-        padding-bottom: 60px;
+        padding-bottom: 0;
     }
 
     .orange-button {
@@ -2014,7 +2186,7 @@
     }
 
     .lazy .slick-dots {
-        bottom: -110px;
+        bottom: -40px;
         justify-content: space-evenly;
     }
 
@@ -2135,10 +2307,7 @@
     }
 
     .video-play-index {
-        position: inherit;
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
+        display: none;
 
     }
     .video-play-index img {
@@ -2153,6 +2322,52 @@
         width: 100%;
         margin-bottom: 58px;
     }
+
+    .orange-image, .type-five-index-bg, .bg-blue-text, .type-three-index-bg-one, .type-three-index-bg-two {
+        display: none;
+    }
+
+    .blue-two {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .video-play-index-mobile {
+        margin-top: 55px;
+    }
+
+    .video-play-index-mobile img {
+        width: 135px;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+    }
+
+    .type-six-index .lazy .slick-dots {
+        bottom: -60px;
+    }
+
+    .orange .type-title {
+        width: 100%;
+    }
+
+    .type-five-index, .type-nine-index {
+        padding-top: 40px;
+    }
+
+    .type-six-index  {
+        padding-bottom: 70px;
+    }
+
+    .header-content-text {
+        margin-top: 0;
+    }
+
+    .type-six-test-image {
+        display: none;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -2778,6 +2993,10 @@
 
     .type-one-index .btn-header-content {
         width: auto;
+    }
+
+    .btn-header-content-python {
+        width: 100%;
     }
 }
 
