@@ -125,7 +125,6 @@ function hoverForms() {
     let formsHover = document.querySelectorAll('.type-tyrphs-item');
     formsHover.forEach(function (el) {
         el.addEventListener('mouseenter', function (e) {
-            console.log(e);
             e.target.children[0].style.backgroundColor = '#3298f2';
             e.target.children[0].style.color = '#ffffff';
             e.target.style.borderColor = '#3298f2';
@@ -177,18 +176,6 @@ fourItemBtn.forEach(el => {
     };
 });
 
-// fourItem.forEach(function (el) {
-//
-//     el.addEventListener('mouseenter', function (e) {
-//         e.target.style.border = '1px solid #FF9638';
-//     });
-//
-//     el.addEventListener('mouseleave', function (e) {
-//         e.target.style.border = '';
-//     })
-// });
-//end border blue in index.html type 3
-
 
 // =========================================================================================================================
 // about
@@ -215,25 +202,30 @@ sixButton.forEach(function (el) {
 
 let playVideo = document.querySelectorAll('.play i');
 
-playVideo.forEach((el) => {
+function play (play) {
+    play.forEach((el) => {
 
-    el.addEventListener('click', (e) => {
-        let videoReview = document.querySelector('.video-reviews');
-        let id = e.target.dataset.id;
-        let videoReviewWrap = '';
+        el.addEventListener('click', (e) => {
+            let videoReview = document.querySelector('.video-reviews');
+            let id = e.target.dataset.id;
+            let videoReviewWrap = '';
 
 
-        videoReviewWrap = `
+            videoReviewWrap = `
             <iframe width="100%" height="100%" src="https://youtube.com/embed/${id}"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen id="Youtube"></iframe>
         `;
 
-        videoReview.innerHTML = videoReviewWrap;
-    });
+            videoReview.innerHTML = videoReviewWrap;
+        });
 
-});
+    });
+}
+
+play(document.querySelectorAll('.play i'));
+play(document.querySelectorAll('.video-play-image img'));
 
 
 // stop video youtube

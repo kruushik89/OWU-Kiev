@@ -172,3 +172,25 @@ $('.four-react-carousel').slick({
     ]
 });
 
+$(".full-nine-carousel").slick({
+    lazyLoad: 'ondemand', // ondemand progressive anticipated
+    dots: false,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                lazyLoad: 'ondemand', // ondemand progressive anticipated
+                dots: true,
+                arrows: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
+
