@@ -26,8 +26,16 @@ courseMobile.onclick = () => {
 
     if (dropDown.classList.contains('is-visible-mobile')) {
         dropDown.style.height = dropDown.scrollHeight + 'px';
+        courseMobile.classList.add('border-menu');
+        courseMobile.style.borderTop = '1px solid rgba(119,187,247, 1)';
+        courseMobile.style.borderLeft = '1px solid rgba(119,187,247, 1)';
+        courseMobile.style.borderRight = '1px solid rgba(119,187,247, 1)';
     } else {
         dropDown.style.height = '';
+        courseMobile.classList.remove('border-menu');
+        courseMobile.style.borderTop = '';
+        courseMobile.style.borderLeft = '';
+        courseMobile.style.borderRight = '';
     }
 };
 // end mobile drop nav menu
@@ -50,26 +58,6 @@ closeButton.onclick = () => {
     modalWindow.classList.remove('d-block');
 };
 // end modal
-
-// =========================================================================================================================
-
-// add white border from item
-//     let typeBtn3 = document.querySelectorAll('.type-3-item a');
-//
-// function addWhiteBorder(param) {
-//     param.forEach(el => {
-//         el.addEventListener('mouseenter', function (e) {
-//             e.target.offsetParent.classList.add('border-white');
-//         });
-//         el.addEventListener('mouseleave', function (e) {
-//             e.target.offsetParent.classList.remove('border-white');
-//         });
-//     });
-// }
-
-// addWhiteBorder(typeBtn3);
-// end add white border from item
-
 
 // =========================================================================================================================
 //плавний скрол до якоря
@@ -198,9 +186,6 @@ sixButton.forEach(function (el) {
     })
 });
 // end type 6 border change color
-
-
-let playVideo = document.querySelectorAll('.play i');
 
 function play (play) {
     play.forEach((el) => {
